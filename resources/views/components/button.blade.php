@@ -1,0 +1,21 @@
+@props(['route'])
+
+@php
+    $classes = '
+    button
+        uppercase
+        font-bold
+        bg-opacity-10
+        text-xs
+        text-center
+        flex
+        items-center
+        justify-center
+        relative
+        squircle
+        bg-white
+        rounded-xl
+    '
+@endphp
+
+<a href="{{ route($route) }}" {{ $attributes->merge(['class' => $classes ]) }}>{{$slot}}</a>

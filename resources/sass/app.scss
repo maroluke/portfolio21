@@ -1,0 +1,115 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.entry-bg {
+    @apply bg-contain bg-no-repeat fixed w-full h-full;
+
+    z-index: -1;
+    background-position: 0 -6rem;
+    background-image: url('../media/macbook-1.png');
+}
+
+#entry {
+    @apply bg-gradient-to-t from-black;
+
+    h1 {
+        span {
+            background-image: linear-gradient(to top, #fff 45%, rgba(255, 255, 255, 0));
+        }
+    }
+}
+
+p {
+    @apply font-light;
+}
+
+.pagination span {
+    @apply bg-white;
+}
+
+.swiper-slide {
+    width: 90% !important;
+}
+
+.link-line {
+    @apply block rounded mb-0.5;
+
+    height: 1px;
+}
+
+#app main .swiper-pagination-bullet {
+    @apply transition-all duration-500 ease-in-out;
+
+    &.swiper-pagination-bullet-active {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+input {
+    @apply font-bold uppercase text-base tracking-wide text-gray-400 py-3 px-6 w-full rounded-xl;
+
+    height: 50px;
+}
+
+#cta-employers {
+    button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.floating {
+    animation: floating 4s infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+@keyframes floating {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(10px);}
+}
+
+.neon {
+    @apply bg-clip-text text-transparent;
+
+    animation: animateBg 15s linear infinite;
+    background-size: 100% 1100%;
+}
+
+.neon-flat {
+    background-image: linear-gradient(15deg, #9F5DCB,#e93bc0,#5fd3e3, #e93bc0, #9F5DCB);
+}
+
+.neon-wide {
+    background-image: linear-gradient(75deg, #9F5DCB,#e93bc0,#5fd3e3, #e93bc0, #9F5DCB);
+}
+
+@keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 0% 100%; }
+}
+
+// .squircle svg {
+//     @apply absolute left-0 top-0 stroke-current stroke-2 opacity-25;
+// }
+
+.button {
+    min-height: 50px;
+
+    a {
+        @apply w-full h-full grid items-center;
+    }
+
+    svg {
+        @apply m-auto mb-1;
+    }
+}
+
+#footer {
+    @apply bg-no-repeat bg-bottom bg-black bg-contain;
+
+    background-image: url('../media/code-editor.png');
+}

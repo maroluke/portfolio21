@@ -1,5 +1,9 @@
 <?php
 
+use App\Mail\ForwardEmailInput;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('home');
+
+Route::post('/', function(Request $request) {
+    // Mail::send(new ForwardEmailInput($request));
+    return Redirect::back()->width('email', $request);
 });
