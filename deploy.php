@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'lukacmarko.com');
+set('application', 'portfolio21');
 
 // Project repository
 set('repository', 'git@github.com:maroluke/portfolio21.git');
