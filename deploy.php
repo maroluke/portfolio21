@@ -4,10 +4,10 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'my_project');
+set('application', 'lukacmarko.com');
 
 // Project repository
-set('repository', 'git@domain.com:username/repository.git');
+set('repository', 'git@github.com:maroluke/portfolio21.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -22,8 +22,10 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');    
+host('164.90.167.92')
+    ->user('deployer')
+    ->identityFile('~/.ssh/deployerkey')
+    ->set('deploy_path', '/var/www/lukacmarko.com');    
     
 // Tasks
 
@@ -36,5 +38,5 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 
-before('deploy:symlink', 'artisan:migrate');
+// before('deploy:symlink', 'artisan:migrate');
 
