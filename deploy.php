@@ -22,7 +22,7 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('164.90.167.92')
+host('167.172.183.30')
     ->user('deployer')
     ->identityFile('~/.ssh/id_rsa')
     ->set('deploy_path', '/var/www/lukacmarko.com');    
