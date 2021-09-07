@@ -26,10 +26,6 @@ p {
     @apply font-light;
 }
 
-.pagination span {
-    @apply bg-white;
-}
-
 .swiper-slide {
     width: 90% !important;
 }
@@ -41,12 +37,41 @@ p {
 }
 
 #app main .swiper-pagination-bullet {
-    @apply transition-all duration-500 ease-in-out;
+    @apply transition-all duration-500 ease-in-out rounded-xs mx-0 relative overflow-hidden;
+
+    width: 8px;
+    height: 12px;
+    z-index: 1;
+    background: linear-gradient(0.2turn, #fff, #fff);
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: -50%;
+        left: -50%;
+        background: linear-gradient(0.1turn, #E93BC0, #5FD3E3);
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
 
     &.swiper-pagination-bullet-active {
-        width: 10px;
-        height: 10px;
+        width: 9px;
+        height: 13px;
+
+        &::before {
+            opacity: 1;
+            background: linear-gradient(0.1turn, #E93BC0, #5FD3E3);
+            animation: spin 3s linear infinite;
+        }
     }
+}
+
+@keyframes spin {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(359deg);}
 }
 
 input {
@@ -92,10 +117,6 @@ input {
     100% { background-position: 0% 100%; }
 }
 
-// .squircle svg {
-//     @apply absolute left-0 top-0 stroke-current stroke-2 opacity-25;
-// }
-
 .button {
     min-height: 50px;
 
@@ -112,4 +133,8 @@ input {
     @apply bg-no-repeat bg-bottom bg-black bg-contain;
 
     background-image: url('../media/code-editor.png');
+}
+
+#intro {
+    margin-top: 100vh;
 }

@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  mode: 'jit',
+  //mode: 'jit',
   purge: [
     './resources/views/**/*.blade.php',
     './resources/css/**/*.css',
@@ -31,6 +31,36 @@ module.exports = {
           DEFAULT: '#5FD3E3',
           light: '#5FD3E3',
         }
+      },
+      borderRadius: {
+        'xs': '0.09rem'
+      },
+      keyframes: {
+        swipe: {
+            '0%': {
+              opacity: 0,
+              transform: 'translate(0, 100%)'
+            },
+            '20%': {
+              opacity: 1,
+              transform: 'translate(0, 0%)'
+            },
+            '70%': {
+              opacity: 1,
+              transform: 'translate(0, 0%)'
+            },
+            '90%': {
+              opacity: 0,
+              transform: 'translate(0, -100%)'
+            },
+            '100%': {
+              opacity: 0,
+              transform: 'translate(0, 100%)'
+            },
+        }
+      },
+      animation: {
+          swipe: 'swipe 5s cubic-bezier(0, 0.55, 0.45, 1) 1s infinite',
       }
     }
   },

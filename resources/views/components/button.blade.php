@@ -13,7 +13,6 @@
         justify-center
         relative
         squircle
-        bg-white
         rounded-xl
     '
 @endphp
