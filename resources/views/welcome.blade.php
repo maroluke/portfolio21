@@ -160,10 +160,10 @@
             <h2 class="text-large">Oder darf ich Sie bei Ihren <span class="bg-clip-text neon neon-flat">Ambitionen</span> unterstützen?</h2>
             <p class="py-8">Möchten Sie sich digital positionieren, Produkte online anbieten oder Arbeitsprozesse digitalisieren? Egal welchen Ambitionen Sie nachgehen, ich lade Sie herzlich zu einem spontanen Brainstorming ein.</p>
             <div class="grid grid-cols-4 gap-2 mt-8">
-                <x-link-button class="z-10" href="tel:+41763887018">Anruf</x-link-button>
-                <x-link-button class="z-10" href="mailto:hello@lukacmarko.com">E-Mail</x-link-button>
-                <x-link-button class="z-10" href="sms:+41763887018">SMS</x-link-button>
-                <x-link-button class="z-10" href="https://t.me/maroluke">Telegram</x-link-button>
+                <x-link-button class="z-10 px-1" href="tel:+41763887018">Anruf</x-link-button>
+                <x-link-button class="z-10 px-1" href="mailto:hello@lukacmarko.com">E-Mail</x-link-button>
+                <x-link-button class="z-10 px-1" href="sms:+41763887018">SMS</x-link-button>
+                <x-link-button class="z-10 px-1" href="https://t.me/maroluke">Telegram</x-link-button>
             </form>
         </section>
 
@@ -191,35 +191,20 @@
                     <div class="flex bg-white bg-opacity-20 text-white align-center py-2 px-6 mb-3">
                         <h4 class="uppercase tracking-wider">Credits</h4>
                     </div>
-
-                    <div class="flex px-6">
-                        <p class="flex-1">MacBook #1</p>
-                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/RcqjrGPDWl4">Hustler's Fuel</a></p>
-                    </div>
-
-                    <div class="flex px-6">
-                        <p class="flex-1">Mobile Phone</p>
-                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="/">Marko Lukac</a></p>
-                    </div>
-
-                    <div class="flex px-6">
-                        <p class="flex-1">MacBook #2</p>
-                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/5sT07dJl65s">Anthony Garand</a></p>
-                    </div>
-
-                    <div class="flex px-6">
-                        <p class="flex-1">Portrait</p>
-                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://www.laurentburst.com/">Laurent Burst</a></p>
-                    </div>
-
-                    <div class="flex px-6">
-                        <p class="flex-1">Hello World</p>
-                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/vDRhC3PAHx0">Marko Lukac</a></p>
-                    </div>
-
-                    <div class="flex px-6">
-                        <p class="flex-1">Code Editor</p>
-                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://images.unsplash.com/photo-1547954575-855750c57bd3">Reza Namdari</a></p>
+                    
+                    <div class="grid grid-cols-2 px-6">
+                        <p>MacBook #1</p>
+                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/RcqjrGPDWl4">Hustler's Fuel</a></p>
+                        <p>Mobile Phone</p>
+                        <p><a class="hover:text-gray-300 underline" target="_blank" href="/">Marko Lukac</a></p>
+                        <p>MacBook #2</p>
+                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/5sT07dJl65s">Anthony Garand</a></p>
+                        <p>Portrait</p>
+                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://www.laurentburst.com/">Laurent Burst</a></p>
+                        <p>Hello World</p>
+                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/vDRhC3PAHx0">Marko Lukac</a></p>
+                        <p>Code Editor</p>
+                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://images.unsplash.com/photo-1547954575-855750c57bd3">Reza Namdari</a></p>
                     </div>
                 </div>
 
@@ -264,14 +249,11 @@
                 </div>
 
                 <div class="pt-10 pb-5 leading-6 px-6">
-                    <div class="flex">
-                        <p class="flex-1">Last update</p>
-                        <p class="flex-1">24. Juli 2021</p>
-                    </div>
-
-                    <div class="flex">
-                        <p class="flex-1">Github Repository</p>
-                        <p class="flex-1"><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <p>Last update</p>
+                        <p>24. Juli 2021</p>
+                        <p>Repository</p>
+                        <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
                     </div>
                 </div>
 
