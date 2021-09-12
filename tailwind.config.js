@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  //mode: 'jit',
+  mode: 'jit',
   purge: [
     './resources/views/**/*.blade.php',
     './resources/css/**/*.css',
@@ -12,13 +12,15 @@ module.exports = {
     extend: {
       fontFamily: {
         'heading': ['bebas-neue', 'sans-serif'],
-        'body': ['soleil', 'sans-serif'],
+        'body': ['strawfordregular', 'sans-serif'],
+        'button': ['strawfordbold', 'sans-serif'],
       },
 
       fontSize: {
-        'large': '3.4375rem',
-        'medium': '2.125rem',
-        'small': '1.3125rem',
+        large: '3.4375rem',
+        medium: '2.125rem',
+        small: '1.3125rem',
+        tiny: '1.25rem',
       },
       colors: {
         'neon-pink': {
@@ -67,12 +69,12 @@ module.exports = {
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
-        'h1, h2, h3, h4': {fontFamily: theme('fontFamily.heading'), lineHeight: theme('lineHeight.none')},
-        'h1': { fontSize: theme('fontSize.large') },
-        'h2': { fontSize: theme('fontSize.medium') },
-        'h3': { fontSize: theme('fontSize.small') },
-        'body': {fontFamily: theme('fontFamily.body'), fontSize: theme('fontSize.small')},
-        'html': {backgroundColor: theme('backgroundColor.black')},
+        'h1, h2, h3, h4': {fontFamily: theme('fontFamily.heading')},
+        'h1':   { fontSize: theme('fontSize.large') },
+        'h2':   { fontSize: theme('fontSize.medium') },
+        'h3':   { fontSize: theme('fontSize.small') },
+        'body': { fontFamily: theme('fontFamily.body') },
+        'html': { backgroundColor: theme('backgroundColor.black') },
       })
     })
   ],

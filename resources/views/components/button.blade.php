@@ -3,17 +3,18 @@
 @php
     $classes = '
     button
-        uppercase
-        font-bold
-        bg-opacity-10
-        text-xs
-        text-center
-        flex
-        items-center
-        justify-center
-        relative
-        squircle
-        rounded-xl
+    uppercase
+    font-bold
+    font-button
+    bg-opacity-10
+    text-xs
+    text-center
+    flex
+    items-center
+    justify-center
+    relative
+    squircle
+    rounded-xl
     '
 @endphp
 

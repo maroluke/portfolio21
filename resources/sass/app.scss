@@ -1,15 +1,20 @@
 @import "tailwindcss/base";
 
-@import "tailwindcss/components";
-
-@import "tailwindcss/utilities";
+@import url("font.scss");
 
 .entry-bg {
-    @apply bg-contain bg-no-repeat fixed w-full h-full;
-
     z-index: -1;
     background-position: 0 -6rem;
     background-image: url('../media/macbook-1.png');
+    margin-top: -50px;
+    animation-name: slideIn;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
+    animation-fill-mode: forwards;
+}
+
+h1, h2, h3, h4 {
+    @apply leading-none;
 }
 
 #entry {
@@ -17,17 +22,17 @@
 
     h1 {
         span {
-            background-image: linear-gradient(to top, #fff 45%, rgba(255, 255, 255, 0));
+            @apply bg-gradient-to-t from-white to-transparent;
         }
     }
 }
 
 p {
-    @apply font-light;
+    @apply leading-normal text-tiny;
 }
 
 .swiper-slide {
-    width: 90% !important;
+    width: 95% !important;
 }
 
 .link-line {
@@ -75,7 +80,7 @@ p {
 }
 
 input {
-    @apply font-bold uppercase text-base tracking-wide text-gray-400 py-3 px-6 w-full rounded-xl;
+    @apply font-bold text-base tracking-wide text-gray-400 py-3 px-6 w-full rounded-xl;
 
     height: 50px;
 }
@@ -98,26 +103,22 @@ input {
 }
 
 .neon {
-    @apply bg-clip-text text-transparent;
+    @apply text-transparent;
 
-    animation: animateBg 15s linear infinite;
-    background-size: 100% 1100%;
-}
-
-.neon-flat {
-    background-image: linear-gradient(15deg, #9F5DCB,#e93bc0,#5fd3e3, #e93bc0, #9F5DCB);
-}
-
-.neon-wide {
-    background-image: linear-gradient(75deg, #9F5DCB,#e93bc0,#5fd3e3, #e93bc0, #9F5DCB);
+    animation: animateBg 15s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    background: linear-gradient(245deg, #e93bc0, #5fd3e3, #e93bc0, #5fd3e3);
+    background-size: 1200% 1200%;
 }
 
 @keyframes animateBg {
-    0% { background-position: 0% 0%; }
-    100% { background-position: 0% 100%; }
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
 }
 
 .button {
+    @apply tracking-wide;
+
     min-height: 50px;
 
     a {
@@ -132,9 +133,32 @@ input {
 #footer {
     @apply bg-no-repeat bg-bottom bg-black bg-contain;
 
-    background-image: url('../media/code-editor.png');
+    background-image: url('../media/repository.png');
 }
 
 #intro {
     margin-top: 100vh;
 }
+
+.entry-fade {
+    animation-name: fadeOutEntry;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes fadeOutEntry {
+    0% { top: 0; }
+    10% { opacity: 1 }
+    100% { top: 100%; opacity: 0 }
+}
+
+@keyframes slideIn {
+    0% { margin-top: -50px }
+    100% { margin-top: 0 }
+}
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";

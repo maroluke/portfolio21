@@ -1,19 +1,23 @@
 <x-layout>
     @section('content')
         <section id="entry" class="px-6 flex fixed top-0 bottom-0 left-0 right-0">
-            <div class="flex flex-col text-white pb-6 justify-end h-full">
-                <h1 class="bg-clip-text neon neon-wide mb-20">
-                    <span class="block bg-clip-text text-transparent">Hallo, Mein Name ist Marko.<br /><br />Ich entwickle digitale Produkte.</span>
-                </h1>
-
-                <div class="grid grid-cols-2 gap-2">
-                    <x-button route="home" class="flex-1 bg-white">Kontaktieren</x-button>
-
-                    <x-button route="home" class="flex-1 bg-white">CV holen</x-button>
+            <div class="flex flex-col text-white pb-6 h-full justify-end">
+                <div class="flex justify-end">
+                    <h1 class="bg-clip-text neon neon-wide mb-20">
+                        <span class="block bg-clip-text text-transparent">Hallo,<br />Mein Name ist Marko.<br /><br />Ich entwickle digitale Produkte.</span>
+                    </h1>
                 </div>
 
-                <div class="mt-5 opacity-30">
-                    <p class="font-heading text-center text-sm tracking-widest animate-swipe opacity-0 transform translate-y-full">Swipe</p>
+                <div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <x-button route="home" class="flex-1 bg-white">Kontaktieren</x-button>
+
+                        <x-button route="home" class="flex-1 bg-white">CV holen</x-button>
+                    </div>
+
+                    <div class="mt-5 opacity-30">
+                        <p class="font-heading text-center text-sm tracking-widest animate-swipe opacity-0 transform translate-y-full">Swipe</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -29,11 +33,10 @@
                 </div>
 
                 <div class="px-6 relative z-10">
-                    <h2 class="text-large">Vom Web–Entwickler zum Problemlöser</h2>
+                    <h2 class="text-large">Vom Programmierer zum Problemlöser</h2>
 
-                    <p class="mt-10">Nach über einem Jahrzehnt als professioneller Web–Entwickler mit Schwerpunkt Frontend, widmete sich Marko zunehmend der digitalen Produktentwicklung.</p>
-                    <p class="mt-10">Durch seine Expertise versteht er es die Lücken zwischen Idee und Technologie zu schliessen.</p>
-                    <p class="mt-10">Seine Herausforderungen geht er aufgeschlossen, selbstständig, strukturiert und pragmatisch an.</p>
+                    <p class="mt-10">Marko unterstützt Menschen sowie Unternehmungen bei der Ideenfindung und entwickelt digitale und nutzerzentrierte Lösungen.</p>
+                    <p class="mt-10">Mit seiner Expertise als vieljähriger Software–Entwickler versteht er es, die Lücken zwischen Idee und Technologie zu schliessen.</p>
                 </div>
 
                 <img class="-my-20 parallax" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lissabon">
@@ -46,71 +49,81 @@
 
         <section id="references" class="bg-black  z-20 relative">
             <div class="card-slider">
-                <div class="flex justify-between items-center px-6 py-4">
+                {{-- <div class="flex justify-between items-center px-6 py-4">
                     <h2 class="text-large">Ausgewählte Referenzen</h2>
                 </div>
 
-                <div class="pagination z-10 grid grid-flow-col justify-start px-6 gap-2 items-center py-3"></div>
+                <div class="pagination z-10 grid grid-flow-col justify-start px-6 gap-2 items-center py-3"></div> --}}
                 
                 <div class="swiper bg-black">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide px-3 last:pr-3">
-                            <div class="rounded-2xl overflow-hidden text-black">
-                                <div class="image">
+                        <div class="swiper-slide px-2">
+                            <div class="rounded-2xl overflow-hidden text-white">
+                                <div class="image relative">
                                     <img src="{{ asset('media/restaurant.png') }}" alt="Working at naanu restaurant">
+
+                                    <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
+                                        <h3 class="text-medium p-5 text-white align-text-bottom">Naanu Take&Eat Restaurant</h3>
+                                    </div>
                                 </div>
 
-                                <div class="bg-white p-5">
-                                    <h3 class="text-medium mb-5">naanu take & eat restaurant</h3>
-                                    <p class="py-2 text-base">Für die naanu GmbH implementierte Marko ein Online Bestellsystem. Unterstützung holte er sich bei der Software–Agentur <a class="underline" href="https://enterwell.net/" target="_blank">Enterwell d.o.o</a>.</p>
-                                    <p class="py-2 text-base">Die Bequemlichkeit naanus feine Gerichte auch online bezahlen zu können, sowie nach Hause liefern zu lassen, wird von den Kunden extrem geschätzt.</p>
-                                    <p class="py-2 text-base">Das Restaurant konnte dadurch auch während des Lockdowns Ihre Produkte weiterhin anbieten.</p>
+                                <div class="bg-white text-black p-5">
+                                    <p class="py-2">Gemeinsam im Team erarbeitete Marko eine e–Commerce Lösung und setzte diese zusammen mit weiteren Verbesserungen erfolgreich um.</p>
+                                    {{-- <p class="py-2 text-base">Die feinen Gerichte vom Naanu Take&Eat Restaurant® sollten neu auch im Internet verfügbar sein. Takeout sowie auch Home Delivery.</p> --}}
                                     <x-button route="home" class="bg-black mt-5">Erfahren Sie mehr</x-button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide px-3 last:pr-3">
-                            <div class="rounded-2xl overflow-hidden text-black">
-                                <div class="image">
+                        <div class="swiper-slide px-2">
+                            <div class="rounded-2xl overflow-hidden text-white">
+                                <div class="image relative">
                                     <img src="{{ asset('media/webpage-fundament.png') }}" alt="Fundament Web Page">
+
+                                    <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
+                                        <h3 class="text-medium p-5 text-white align-text-bottom">Fundament AG</h3>
+                                    </div>
                                 </div>
 
-                                <div class="bg-white p-5">
-                                    <h3 class="text-medium mb-5">Fundament AG</h3>
-                                    <p class="py-2 text-base">Die Qualitätsansprüche und Expertisen des neu gegründeten Startups Fundament AG, sollten vor allem durch die Wahrnehmung ausgedrückt werden.</p>
-                                    <p class="py-2 text-base">Yves Böniger und sein Team brauchten ein Nagelneues Branding sowie Webauftritt.</p>
-                                    <p class="py-2 text-base">Marko durfte den Auftrag mit Unterstützung von <a class="underline" href="https://henrygillis.com/" target="_blank">Henry Gillis</a> ausführen.</p>
+                                <div class="bg-white text-black p-5">
+                                    <p class="py-2">Für das neu gegründete Startup wirkte Marko im Branding–Prozess mit und entwickelte die Unternehmens–Website.</p>
+                                    {{-- <p class="py-2 text-base">Das Branding des neu gegründeten Startups sollte Nachhaltigkeit sowie Unternehmertum vermitteln. Die Website potenzielle Kunden ansprechen und überzeugen.</p> --}}
                                     <x-button route="home" class="bg-black mt-5">Erfahren Sie mehr</x-button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide px-3 last:pr-3">
-                            <div class="rounded-2xl overflow-hidden text-black">
-                                <div class="image">
+                        <div class="swiper-slide px-2">
+                            <div class="rounded-2xl overflow-hidden text-white">
+                                <div class="image relative">
                                     <img src="{{ asset('media/restaurant.png') }}" alt="Working at naanu restaurant">
+
+                                    <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
+                                        <h3 class="text-medium p-5 text-white align-text-bottom">Generation Purpose</h3>
+                                    </div>
                                 </div>
 
-                                <div class="bg-white p-5">
-                                    <h3 class="text-medium">Generation Purpose</h3>
-                                    <p class="py-5">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                                    <x-button route="home" class="bg-black">Erfahren Sie mehr</x-button>
+                                <div class="bg-white text-black p-5">
+                                    <p class="py-2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    <x-button route="home" class="bg-black mt-5">Erfahren Sie mehr</x-button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide px-3 last:pr-3">
-                            <div class="rounded-2xl overflow-hidden text-black">
-                                <div class="image">
+                        <div class="swiper-slide px-2">
+                            <div class="rounded-2xl overflow-hidden text-white">
+                                <div class="image relative">
                                     <img src="{{ asset('media/restaurant.png') }}" alt="Working at naanu restaurant">
+
+                                    <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
+                                        <h3 class="text-medium p-5 text-white align-text-bottom">Coffaina</h3>
+                                    </div>
                                 </div>
 
                                 <div class="bg-white p-5">
-                                    <h3 class="text-medium">Desire in Balance</h3>
-                                    <p class="py-5">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                                    <x-button route="home" class="bg-black">Erfahren Sie mehr</x-button>
+                                    <p class="py-2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                    <x-button route="home" class="bg-black mt-5">Erfahren Sie mehr</x-button>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +137,8 @@
         </section>
 
         <section id="cta-employers" class="bg-black px-6 py-10 z-20 relative">
-            <h2 class="text-large">Suchen Sie <span class="neon neon-flat">Verstärkung</span> Für Ihr Team?</h2>
-            <p class="py-8">Holen Sie sich meine Bewerbungsunterlagen. Tragen Sie dazu einfach Ihre E-Mail Adresse ein und ich schicke Ihnen die Dokumente als PDF. Ihre E-Mail Adresse wird nicht gespeichert.</p>
+            <h2 class="text-large">Suchen Sie <span class="bg-clip-text neon neon-flat">Verstärkung</span> Für Ihr Team?</h2>
+            <p class="py-8">Holen Sie sich meine Bewerbungsunterlagen. Tragen Sie dazu einfach Ihre E-Mail Adresse ein und ich schicke Ihnen die Dokumente als PDF.</p>
             <form action="{{ url('/') }}" method="post" class="flex">
                 {{ csrf_field() }}
                 <div class="flex-grow mr-2">
@@ -144,8 +157,8 @@
         </section>
 
         <section id="cta-support" class="bg-black px-6 py-10 z-20 relative">
-            <h2 class="text-large">Oder darf ich Sie bei Ihren <span class="neon neon-flat">Ambitionen</span> unterstützen?</h2>
-            <p class="py-8">Möchten Sie sich digital positionieren und Ihre Produkte online anbieten? Oder Ihre Arbeitsprozesse digitalisieren? Egal welche Ambitionen Sie angehen, ich lade Sie herzlich zu einem spontanen Brainstorming ein.</p>
+            <h2 class="text-large">Oder darf ich Sie bei Ihren <span class="bg-clip-text neon neon-flat">Ambitionen</span> unterstützen?</h2>
+            <p class="py-8">Möchten Sie sich digital positionieren, Produkte online anbieten oder Arbeitsprozesse digitalisieren? Egal welchen Ambitionen Sie nachgehen, ich lade Sie herzlich zu einem spontanen Brainstorming ein.</p>
             <div class="grid grid-cols-4 gap-2 mt-8">
                 <x-link-button class="z-10" href="tel:+41763887018">Anruf</x-link-button>
                 <x-link-button class="z-10" href="mailto:hello@lukacmarko.com">E-Mail</x-link-button>
@@ -164,107 +177,109 @@
                 </div>
 
                 <div class="col-span-2 flex flex-col">
-                        <a href="https://github.com/maroluke" class="pl-4 py-4"><x-icon-logo-github /></a>
-                        <a href="https://www.instagram.com/maroluke/" class="pl-4 py-4"><x-icon-logo-instagram /></a>
-                        <a href="https://unsplash.com/@maroluke" class="pl-4 py-4"><x-icon-logo-unsplash /></a>
-                        <a href="https://soundcloud.com/maroluke" class="pl-4 py-6"><x-icon-logo-soundcloud /></a>
+                        <a href="https://github.com/maroluke" target="_blank" class="pl-4 py-4"><x-icon-logo-github /></a>
+                        <a href="https://www.instagram.com/maroluke/" target="_blank" class="pl-4 py-4"><x-icon-logo-instagram /></a>
+                        <a href="https://unsplash.com/@maroluke" target="_blank" class="pl-4 py-4"><x-icon-logo-unsplash /></a>
+                        <a href="https://soundcloud.com/maroluke" target="_blank" class="pl-4 py-6"><x-icon-logo-soundcloud /></a>
                 </div>
             </div>
         </section>
 
         <section id="footer" class="z-20 relative">
-            <div class="px-6 py-10 flex flex-col opacity-50">
-                <div class="text-sm py-5 border-t leading-6">
-                    <div class="flex">
-                        <h4 class="uppercase mb-3 tracking-wider">Credits</h4>
+            <div class="py-10 flex flex-col opacity-50">
+                <div class="text-base py-5 leading-6">
+                    <div class="flex bg-white bg-opacity-20 text-white align-center py-2 px-6 mb-3">
+                        <h4 class="uppercase tracking-wider">Credits</h4>
                     </div>
 
-                    <div class="flex">
-                        <p class="flex-1 font-bold">MacBook #1</p>
-                        <p class="flex-1 font-bold"><a class="hover:text-gray-300" href="https://unsplash.com/photos/RcqjrGPDWl4">Hustler's Fuel</a></p>
+                    <div class="flex px-6">
+                        <p class="flex-1">MacBook #1</p>
+                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/RcqjrGPDWl4">Hustler's Fuel</a></p>
                     </div>
 
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Mobile Phone</p>
-                        <p class="flex-1 font-bold"><a class="hover:text-gray-300" href="/">Marko Lukac</a></p>
+                    <div class="flex px-6">
+                        <p class="flex-1">Mobile Phone</p>
+                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="/">Marko Lukac</a></p>
                     </div>
 
-                    <div class="flex">
-                        <p class="flex-1 font-bold">MacBook #2</p>
-                        <p class="flex-1 font-bold"><a class="hover:text-gray-300" href="https://unsplash.com/photos/5sT07dJl65s">Anthony Garand</a></p>
+                    <div class="flex px-6">
+                        <p class="flex-1">MacBook #2</p>
+                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/5sT07dJl65s">Anthony Garand</a></p>
                     </div>
 
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Portrait</p>
-                        <p class="flex-1 font-bold"><a class="hover:text-gray-300" href="https://www.laurentburst.com/">Laurent Burst</a></p>
+                    <div class="flex px-6">
+                        <p class="flex-1">Portrait</p>
+                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://www.laurentburst.com/">Laurent Burst</a></p>
                     </div>
 
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Hello World</p>
-                        <p class="flex-1 font-bold"><a class="hover:text-gray-300" href="https://unsplash.com/photos/vDRhC3PAHx0">Marko Lukac</a></p>
+                    <div class="flex px-6">
+                        <p class="flex-1">Hello World</p>
+                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/vDRhC3PAHx0">Marko Lukac</a></p>
                     </div>
 
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Code Editor</p>
-                        <p class="flex-1 font-bold"><a class="hover:text-gray-300" href="https://images.unsplash.com/photo-1547954575-855750c57bd3">Reza Namdari</a></p>
+                    <div class="flex px-6">
+                        <p class="flex-1">Code Editor</p>
+                        <p class="flex-1"><a class="hover:text-gray-300 underline" target="_blank" href="https://images.unsplash.com/photo-1547954575-855750c57bd3">Reza Namdari</a></p>
                     </div>
                 </div>
 
-                <div class="text-sm py-5 leading-6">
-                    <div class="flex">
-                        <h4 class="uppercase mb-3 tracking-wider">Development stack</h4>
+                <div class="text-base pt-5 leading-6">
+                    <div class="flex bg-white bg-opacity-20 text-white align-center p-1 bg-white bg-opacity-20 text-white align-center py-2 px-6 mb-3">
+                        <h4 class="uppercase tracking-wider">Development stack</h4>
                     </div>
 
-                    <div class="grid grid-cols-3 place-items-stretch justify-items-stretch auto-rows-max auto-cols-max">
-                        <a href="https://github.com/laravel/framework" class="flex items-center h-10">
+                    <div class="grid grid-cols-3 place-items-stretch justify-items-stretch auto-rows-max auto-cols-max px-6">
+                        <a href="https://github.com/laravel/framework" target="_blank" class="flex items-center h-16">
                             <x-icon-logo-laravel class="hover:opacity-75"/>
                         </a>
 
-                        <a href="https://github.com/alpinejs/alpine/" class="flex items-center h-10">
+                        <a href="https://github.com/alpinejs/alpine/" target="_blank" class="flex items-center h-16">
                             <x-icon-logo-alpinejs class="hover:opacity-75"/>
                         </a>
 
-                        <a href="https://github.com/tailwindlabs/tailwindcss" class="flex items-center h-10">
+                        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="flex items-center h-16">
                             <x-icon-logo-tailwindcss class="hover:opacity-75"/>
                         </a>
                         
-                        <a href="https://github.com/deployphp/deployer" class="flex items-center h-10">
+                        <a href="https://github.com/deployphp/deployer" target="_blank" class="flex items-center h-16">
                             <x-icon-logo-deployer class="hover:opacity-75"/>
                         </a>
 
-                        <a href="https://github.com/nolimits4web/swiper" class="flex items-center h-10">
+                        <a href="https://github.com/nolimits4web/swiper" target="_blank" class="flex items-center h-16">
                             <x-icon-logo-swiperjs class="hover:opacity-75"/>
                         </a>
                     </div>
                 </div>
 
-                <div class="text-sm py-5 leading-6">
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Version</p>
-                        <p class="flex-1 font-bold">1.0</p>
+                <div class="text-base pt-5 leading-6">
+                    <div class="flex bg-white bg-opacity-20 text-white align-center py-2 px-6 mb-3">
+                        <h4 class="uppercase tracking-wider">Runs on a Droplet by</h4>
                     </div>
 
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Last update</p>
-                        <p class="flex-1 font-bold">24. Juli 2021</p>
-                    </div>
-
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Optimized for</p>
-                        <p class="flex-1 font-bold">Mobile & Desktop Browsers</p>
-                    </div>
-
-                    <div class="flex">
-                        <p class="flex-1 font-bold">Github Repository</p>
-                        <p class="flex-1 font-bold"><a class="hover:text-gray-300" href="https://github.com/maroluke/portfolio21">maroluke/portfolio21</a></p>
+                    <div class="grid grid-cols-3 place-items-stretch justify-items-stretch auto-rows-max auto-cols-max px-6">
+                        <a href="https://www.digitalocean.com/products/droplets/" class="flex items-center h-16">
+                            <x-icon-logo-digitalocean class="hover:opacity-75"/>
+                        </a>
                     </div>
                 </div>
 
-                <div class="text-sm py-5 leading-6">
+                <div class="pt-10 pb-5 leading-6 px-6">
+                    <div class="flex">
+                        <p class="flex-1">Last update</p>
+                        <p class="flex-1">24. Juli 2021</p>
+                    </div>
+
+                    <div class="flex">
+                        <p class="flex-1">Github Repository</p>
+                        <p class="flex-1"><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
+                    </div>
+                </div>
+
+                <div class="text-base py-5 leading-6 px-6">
                     <div class="">
-                        <p class="font-bold">© 2021</p>
-                        <p class="font-bold">Marko Lukac</p>
-                        <p class="font-bold"><a href="mailto:hello@lukacmarko.com" class="hover:opacity-75">hello@lukacmarko.com</a></p>
+                        <p class="">© 2021</p>
+                        <p class="">Marko Lukac</p>
+                        <p class=""><a href="mailto:hello@lukacmarko.com" target="_blank" class="hover:opacity-75 underline">hello@lukacmarko.com</a></p>
                     </div>
                 </div>
             </div>
