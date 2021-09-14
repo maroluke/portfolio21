@@ -44,11 +44,11 @@
         </section>
 
         <section id="references" class="bg-black z-20 relative">
-            <div class="pb-8 opacity-30 relative z-50 flex justify-end">
-                <p class="animate-swipe-x"></p>
-            </div>
-
+            
             <div class="card-slider">
+                <div class="pb-8 opacity-30 relative z-50 flex justify-end">
+                    <p class="animate-swipe-x"></p>
+                </div>
                 {{-- <div class="flex justify-between items-center px-6 py-4">
                     <h2 class="text-large">Ausgewählte Referenzen</h2>
                 </div>
