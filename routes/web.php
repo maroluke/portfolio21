@@ -1,6 +1,7 @@
 <?php
 
 use App\Mail\ForwardEmailInput;
+use App\Mail\Mailtrap;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
@@ -21,7 +22,14 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::post('/', function(Request $request) {
-    // Mail::send(new ForwardEmailInput($request));
-    return Redirect::back()->width('email', $request);
+// Route::post('/', function(Request $request) {
+//     // Mail::send(new ForwardEmailInput($request));
+//     return Redirect::back()->width('email', $request);
+// });
+
+Route::get('/send/email', 'CVRequestController@mail');
+
+Route::get('/send-mail', function () {
+    Mail::to('hello@nonko.space')->send(new Mailtrap()); 
+    return 'A message has been sent to Mailtrap!';
 });

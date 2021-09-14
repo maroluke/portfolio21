@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'heading': ['bebas-neue', 'sans-serif'],
+        'heading': ['bebasneue', 'sans-serif'],
         'body': ['strawfordregular', 'sans-serif'],
         'button': ['strawfordbold', 'sans-serif'],
       },
@@ -19,7 +19,7 @@ module.exports = {
       fontSize: {
         large: '3.4375rem',
         medium: '2.125rem',
-        small: '1.3125rem',
+        small: '1.5rem',
         tiny: '1.25rem',
       },
       colors: {

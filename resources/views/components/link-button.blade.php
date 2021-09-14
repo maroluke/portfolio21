@@ -3,13 +3,13 @@
         button
         uppercase
         font-bold
+        font-button
         text-xs
         text-center
         flex
         items-center
         justify-center
         relative
-        squircle
         bg-white
         bg-opacity-10
         rounded-xl

@@ -1,6 +1,6 @@
 @import "tailwindcss/base";
 
-@import url("font.scss");
+@import url("fonts.scss");
 
 .entry-bg {
     z-index: -1;
@@ -134,6 +134,10 @@ input {
     @apply bg-no-repeat bg-bottom bg-black bg-contain;
 
     background-image: url('../media/repository.png');
+
+    p {
+        @apply text-sm;
+    }
 }
 
 #intro {

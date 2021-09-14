@@ -14,23 +14,15 @@ Alpine.start();
  * https://github.com/nolimits4web/swiper
  */
 
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
+// core version:
+import Swiper from 'swiper';
 
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination]);
+// import Swiper styles
+import 'swiper/scss';
 
 const swiper = new Swiper('.swiper', {
     speed: 300,
     slidesPerView: 'auto',
-    pagination: {
-        el: '.pagination',
-        type: 'bullets',
-    },
     loop: true,
 });
 
@@ -44,8 +36,9 @@ import simpleParallax from 'simple-parallax-js';
 var image = document.querySelectorAll('.parallax');
 new simpleParallax(image, {
     overflow: true,
-    delay: 2.5,
-	transition: 'cubic-bezier(0.33, 1, 0.68, 1)'
+    delay: 2,
+	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+    scale: 1.3,
 });
 
 /* 

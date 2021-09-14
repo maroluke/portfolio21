@@ -13,7 +13,6 @@
     items-center
     justify-center
     relative
-    squircle
     rounded-xl
     '
 @endphp
