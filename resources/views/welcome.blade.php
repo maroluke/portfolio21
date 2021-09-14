@@ -244,7 +244,7 @@
                 <div class="pt-10 pb-5 leading-6">
                     <div class="grid grid-cols-2 gap-2 text-tiny">
                         <p>Last update</p>
-                        <p>24. Juli 2021</p>
+                        <p>14. September 2021</p>
                         <p>Repository</p>
                         <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
                     </div>
