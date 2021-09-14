@@ -14,7 +14,7 @@
                     </div>
 
                     <div class="mt-5 opacity-30">
-                        <p class="font-heading text-center text-sm tracking-widest animate-swipe opacity-0 transform translate-y-full">Swipe</p>
+                        <p class="font-heading text-center text-sm tracking-widest animate-swipe-y opacity-0 transform translate-y-full">Swipe</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,11 @@
             </div>
         </section>
 
-        <section id="references" class="bg-black  z-20 relative">
+        <section id="references" class="bg-black z-20 relative">
+            <div class="pb-8 opacity-30 relative z-50 flex justify-end">
+                <p class="animate-swipe-x"></p>
+            </div>
+
             <div class="card-slider">
                 {{-- <div class="flex justify-between items-center px-6 py-4">
                     <h2 class="text-large">Ausgewählte Referenzen</h2>
@@ -51,11 +55,11 @@
 
                 <div class="pagination z-10 grid grid-flow-col justify-start px-6 gap-2 items-center py-3"></div> --}}
                 
-                <div class="swiper bg-black">
-                    <div class="swiper-wrapper">
+                <div class="swiper">
+                    <div class="swiper-wrapper items-stretch">
                         <!-- Slides -->
                         <div class="swiper-slide px-2">
-                            <div class="rounded-2xl overflow-hidden text-white">
+                            <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
                                 <div class="image relative">
                                     <img src="{{ asset('media/restaurant.png') }}" alt="Working at naanu restaurant">
 
@@ -64,16 +68,16 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white text-black p-5">
+                                <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
                                     {{-- <p class="py-2">Gemeinsam im Team hat Marko eine e–Commerce Lösung für das Naanu Restaurant erarbeitet und setzte diese zusammen mit weiteren Verbesserungen erfolgreich um.</p> --}}
                                     <p class="py-2">Die feinen Gerichte sollten den Kunden vom Naanu Take&Eat Restaurant auch im Internet zur Verfügung stehen. Gemeinsam im Team hat Marko eine e-Commerce Lösung erarbeitet und setzte diese mit weiteren Verbesserungen erfolgreich um.</p>
-                                    <a href="https://naanu.ch" target="_blank" class="pt-4 pb-1 mb-2 inline-block border-b-2 border-black uppercase font-bold font-button text-xs">Zum Produkt</a>
+                                    <a href="https://naanu.ch" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide px-2">
-                            <div class="rounded-2xl overflow-hidden text-white">
+                            <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
                                 <div class="image relative">
                                     <img src="{{ asset('media/webpage-fundament.png') }}" alt="Fundament Web Page">
 
@@ -82,17 +86,17 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white text-black p-5">
+                                <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
                                     <p class="py-2">Fundament ist ein Startup dass in nachhaltige Geschäftsmodelle und Unternehmen investiert. Marko hatte die Möglichkeit, ein Team zu bilden, das die Corporate Identity des Unternehmens entwickelt, mit Fokus auf einer starken Online–Präsenz.</p>
                                     {{-- <p class="py-2">Für das neu gegründete Startup wirkte Marko im Branding–Prozess mit und entwickelte die Unternehmens–Website.</p> --}}
                                     {{-- Das neu gegründete Start-up, konzentriert sich auf Investitionen in nachhaltige Geschäftsmodelle und Unternehmen. Marko hatte die Möglichkeit, ein Team zu bilden, das die Corporate Identity des Unternehmens entwickelt und sich auf eine starke Online-Präsenz konzentriert. --}}
-                                    <a href="https://fundament.swiss" target="_blank" class="pt-4 pb-1 mb-2 inline-block border-b-2 border-black uppercase font-bold font-button text-xs">Zum Produkt</a>
+                                    <a href="https://fundament.swiss" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide px-2">
-                            <div class="rounded-2xl overflow-hidden text-white">
+                            <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
                                 <div class="image relative">
                                     <img src="{{ asset('media/desktop.png') }}" alt="Working at naanu restaurant">
 
@@ -101,15 +105,15 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white text-black p-5">
-                                    <p class="py-2">Das Netzwerk Generation Purpose hilft dabei, Ziele für Organisationen und Einzelpersonen zu finden und zu definieren. Da Marko von Anfang an dabei war, wurde er mit der Erstellung der Online-Präsenz und der Entwicklung einer digitalen Plattform beauftragt, auf der die Teammitglieder und Kunden arbeiten können.</p>
-                                    <a href="https://generation-purpose.org" target="_blank" class="pt-4 pb-1 mb-2 inline-block border-b-2 border-black uppercase font-bold font-button text-xs">Zum Produkt</a>
+                                <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
+                                    <p class="py-2">Generation Purpose hilft Organisationen und Einzelpersonen, ihre Ziele zu finden und zu definieren. Marko wurde mit der Erstellung der Online-Präsenz und der Entwicklung einer digitalen Plattform beauftragt, auf der die Teammitglieder und Kunden arbeiten können.</p>
+                                    <a href="https://generation-purpose.org" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide px-2">
-                            <div class="rounded-2xl overflow-hidden text-white">
+                            <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
                                 <div class="image relative">
                                     <img src="{{ asset('media/berlin.png') }}" alt="Working at naanu restaurant">
 
@@ -118,9 +122,9 @@
                                     </div>
                                 </div>
 
-                                <div class="bg-white text-black p-5">
+                                <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
                                     <p class="py-2">Coffaina ist die wohl stärkste Cola der Welt und hält bei ewigen Partynächten, Abi–Stress oder einem 24–Stunden–Drag–Race wach. Während eines intensiven, 4-Tägigen Aufenthalts in Berlin Kreuzberg, liess sich Marko inspirieren und entwickelte die Website zur Produktlancierung.</p>
-                                    <a href="http://coffaina.com" target="_blank" class="pt-4 pb-1 mb-2 inline-block border-b-2 border-black uppercase font-bold font-button text-xs">Zum Produkt</a>
+                                    <a href="http://coffaina.com" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
                         </div>
@@ -132,8 +136,8 @@
         </section>
 
         <section id="cta-support" class="bg-black px-6 pb-10 z-20 relative">
-            <h2 class="text-large">Darf ich Sie bei Ihren <span class="bg-clip-text neon neon-flat">Ambitionen</span> unterstützen?</h2>
-            <p class="py-8">Möchten Sie sich digital positionieren, Produkte online verkaufen oder Arbeitsprozesse digitalisieren? Egal welchen Ambitionen Sie nachgehen, ich lade Sie herzlich zu einem spontanen Brainstorming ein.</p>
+            <h2 class="text-large">Marko unterstützt Sie bei Ihren <span class="bg-clip-text neon neon-flat">Ambitionen</span></h2>
+            <p class="py-8">Möchten Sie sich digital positionieren, Produkte online verkaufen oder Arbeitsprozesse digitalisieren? Egal vor welchen Herausforderungen Sie stehen, Marko lädt Sie zu einem spontanen Brainstorming ein.</p>
             <div class="grid grid-cols-4 gap-2 mt-8">
                 <x-link-button class="z-10 px-1" href="tel:+41763887018">Anruf</x-link-button>
                 <x-link-button class="z-10 px-1" href="mailto:hello@lukacmarko.com">E-Mail</x-link-button>
@@ -148,7 +152,7 @@
 
         <section id="cta-employers" class="bg-black px-6 py-10 z-20 relative">
             <h2 class="text-large">Suchen Sie <span class="bg-clip-text neon neon-flat">Verstärkung</span> Für Ihr Team?</h2>
-            <p class="py-8">Holen Sie sich meine Bewerbungsunterlagen. Tragen Sie dazu einfach Ihre E-Mail Adresse ein und ich schicke Ihnen die Dokumente als PDF.</p>
+            <p class="py-8">Holen Sie sich Marko's Bewerbungsunterlagen. Tragen Sie dazu einfach Ihre E-Mail Adresse ein und Sie erhalten die Dokumente als PDF.</p>
             <form action="{{ url('/') }}" method="post" class="flex">
                 {{ csrf_field() }}
                 <div class="flex-grow mr-2">
@@ -168,7 +172,7 @@
 
         <section id="portrait" class="bg-black px-6 py-10 z-20 relative">
             <div class="grid grid-cols-12 gap-2">
-                <div class="col-span-10">
+                <div class="col-span-10 relative">
                     <img 
                         src="{{ asset('media/marko-portrait.png') }}" 
                         alt="Portrait Marko Lukac" 
@@ -185,75 +189,72 @@
         </section>
 
         <section id="footer" class="z-20 relative">
-            <div class="py-10 flex flex-col opacity-50 mx-6 border-t">
+            <div class="py-10 flex flex-col opacity-50 mx-6 border-t border-opacity-25">
                 <div class="text-base leading-6">
-                    <h4 class="uppercase tracking-wider mb-2">Credits</h4>
+                    <h4 class="uppercase tracking-wider mb-2 text-center">Credits</h4>
                     
-                    <div class="grid grid-cols-2">
-                        <p>MacBook #1</p>
-                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/RcqjrGPDWl4">Hustler's Fuel</a></p>
-                        <p>Mobile Phone</p>
-                        <p><a class="hover:text-gray-300 underline" target="_blank" href="/">Marko Lukac</a></p>
-                        <p>MacBook #2</p>
-                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/5sT07dJl65s">Anthony Garand</a></p>
-                        <p>Portrait</p>
-                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://www.laurentburst.com/">Laurent Burst</a></p>
-                        <p>Hello World</p>
-                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/vDRhC3PAHx0">Marko Lukac</a></p>
-                        <p>Code Editor</p>
-                        <p><a class="hover:text-gray-300 underline" target="_blank" href="https://images.unsplash.com/photo-1547954575-855750c57bd3">Reza Namdari</a></p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <p class="text-right">MacBook #1</p>
+                        <p class="text-left"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/RcqjrGPDWl4">Hustler's Fuel</a></p>
+                        <p class="text-right">Mobile Phone</p>
+                        <p class="text-left"><a class="hover:text-gray-300 underline" target="_blank" href="/">Marko Lukac</a></p>
+                        <p class="text-right">MacBook #2</p>
+                        <p class="text-left"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/5sT07dJl65s">Anthony Garand</a></p>
+                        <p class="text-right">Portrait</p>
+                        <p class="text-left"><a class="hover:text-gray-300 underline" target="_blank" href="https://www.laurentburst.com/">Laurent Burst</a></p>
+                        <p class="text-right">Hello World</p>
+                        <p class="text-left"><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/vDRhC3PAHx0">Marko Lukac</a></p>
+                        <p class="text-right">Code Editor</p>
+                        <p class="text-left"><a class="hover:text-gray-300 underline" target="_blank" href="https://images.unsplash.com/photo-1547954575-855750c57bd3">Reza Namdari</a></p>
                     </div>
                 </div>
 
-                <div class="text-base pt-10 leading-6">
+                <div class="text-base pt-12 leading-6 text-center">
                     <h4 class="uppercase tracking-wider mb-2">Development stack</h4>
 
-                    <div class="grid grid-cols-3 place-items-stretch justify-items-stretch auto-rows-max auto-cols-max">
-                        <a href="https://github.com/laravel/framework" target="_blank" class="flex items-center h-12">
+                    <div class="flex flex-wrap justify-center">
+                        <a href="https://github.com/laravel/framework" target="_blank" class="flex items-center justify-center w-1/3 h-12">
                             <x-icon-logo-laravel class="hover:opacity-75"/>
                         </a>
 
-                        <a href="https://github.com/alpinejs/alpine/" target="_blank" class="flex items-center h-12">
+                        <a href="https://github.com/alpinejs/alpine/" target="_blank" class="flex items-center justify-center w-1/3 h-12">
                             <x-icon-logo-alpinejs class="hover:opacity-75"/>
                         </a>
 
-                        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="flex items-center h-12">
+                        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="flex items-center justify-center w-1/3 h-12">
                             <x-icon-logo-tailwindcss class="hover:opacity-75"/>
                         </a>
                         
-                        <a href="https://github.com/deployphp/deployer" target="_blank" class="flex items-center h-12">
+                        <a href="https://github.com/deployphp/deployer" target="_blank" class="flex items-center justify-center w-1/3 h-12">
                             <x-icon-logo-deployer class="hover:opacity-75"/>
                         </a>
 
-                        <a href="https://github.com/nolimits4web/swiper" target="_blank" class="flex items-center h-12">
+                        <a href="https://github.com/nolimits4web/swiper" target="_blank" class="flex items-center justify-center w-1/3 h-12">
                             <x-icon-logo-swiperjs class="hover:opacity-75"/>
                         </a>
                     </div>
                 </div>
 
-                <div class="text-base pt-10 leading-6">
-                    <h4 class="uppercase tracking-wider mb-2">Runs on a Droplet by</h4>
+                <div class="text-base pt-12 leading-6">
+                    <h4 class="uppercase tracking-wider mb-2 text-center">Runs on a Droplet by</h4>
 
-                    <div class="grid grid-cols-3 place-items-stretch justify-items-stretch auto-rows-max auto-cols-max">
-                        <a href="https://www.digitalocean.com/products/droplets/" class="flex items-center h-12">
+                    <div class="flex flex-wrap justify-center">
+                        <a href="https://www.digitalocean.com/products/droplets/" class="flex items-center justify-center w-1/3 h-12">
                             <x-icon-logo-digitalocean class="hover:opacity-75"/>
                         </a>
                     </div>
                 </div>
 
-                <div class="pt-10 pb-5 leading-6">
-                    <div class="grid grid-cols-2 gap-2 text-tiny">
-                        <p>Last update</p>
-                        <p>14. September 2021</p>
-                        <p>Repository</p>
-                        <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
+                <div class="pt-12 leading-6">
+                    <div class="text-tiny text-center">
+                        <p>Last update: September 14 2021</p>
+                        <p>Public github repository: <a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
                     </div>
                 </div>
 
-                <div class="text-base py-5 leading-6">
-                    <div class="">
-                        <p class="">© 2021</p>
-                        <p class="">Marko Lukac</p>
+                <div class="text-base py-12 leading-6">
+                    <div class="text-center">
+                        <p class="">© 2021 Marko Lukac</p>
                         <p class=""><a href="mailto:hello@lukacmarko.com" target="_blank" class="hover:opacity-75 underline">hello@lukacmarko.com</a></p>
                     </div>
                 </div>

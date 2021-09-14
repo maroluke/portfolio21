@@ -8,7 +8,8 @@
     background-image: url('../media/macbook-1.png');
     margin-top: -50px;
     animation-name: slideIn;
-    animation-duration: 5s;
+    animation-duration: 2s;
+    animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
     animation-fill-mode: forwards;
 }
@@ -33,6 +34,7 @@ p {
 
 .swiper-slide {
     width: 95% !important;
+    height: auto !important;
 }
 
 .link-line {
@@ -146,7 +148,7 @@ input {
 
 .entry-fade {
     animation-name: fadeOutEntry;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
@@ -161,6 +163,27 @@ input {
 @keyframes slideIn {
     0% { margin-top: -50px }
     100% { margin-top: 0 }
+}
+
+.animate-swipe-x {
+    @apply font-heading text-center text-sm tracking-widest relative w-24;
+}
+
+.animate-swipe-x::before,
+.animate-swipe-x::after {
+    @apply absolute w-full h-full top-0 left-0 block opacity-0;
+}
+
+.animate-swipe-x::before {
+    @apply animate-swipe-x-out;
+
+    content: "SWIPE";
+}
+
+.animate-swipe-x::after {
+    @apply animate-swipe-x-in left-full;
+
+    content: "SWIPE";
 }
 
 @import "tailwindcss/components";

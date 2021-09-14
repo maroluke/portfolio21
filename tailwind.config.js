@@ -38,31 +38,55 @@ module.exports = {
         'xs': '0.09rem'
       },
       keyframes: {
-        swipe: {
-            '0%': {
-              opacity: 0,
-              transform: 'translate(0, 100%)'
-            },
-            '20%': {
-              opacity: 1,
-              transform: 'translate(0, 0%)'
-            },
-            '70%': {
-              opacity: 1,
-              transform: 'translate(0, 0%)'
-            },
-            '90%': {
-              opacity: 0,
-              transform: 'translate(0, -100%)'
-            },
-            '100%': {
-              opacity: 0,
-              transform: 'translate(0, 100%)'
-            },
+        'swipe-y': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate(0, 100%)'
+          },
+          '20%': {
+            opacity: 1,
+            transform: 'translate(0, 0%)'
+          },
+          '70%': {
+            opacity: 1,
+            transform: 'translate(0, 0%)'
+          },
+          '90%': {
+            opacity: 0,
+            transform: 'translate(0, -100%)'
+          },
+          '100%': {
+            opacity: 0,
+            transform: 'translate(0, 100%)'
+          },
+        },
+
+        'swipe-x-out': {
+          '0%': {
+            opacity: 1,
+            transform: 'translate(0%, 0%)'
+          },
+          '100%': {
+            opacity: 0,
+            transform: 'translate(-100%, 0%)'
+          },
+        },
+
+        'swipe-x-in': {
+          '0%': {
+            opacity: 0,
+            transform: 'translate(0%, 0%)'
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translate(-100%, 0%)'
+          },
         }
       },
       animation: {
-          swipe: 'swipe 5s cubic-bezier(0, 0.55, 0.45, 1) 1s infinite',
+          'swipe-y': 'swipe-y 5s cubic-bezier(0, 0.55, 0.45, 1) 1s infinite',
+          'swipe-x-out': 'swipe-x-out 5s cubic-bezier(0.16, 1, 0.3, 1) 0s infinite',
+          'swipe-x-in': 'swipe-x-in 5s cubic-bezier(0.16, 1, 0.3, 1) 0s infinite',
       }
     }
   },
