@@ -3,8 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta property="og:title" content="Marko Lukac">
-<meta property="og:description" content="Hello, my name is Marko and this is my portfolio website.">
-<meta property="og:image" content="https://lukacmarko.com/thumbnail.png">
+<meta property="og:description" content="Hey, my name is Marko and this is my portfolio website.">
+<meta property="og:image" content="https://lukacmarko.com/media/thumbnail.png">
 <meta property="og:url" content="https://lukacmarko.com/">
 <meta name="twitter:card" content="summary_large_image">
 
