@@ -58,3 +58,29 @@ function marginFromTop(el, margin) {
 
 setScreenHeight('entry');
 marginFromTop('intro', window.innerHeight);
+
+// AJAX CV Request
+$('form').on('submit', function (e) {
+    e.preventDefault(); // prevent the form submit
+    var url = 'submitEmail';
+    // create the FormData object from the form context (this),
+    // that will be present, since it is a form event
+    var formData = new FormData(this);
+    // build the ajax call
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: formData,
+        success: function (response) {
+            // handle success response
+            $('p').addClass('xxx');
+            console.log('response.data');
+        },
+        error: function (response) {
+            // handle error response
+            console.log(response.data);
+        },
+        contentType: false,
+        processData: false
+    });
+})

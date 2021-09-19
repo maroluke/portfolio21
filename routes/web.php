@@ -1,10 +1,6 @@
 <?php
 
-use App\Mail\ForwardEmailInput;
-use App\Mail\Mailtrap;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\CVRequestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,9 +23,4 @@ Route::get('/', function () {
 //     return Redirect::back()->width('email', $request);
 // });
 
-Route::get('/send/email', 'CVRequestController@mail');
-
-Route::get('/send-mail', function () {
-    Mail::to('hello@nonko.space')->send(new Mailtrap()); 
-    return 'A message has been sent to Mailtrap!';
-});
+Route::post('submitEmail', [CvRequestController::class, 'mailSend']);

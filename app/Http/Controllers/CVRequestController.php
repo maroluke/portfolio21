@@ -1,18 +1,37 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Mail\CVRequest;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\CvRequestMail;
 
-class CVRequestController extends Controller
+class CvRequestController extends Controller
 {
-    public function mail()
-    {
-       $name = 'Cloudways';
-       Mail::to('Cloudways@Cloudways.com')->send(new CVRequest($name));
-       
-       return 'Email sent Successfully';
+    public function mailSend(Request $request) {
+        $this->validate($request, [
+            'email' => 'required|email',
+        ]);
+
+        $email = 'hello@lukacmarko.com';
+   
+        $mailInfo = [
+            'title' => 'New CV Request',
+            'senderEmail' => $request->get('email')
+        ];
+  
+        Mail::to($email)->send(new CvRequestMail($mailInfo));
+
+        return response()->json([ 'success'=> 'Form is successfully submitted!']);
+   
+        // // return response()->json([
+        // //     'message' => 'Mail has sent from: '
+        // // ], Response::HTTP_OK);
+
+        // if ($this->validate->passes()) {
+        //     return response()->json(['success'=>'Added new records.']);
+        // }
+
+        // return response()->json(['error'=>$this->validate->errors()]);
     }
 }

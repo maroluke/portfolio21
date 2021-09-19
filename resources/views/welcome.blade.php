@@ -1,20 +1,21 @@
 <x-layout>
     @section('content')
         <section id="entry" class="px-6 flex fixed top-0 bottom-0 left-0 right-0">
-            <div class="flex flex-col text-white pb-6 h-full justify-end">
-                <h1 class="bg-clip-text neon neon-wide mb-10">
-                    <span class="block bg-clip-text text-transparent">Hallo,<br />Mein Name ist Marko.<br /><br />Ich entwickle digitale Produkte.</span>
+            <div class="flex flex-col text-white h-full justify-end w-full">
+                <h1 class="bg-clip-text neon neon-wide">
+                    <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Web und Mobile Apps</span>
+                    {{-- <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Lösungen für Web und Mobile.</span> --}}
                 </h1>
-
+                
                 <div>
-                    <div class="grid grid-cols-2 gap-2">
+                    {{-- <div class="grid grid-cols-2 gap-2">
                         <x-button route="home" class="flex-1 bg-white">Kontaktieren</x-button>
 
                         <x-button route="home" class="flex-1 bg-white">CV holen</x-button>
-                    </div>
+                    </div> --}}
 
-                    <div class="mt-5 opacity-30">
-                        <p class="font-heading text-center text-sm tracking-widest animate-swipe-y opacity-0 transform translate-y-full">Swipe</p>
+                    <div class="my-12 opacity-30">
+                        <p class="font-heading text-sm tracking-widest animate-swipe-y opacity-0 transform translate-y-full">Swipe</p>
                     </div>
                 </div>
             </div>
@@ -31,10 +32,14 @@
                 </div>
 
                 <div class="px-6 relative z-10">
-                    <h2 class="text-large">Vom Programmierer zum Problemlöser</h2>
+                    <h2 class="">Hallo!<br />Mein Name ist Marko</h2>
 
-                    <p class="mt-10 text-small">Marko unterstützt Menschen sowie Unternehmungen bei der Ideenfindung und entwickelt digitale und nutzerzentrierte Lösungen.</p>
-                    <p class="mt-10 text-small">Mit seiner Expertise als vieljähriger Software–Entwickler versteht er es, Ideen mit Technologien zu verbinden.</p>
+                    {{-- <p class="mt-10 text-small">Marko unterstützt Menschen sowie Unternehmungen bei der Ideenfindung und entwickelt digitale und nutzerzentrierte Lösungen.</p>
+                    <p class="mt-10 text-small">Mit seiner Expertise als vieljähriger Software–Entwickler versteht er es, Ideen mit Technologien zu verbinden.</p> --}}
+
+                    <p class="mt-10 text-small">Alles beginnt mit einer guten Idee. Die technische Umsetzung jedoch, ist im Normalfall eine Herausforderung.</p>
+                    
+                    <p class="mt-10 text-small">Als erfahrener Softwareentwickler verstehe ich es, Ideen mit neusten Technologien umzusetzen um daraus spanende, digitale Produkte zu entwickeln.</p>
                 </div>
 
                 {{-- <div class="px-6">
@@ -46,7 +51,7 @@
         <section id="references" class="bg-black z-20 relative">
             
             <div class="card-slider">
-                <div class="pb-8 opacity-30 relative z-50 flex justify-end">
+                <div class="pb-8 opacity-30 relative z-50 flex justify-end overflow-hidden">
                     <p class="animate-swipe-x"></p>
                 </div>
                 {{-- <div class="flex justify-between items-center px-6 py-4">
@@ -70,7 +75,9 @@
 
                                 <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
                                     {{-- <p class="py-2">Gemeinsam im Team hat Marko eine e–Commerce Lösung für das Naanu Restaurant erarbeitet und setzte diese zusammen mit weiteren Verbesserungen erfolgreich um.</p> --}}
-                                    <p class="py-2">Die feinen Gerichte sollten den Kunden vom Naanu Take&Eat Restaurant auch im Internet zur Verfügung stehen. Gemeinsam im Team hat Marko eine e-Commerce Lösung erarbeitet und setzte diese mit weiteren Verbesserungen erfolgreich um.</p>
+                                    {{-- <p class="py-2">Die feinen Gerichte sollten den Kunden vom Naanu Take&Eat Restaurant auch im Internet zur Verfügung stehen. Gemeinsam im Team hat Marko eine e-Commerce Lösung erarbeitet und setzte diese mit weiteren Verbesserungen erfolgreich um.</p> --}}
+                                    <p class="py-2">Naanu ist ein Restaurant, Take-Away und Delivery Service in Zürich welches mit dem Bedürfnis einen neuen digitalen Auftritt zu bekommen an mich herangetreten ist. 
+                                        Entstanden ist eine integrale Lösung mit Anbindung ans betriebsinterne Reservations-, Kassen-, und Buchaltungssystem sowie an die gängigen Auslieferungsdienstleister.</p>
                                     <a href="https://naanu.ch" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
@@ -87,7 +94,8 @@
                                 </div>
 
                                 <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
-                                    <p class="py-2">Fundament ist ein Startup dass in nachhaltige Geschäftsmodelle und Unternehmen investiert. Marko hatte die Möglichkeit, ein Team zu bilden, das die Corporate Identity des Unternehmens entwickelt, mit Fokus auf einer starken Online–Präsenz.</p>
+                                    {{-- <p class="py-2">Fundament ist ein Startup dass in nachhaltige Geschäftsmodelle und Unternehmen investiert. Marko hatte die Möglichkeit, ein Team zu bilden, das die Corporate Identity des Unternehmens entwickelt, mit Fokus auf einer starken Online–Präsenz.</p> --}}
+                                    <p class="py-2">Fundament ist eine Schweizer Investment-Gesellschaft welche in nachhaltige Geschäftsmodelle und Unternehmen investiert. Mit einem von mir selektiertem Team und einem starken Fokus auf Online–Präsenz und digitale Zusammenarbeit, wurde die Corporate Identity von Fundament und die dazugehörigen digitalen Plattformen entwickelt.</p>
                                     {{-- <p class="py-2">Für das neu gegründete Startup wirkte Marko im Branding–Prozess mit und entwickelte die Unternehmens–Website.</p> --}}
                                     {{-- Das neu gegründete Start-up, konzentriert sich auf Investitionen in nachhaltige Geschäftsmodelle und Unternehmen. Marko hatte die Möglichkeit, ein Team zu bilden, das die Corporate Identity des Unternehmens entwickelt und sich auf eine starke Online-Präsenz konzentriert. --}}
                                     <a href="https://fundament.swiss" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
@@ -106,7 +114,8 @@
                                 </div>
 
                                 <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
-                                    <p class="py-2">Generation Purpose hilft Organisationen und Einzelpersonen, ihre Ziele zu finden und zu definieren. Marko wurde mit der Erstellung der Online-Präsenz und der Entwicklung einer digitalen Plattform beauftragt, auf der die Teammitglieder und Kunden arbeiten können.</p>
+                                    {{-- <p class="py-2">Generation Purpose hilft Organisationen und Einzelpersonen, ihre Ziele zu finden und zu definieren. Marko wurde mit der Erstellung der Online-Präsenz und der Entwicklung einer digitalen Plattform beauftragt, auf der die Teammitglieder und Kunden arbeiten können.</p> --}}
+                                    <p class="py-2">Generation Purpose hilft Organisationen und Einzelpersonen, ihren Purpose zu finden und diesen im Alltag zu implementieren. In Zusammenarbeit mit den Gründern durfte ich einerseits die online-Präsenz von Generation Purpose entwickeln sowie eine digitalen Plattform aufbauen, auf welcher die Facilitators (Mitarbeiter) und Kunden täglich arbeiten können.</p>
                                     <a href="https://generation-purpose.org" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
@@ -123,7 +132,8 @@
                                 </div>
 
                                 <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
-                                    <p class="py-2">Coffaina ist die wohl stärkste Cola der Welt und hält bei ewigen Partynächten, Abi–Stress oder einem 24–Stunden–Drag–Race wach. Während eines intensiven, 4-Tägigen Aufenthalts in Berlin Kreuzberg, liess sich Marko inspirieren und entwickelte die Website zur Produktlancierung.</p>
+                                    {{-- <p class="py-2">Coffaina ist die wohl stärkste Cola der Welt und hält bei ewigen Partynächten, Abi–Stress oder einem 24–Stunden–Drag–Race wach. Während eines intensiven, 4-Tägigen Aufenthalts in Berlin Kreuzberg, liess sich Marko inspirieren und entwickelte die Website zur Produktlancierung.</p> --}}
+                                    <p class="py-2">Coffaina ist eine Berliner Indie-Cola. Sie ist die wohl stärkste Cola der Welt und hält bei ewigen Partynächten, Abi–Stress oder einem 24–Stunden–Drag–Race zuverlässig wach. In einem desing-sprint-workshop in Berlin konnte ich mit dem Kunden den digitalen Auftritt entwickeln und diesen in einem zweiten Schritt umsetzen.</p>
                                     <a href="http://coffaina.com" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
@@ -136,14 +146,14 @@
         </section>
 
         <section id="cta-support" class="bg-black px-6 pb-10 z-20 relative">
-            <h2 class="text-large">Marko unterstützt Sie bei Ihren <span class="bg-clip-text neon neon-flat">Ambitionen</span></h2>
-            <p class="py-8">Möchten Sie sich digital positionieren, Produkte online verkaufen oder Arbeitsprozesse digitalisieren? Egal vor welchen Herausforderungen Sie stehen, Marko lädt Sie zu einem spontanen Brainstorming ein.</p>
+            <h2 class="text-large">Sie haben eine spannende <span class="bg-clip-text neon neon-flat">Idee</span>?</h2>
+            <p class="py-8">Möchten Sie sich digital neu positionieren, Ihren Kunden ein digitales shopping-Erlebnis bieten können, oder einige Ihrer Arbeitsprozesse digitalisieren? Egal vor welchen Herausforderungen Sie stehen, lassen Sie uns in einem gemeinsamen Braistormig herausfinden was Ihre Bedürfnisse sind und wie wir sie gemeinsam umsetzen können.</p>
             <div class="grid grid-cols-4 gap-2 mt-8">
                 <x-link-button class="z-10 px-1" href="tel:+41763887018">Anruf</x-link-button>
                 <x-link-button class="z-10 px-1" href="mailto:hello@lukacmarko.com">E-Mail</x-link-button>
                 <x-link-button class="z-10 px-1" href="sms:+41763887018">SMS</x-link-button>
                 <x-link-button class="z-10 px-1" href="https://t.me/maroluke">Tlgrm</x-link-button>
-            </form>
+            </div>
         </section>
 
         <section class="full-image bg-black z-20 relative">
@@ -152,15 +162,22 @@
 
         <section id="cta-employers" class="bg-black px-6 py-10 z-20 relative">
             <h2 class="text-large">Suchen Sie <span class="bg-clip-text neon neon-flat">Verstärkung</span> Für Ihr Team?</h2>
-            <p class="py-8">Holen Sie sich Marko's Bewerbungsunterlagen. Tragen Sie dazu einfach Ihre E-Mail Adresse ein und Sie erhalten die Dokumente als PDF.</p>
-            <form action="{{ url('/') }}" method="post" class="flex">
+            <p class="py-8">Falls ich Ihr Interesse geweckt haben sollte, dürfen Sie gerne meinen CV als PDF anfordern. Ich freue mich auf Ihre Kontaktaufnahme.</p>
+
+            <div class="alert alert-success alert-block" style="display: none;">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong class="success-msg"></strong>
+            </div>
+
+
+            <form method="POST" class="flex">
                 {{ csrf_field() }}
                 <div class="flex-grow mr-2">
                     <input type="email" name="email" placeholder="Ihre E-Mail Adresse">
                 </div>
 
                 <div class="flex-shrink">
-                    <button type="submit" class="bg-white bg-opacity-10 rounded-xl p-3 flex justify-center items-center">
+                    <button type="submit" class="btn-submit bg-white bg-opacity-10 rounded-xl p-3 flex justify-center items-center">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -180,10 +197,10 @@
                 </div>
 
                 <div class="col-span-2 flex flex-col">
-                        <a href="https://github.com/maroluke" target="_blank" class="pl-4 py-4"><x-icon-logo-github /></a>
-                        <a href="https://www.instagram.com/maroluke/" target="_blank" class="pl-4 py-4"><x-icon-logo-instagram /></a>
-                        <a href="https://unsplash.com/@maroluke" target="_blank" class="pl-4 py-4"><x-icon-logo-unsplash /></a>
-                        <a href="https://soundcloud.com/maroluke" target="_blank" class="pl-4 py-6"><x-icon-logo-soundcloud /></a>
+                        <a href="https://github.com/maroluke" target="_blank" class="btn-submit bg-white bg-opacity-10 rounded-xl p-3 mb-4 h-"><x-icon-logo-github /></a>
+                        <a href="https://www.instagram.com/maroluke/" target="_blank" class="btn-submit bg-white bg-opacity-10 rounded-xl p-3 mb-4 h-"><x-icon-logo-instagram /></a>
+                        <a href="https://unsplash.com/@maroluke" target="_blank" class="btn-submit bg-white bg-opacity-10 rounded-xl p-3 mb-4 h-"><x-icon-logo-unsplash /></a>
+                        <a href="https://soundcloud.com/maroluke" target="_blank" class="btn-submit bg-white bg-opacity-10 rounded-xl p-3 mb-4 h-"><x-icon-logo-soundcloud /></a>
                 </div>
             </div>
         </section>

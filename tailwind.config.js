@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  mode: 'jit',
+  //mode: 'jit',
   purge: [
     './resources/views/**/*.blade.php',
     './resources/css/**/*.css',
@@ -18,7 +18,7 @@ module.exports = {
 
       fontSize: {
         large: '3.4375rem',
-        medium: '2.125rem',
+        medium: '2.625rem',
         small: '1.5rem',
         tiny: '1.25rem',
       },

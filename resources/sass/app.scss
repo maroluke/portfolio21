@@ -8,8 +8,8 @@
     background-image: url('../media/macbook-1.png');
     margin-top: -40px;
     animation-name: slideIn;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 4s;
+    // animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
     animation-fill-mode: forwards;
 }
@@ -23,7 +23,7 @@ h1, h2, h3, h4 {
 
     h1 {
         span {
-            @apply bg-gradient-to-t from-white to-transparent;
+            background-image: linear-gradient(200deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
         }
     }
 }
@@ -108,7 +108,7 @@ input {
     @apply text-transparent;
 
     animation: animateBg 15s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-    background: linear-gradient(245deg, #e93bc0, #5fd3e3, #e93bc0, #5fd3e3);
+    background: linear-gradient(200deg, #e93bc0, #5fd3e3, #e93bc0, #5fd3e3);
     background-size: 1200% 1200%;
 }
 
