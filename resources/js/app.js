@@ -32,6 +32,7 @@ const swiper = new Swiper('.swiper', {
  */
 
 import simpleParallax from 'simple-parallax-js';
+import { functions } from 'lodash';
 
 var image = document.querySelectorAll('.parallax');
 new simpleParallax(image, {
@@ -59,9 +60,12 @@ function marginFromTop(el, margin) {
 setScreenHeight('entry');
 marginFromTop('intro', window.innerHeight);
 
-// AJAX CV Request
+// AJAX CV Request submit
 $('form').on('submit', function (e) {
+    $('.icon-send').hide(0);
+
     e.preventDefault(); // prevent the form submit
+
     var url = 'submitEmail';
     // create the FormData object from the form context (this),
     // that will be present, since it is a form event
@@ -69,18 +73,49 @@ $('form').on('submit', function (e) {
     // build the ajax call
     $.ajax({
         url: url,
-        type: 'POST',
+        method: 'POST',
         data: formData,
+        beforeSend: function () {
+            $('.icon-submitted').hide(0);
+            $('.icon-error').hide(0);
+            $('.messages').hide();
+            $(':submit').removeClass('error success');
+            $('.messages').removeClass('text-neon-green text-neon-red');
+            $('.icon-loading').show(0);
+        },
+        complete: function () {
+            $('.icon-loading').hide(0);
+        },
         success: function (response) {
             // handle success response
-            $('p').addClass('xxx');
-            console.log('response.data');
+            $('.icon-submitted').show(0);
+
+            $('.messages').addClass('text-neon-green').html('Herzlichen Dank!').fadeIn();
+            $(':submit').addClass('success');
         },
-        error: function (response) {
+        error: function (error) {
             // handle error response
-            console.log(response.data);
+            $('.icon-error').show(0);
+            
+            // get errors
+            var errors = JSON.parse(error.responseText);
+            // store them
+            var errorMessage = errors.errors.email;
+            // display error messages if message element is empty
+            $('.messages').addClass('text-neon-red').html(errorMessage).fadeIn();
+            $(':submit').addClass('error');
         },
         contentType: false,
         processData: false
     });
-})
+});
+
+// reset CV request state
+$('#email').on('focus', function() {
+    $('.icon-submitted').hide(0);
+    $('.icon-error').hide(0);
+    $('.messages').hide();
+    $(':submit').removeClass('error success');
+    $('.messages').removeClass('text-neon-green text-neon-red');
+    $('.icon-send').show(0);
+});

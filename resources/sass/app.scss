@@ -118,6 +118,16 @@ input {
     100%{background-position:0% 73%}
 }
 
+button {
+    &.error {
+        @apply bg-neon-red;
+    }
+
+    &.success {
+        @apply bg-neon-green;
+    }
+}
+
 .button {
     @apply tracking-wide;
 

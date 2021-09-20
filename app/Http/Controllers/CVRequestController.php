@@ -22,7 +22,7 @@ class CvRequestController extends Controller
   
         Mail::to($email)->send(new CvRequestMail($mailInfo));
 
-        return response()->json([ 'success'=> 'Form is successfully submitted!']);
+        return response()->json([ 'success'=> 'Email address ' . $request->get('email') . ' is successfully submitted!']);
    
         // // return response()->json([
         // //     'message' => 'Mail has sent from: '

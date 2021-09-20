@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="px-6 relative z-10">
-                    <h2 class="">Hallo!<br />Mein Name ist Marko</h2>
+                    <h2 class="">Hallo,<br />Mein Name ist Marko</h2>
 
                     {{-- <p class="mt-10 text-small">Marko unterstützt Menschen sowie Unternehmungen bei der Ideenfindung und entwickelt digitale und nutzerzentrierte Lösungen.</p>
                     <p class="mt-10 text-small">Mit seiner Expertise als vieljähriger Software–Entwickler versteht er es, Ideen mit Technologien zu verbinden.</p> --}}
@@ -164,27 +164,36 @@
             <h2 class="text-large">Suchen Sie <span class="bg-clip-text neon neon-flat">Verstärkung</span> Für Ihr Team?</h2>
             <p class="py-8">Falls ich Ihr Interesse geweckt haben sollte, dürfen Sie gerne meinen CV als PDF anfordern. Ich freue mich auf Ihre Kontaktaufnahme.</p>
 
-            <div class="alert alert-success alert-block" style="display: none;">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <strong class="success-msg"></strong>
-            </div>
-
-
             <form method="POST" class="flex">
                 {{ csrf_field() }}
                 <div class="flex-grow mr-2">
-                    <input type="email" name="email" placeholder="Ihre E-Mail Adresse">
+                    <input id="email" type="email" name="email" placeholder="Ihre E-Mail Adresse">
                 </div>
 
                 <div class="flex-shrink">
-                    <button type="submit" class="btn-submit bg-white bg-opacity-10 rounded-xl p-3 flex justify-center items-center">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
+                    <button type="submit" class="relative btn-submit bg-white bg-opacity-10 rounded-xl flex justify-center items-center">
+                        <span class="icon-send top-0 left-0 absolute w-full h-full p-2">
+                            <x-icon-icon-send class="w-full h-full" />
+                        </span>
+
+                        <span class="icon-loading animate-spin hidden top-0 left-0 absolute w-full h-full p-2">
+                            <x-icon-icon-loading class="w-full h-full" />
+                        </span>
+
+                        <span class="icon-submitted hidden top-0 left-0 absolute w-full h-full p-2">
+                            <x-icon-icon-submitted class="w-full h-full" />
+                        </span>
+
+                        <span class="icon-error hidden top-0 left-0 absolute w-full h-full p-2">
+                            <x-icon-icon-error class="w-full h-full" />
+                        </span>
                     </button>
                 </div>
             </form>
+
+            <div class="relative">
+                <p class="messages hidden absolute top-0 left-0 text-sm px-2 pt-2"></p>
+            </div>
         </section>
 
         <section id="portrait" class="bg-black px-6 py-10 z-20 relative">

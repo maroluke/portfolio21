@@ -2,12 +2,18 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   //mode: 'jit',
-  purge: [
+  purge: {
+    content: [
     './resources/views/**/*.blade.php',
     './resources/css/**/*.css',
     './resources/sass/**/*.scss',
     './resources/js/**/*.js',
-  ],
+    ],
+
+    options: {
+      whitelist: ['displayed'],
+    },
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -32,7 +38,17 @@ module.exports = {
           dark: '#5FD3E3',
           DEFAULT: '#5FD3E3',
           light: '#5FD3E3',
-        }
+        },
+        'neon-green': {
+          dark: '#23E875',
+          DEFAULT: '#23E875',
+          light: '#23E875',
+        },
+        'neon-red': {
+          dark: '#E85146',
+          DEFAULT: '#E85146',
+          light: '#E85146',
+        },
       },
       borderRadius: {
         'xs': '0.09rem'
