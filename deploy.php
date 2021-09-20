@@ -25,7 +25,7 @@ add('writable_dirs', []);
 host('167.172.183.30')
     ->user('deployer')
     ->identityFile('~/.ssh/deployerkey')
-    ->set('deploy_path', '/var/www/lukacmarko.com');    
+    ->set('deploy_path', '/var/www/markolukac.ch/html');    
     
 // Tasks
 

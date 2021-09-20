@@ -150,7 +150,7 @@
             <p class="py-8">Möchten Sie sich digital neu positionieren, Ihren Kunden ein digitales shopping-Erlebnis bieten können, oder einige Ihrer Arbeitsprozesse digitalisieren? Egal vor welchen Herausforderungen Sie stehen, lassen Sie uns in einem gemeinsamen Braistormig herausfinden was Ihre Bedürfnisse sind und wie wir sie gemeinsam umsetzen können.</p>
             <div class="grid grid-cols-4 gap-2 mt-8">
                 <x-link-button class="z-10 px-1" href="tel:+41763887018">Anruf</x-link-button>
-                <x-link-button class="z-10 px-1" href="mailto:hello@lukacmarko.com">E-Mail</x-link-button>
+                <x-link-button class="z-10 px-1" href="mailto:hello@markolukac.ch">E-Mail</x-link-button>
                 <x-link-button class="z-10 px-1" href="sms:+41763887018">SMS</x-link-button>
                 <x-link-button class="z-10 px-1" href="https://t.me/maroluke">Tlgrm</x-link-button>
             </div>
@@ -283,7 +283,7 @@
                 <div class="text-base py-12 leading-6">
                     <div class="text-center">
                         <p class="">© 2021 Marko Lukac</p>
-                        <p class=""><a href="mailto:hello@lukacmarko.com" target="_blank" class="hover:opacity-75 underline">hello@lukacmarko.com</a></p>
+                        <p class=""><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
                     </div>
                 </div>
             </div>
