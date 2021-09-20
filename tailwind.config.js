@@ -2,18 +2,12 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   //mode: 'jit',
-  purge: {
-    content: [
+  purge: [
     './resources/views/**/*.blade.php',
     './resources/css/**/*.css',
     './resources/sass/**/*.scss',
     './resources/js/**/*.js',
-    ],
-
-    options: {
-      whitelist: ['displayed'],
-    },
-  },
+  ],
   theme: {
     extend: {
       fontFamily: {

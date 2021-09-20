@@ -32,14 +32,14 @@
                 </div>
 
                 <div class="px-6 relative z-10">
-                    <h2 class="">Hallo,<br />Mein Name ist Marko</h2>
+                    <h2 class="text-large">Hallo,<br />Mein Name ist Marko</h2>
 
                     {{-- <p class="mt-10 text-small">Marko unterstützt Menschen sowie Unternehmungen bei der Ideenfindung und entwickelt digitale und nutzerzentrierte Lösungen.</p>
                     <p class="mt-10 text-small">Mit seiner Expertise als vieljähriger Software–Entwickler versteht er es, Ideen mit Technologien zu verbinden.</p> --}}
 
-                    <p class="mt-10 text-small">Alles beginnt mit einer guten Idee. Die technische Umsetzung jedoch, ist im Normalfall eine Herausforderung.</p>
                     
                     <p class="mt-10 text-small">Als erfahrener Softwareentwickler verstehe ich es, Ideen mit neusten Technologien umzusetzen um daraus spanende, digitale Produkte zu entwickeln.</p>
+
                 </div>
 
                 {{-- <div class="px-6">
@@ -65,7 +65,7 @@
                         <!-- Slides -->
                         <div class="swiper-slide px-2">
                             <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
-                                <div class="image relative">
+                                <div class="image relative max-h-48 overflow-hidden max-h-48 overflow-hidden">
                                     <img src="{{ asset('media/restaurant.png') }}" alt="Working at naanu restaurant">
 
                                     <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
@@ -85,10 +85,10 @@
 
                         <div class="swiper-slide px-2">
                             <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
-                                <div class="image relative">
+                                <div class="image relative max-h-48 overflow-hidden">
                                     <img src="{{ asset('media/webpage-fundament.png') }}" alt="Fundament Web Page">
 
-                                    <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
+                                    <div class="w-full h-full bg-black bg-opacity-30 absolute bottom-0 left-0 flex items-end">
                                         <h3 class="text-medium p-5 text-white align-text-bottom">Fundament AG</h3>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
 
                         <div class="swiper-slide px-2">
                             <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
-                                <div class="image relative">
+                                <div class="image relative max-h-48 overflow-hidden">
                                     <img src="{{ asset('media/desktop.png') }}" alt="Working at naanu restaurant">
 
                                     <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
@@ -115,7 +115,7 @@
 
                                 <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between">
                                     {{-- <p class="py-2">Generation Purpose hilft Organisationen und Einzelpersonen, ihre Ziele zu finden und zu definieren. Marko wurde mit der Erstellung der Online-Präsenz und der Entwicklung einer digitalen Plattform beauftragt, auf der die Teammitglieder und Kunden arbeiten können.</p> --}}
-                                    <p class="py-2">Generation Purpose hilft Organisationen und Einzelpersonen, ihren Purpose zu finden und diesen im Alltag zu implementieren. In Zusammenarbeit mit den Gründern durfte ich einerseits die online-Präsenz von Generation Purpose entwickeln sowie eine digitalen Plattform aufbauen, auf welcher die Facilitators (Mitarbeiter) und Kunden täglich arbeiten können.</p>
+                                    <p class="py-2">Generation Purpose hilft Organi&shy;sationen und Einzel&shy;personen, ihren Purpose zu finden und diesen im Alltag zu imple&shy;men&shy;tieren. In Zusam&shy;men&shy;arbeit mit den Gründern durfte ich einerseits die online–Präsenz entwickeln sowie eine digitalen Plattform aufbauen, auf welcher die Facili&shy;tators (Mit&shy;arbeiter) und Kunden täglich arbeiten können.</p>
                                     <a href="https://generation-purpose.org" target="_blank" class="pt-10 pb-5 uppercase font-bold font-button text-xs"><span class="border-b-2 border-black">Zum Produkt</span></a>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
 
                         <div class="swiper-slide px-2">
                             <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white">
-                                <div class="image relative">
+                                <div class="image relative max-h-48 overflow-hidden">
                                     <img src="{{ asset('media/berlin.png') }}" alt="Working at naanu restaurant">
 
                                     <div class="w-full h-full bg-black bg-opacity-40 absolute bottom-0 left-0 flex items-end">
@@ -167,7 +167,7 @@
             <form method="POST" class="flex">
                 {{ csrf_field() }}
                 <div class="flex-grow mr-2">
-                    <input id="email" type="email" name="email" placeholder="Ihre E-Mail Adresse">
+                    <input id="email" type="email" name="email" placeholder="Ihre E-Mail Adresse" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                 </div>
 
                 <div class="flex-shrink">
@@ -215,7 +215,9 @@
         </section>
 
         <section id="footer" class="z-20 relative">
-            <div class="py-10 flex flex-col opacity-50 mx-6 border-t border-opacity-25">
+            <div class="bg-white h-px opacity-25 mx-6"></div>
+
+            <div class="py-10 flex flex-col opacity-50 mx-6">
                 <div class="text-base leading-6">
                     <h4 class="uppercase tracking-wider mb-2 text-center">Credits</h4>
                     
