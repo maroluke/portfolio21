@@ -29,8 +29,8 @@
             <x-portrait />
 
             <section class="px-6 py-10 z-20 relative">
-                <h2>Bald weitere Updates verfügbar</h2>
-                <p class="py-8 text-small">Falls Sie gespannt auf weitere Neuigkeiten sind, registrieren Sie sich hier mit Ihrer E–Mail Adresse.</p>
+                <h2>Neugierig auf weitere spannende Projekte?</h2>
+                <p class="py-8 text-small">Es würde mich freuen, Sie mit Neuigkeiten auf dem Laufenden zu halten.</p>
 
                 <form method="POST" class="flex" data-context="submitNlEmail">
                     {{ csrf_field() }}
