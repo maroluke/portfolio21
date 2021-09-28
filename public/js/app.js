@@ -5334,7 +5334,7 @@ $('form').on('submit', function (e) {
   $('.icon-send').hide(0);
   e.preventDefault(); // prevent the form submit
 
-  var url = 'submitEmail'; // create the FormData object from the form context (this),
+  var url = $(this).data('context'); // create the FormData object from the form context (this),
   // that will be present, since it is a form event
 
   var formData = new FormData(this); // build the ajax call

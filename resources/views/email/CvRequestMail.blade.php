@@ -1,5 +1,5 @@
 @component('mail::message')
-# New CV Request from:
+{{ $mailInfo['title'] }}
 
 {{ $mailInfo['senderEmail'] }}
 @endcomponent

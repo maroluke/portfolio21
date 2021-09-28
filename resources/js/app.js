@@ -70,7 +70,7 @@ $('form').on('submit', function (e) {
 
     e.preventDefault(); // prevent the form submit
 
-    var url = 'submitEmail';
+    var url = $(this).data('context');
     // create the FormData object from the form context (this),
     // that will be present, since it is a form event
     var formData = new FormData(this);

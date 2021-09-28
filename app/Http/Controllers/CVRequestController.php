@@ -10,19 +10,27 @@ class CvRequestController extends Controller
 {
     public function mailSend(Request $request) {
         $this->validate($request, [
+            // email for cv request
             'email' => 'required|email',
         ]);
 
         $email = 'hello@lukacmarko.com';
+        $title = '';
+
+        if ($request->path() === 'submitCvEmail') {
+            $title = 'New CV request from:';
+        } else {
+            $title = 'New newsletter subscription from:';
+        }
    
         $mailInfo = [
-            'title' => 'New CV Request',
-            'senderEmail' => $request->get('email')
+            'title' => $title,
+            'senderEmail' => $request->get('email'),
         ];
   
         Mail::to($email)->send(new CvRequestMail($mailInfo));
 
-        return response()->json([ 'success'=> 'Email address ' . $request->get('email') . ' is successfully submitted!']);
+        return response()->json([ 'success'=> $request->get('email')]);
    
         // // return response()->json([
         // //     'message' => 'Mail has sent from: '

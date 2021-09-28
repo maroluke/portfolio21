@@ -52,7 +52,7 @@
 
                         <div class="bg-white text-black p-5 sm:py-0 flex flex-col flex-grow justify-between relative sm:flex-1 sm:bg-transparent sm:text-white sm:order-first">
                             <h3 class="py-5 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-6">Fundament</h3>
-                            <p class="font-medium py-6">Fundament ist eine Schweizer Investment-Gesellschaft welche in nachhaltige Geschäftsmodelle und Unternehmen investiert. Mit einem von mir selektiertem Team und einem starken Fokus auf <a class="border-b-2 border-black" href="https://naanu.ch" target="_blank">Online–Präsenz</a> und digitale Zusammenarbeit, wurde die Corporate Identity von Fundament und die dazugehörigen digitalen Plattformen entwickelt.</p>
+                            <p class="font-medium py-6">Fundament ist ein Schweizer Investment-Startup welches in nachhaltige Geschäftsmodelle und Unternehmen investiert. Mit einem von mir selektierten Team sowie einem starken Fokus auf <a class="border-b-2 border-black" href="https://naanu.ch" target="_blank">Online–Präsenz</a> und digitale Zusammenarbeit, wurde die Corporate Identity von Fundament und die dazugehörigen digitalen Plattformen entwickelt.</p>
                             {{-- <a href="https://fundament.swiss" target="_blank" class="pt-10 pb-5 uppercase font-bold text-base">
                                 <x-icon-icon-link class="hover:opacity-75 w-7 inline bg-black p-1 mr-2 rounded"/>
                                 <span class="">Zum Produkt</span>

@@ -23,4 +23,6 @@ Route::get('/', function () {
 //     return Redirect::back()->width('email', $request);
 // });
 
-Route::post('submitEmail', [CvRequestController::class, 'mailSend']);
+Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
+
+Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);

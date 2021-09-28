@@ -3,10 +3,10 @@
     <p class="pt-8 text-small">Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne meinen CV als PDF anfordern.</p>
     <p class="py-8 text-small">Ich freue mich auf Ihre Kontaktaufnahme.</p>
 
-    <form method="POST" class="flex">
+    <form method="POST" class="flex" data-context="submitCvEmail">
         {{ csrf_field() }}
         <div class="flex-grow mr-2">
-            <input id="email" type="email" name="email" placeholder="Ihre E-Mail Adresse" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+            <input id="email-cv" type="email" name="email" placeholder="Ihre E-Mail Adresse" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
         </div>
 
         <div class="flex-shrink">
