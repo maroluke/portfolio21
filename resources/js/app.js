@@ -14,8 +14,8 @@ const plausible = Plausible({
   domain: 'markolukac.ch'
 });
 
-// And override it on this call
-trackPageview({}, { callback: () => console.log("Done!") });
+// This tracks the current page view and all future ones as well
+enableAutoPageviews();
 
 /* 
  * Import Swiper JS
