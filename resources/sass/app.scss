@@ -131,6 +131,8 @@ input {
 }
 
 button {
+    @apply transition-colors;
+
     &.error {
         @apply bg-neon-red;
     }

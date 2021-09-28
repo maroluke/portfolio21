@@ -79,7 +79,7 @@ marginFromTop('intro-gradient', window.innerHeight);
 
 // AJAX CV Request submit
 $('form').on('submit', function (e) {
-    $('.icon-send').hide(0);
+    $('.icon-send').fadeOut(0);
 
     e.preventDefault(); // prevent the form submit
 
@@ -93,26 +93,27 @@ $('form').on('submit', function (e) {
         method: 'POST',
         data: formData,
         beforeSend: function () {
-            $('.icon-submitted').hide(0);
-            $('.icon-error').hide(0);
-            $('.messages').hide();
+            $('.icon-submitted').fadeOut();
+            $('.icon-error').fadeOut();
+            $('.messages').fadeOut();
             $(':submit').removeClass('error success');
             $('.messages').removeClass('text-neon-green text-neon-red');
-            $('.icon-loading').show(0);
+            $('.icon-loading').fadeIn();
         },
         complete: function () {
-            $('.icon-loading').hide(0);
+            $('.icon-loading').fadeOut();
+            $('.email-input').html('');
         },
         success: function (response) {
             // handle success response
-            $('.icon-submitted').show(0);
+            $('.icon-submitted').fadeIn();
 
             $('.messages').addClass('text-neon-green').html('Herzlichen Dank!').fadeIn();
             $(':submit').addClass('success');
         },
         error: function (error) {
             // handle error response
-            $('.icon-error').show(0);
+            $('.icon-error').fadeIn(0);
             
             // get errors
             var errors = JSON.parse(error.responseText);
@@ -128,11 +129,10 @@ $('form').on('submit', function (e) {
 });
 
 // reset CV request state
-$('#email').on('focus', function() {
-    $('.icon-submitted').hide(0);
-    $('.icon-error').hide(0);
-    $('.messages').hide();
+$('.email-input').focus(function() {
+    $('.icon-submitted').fadeOut();
+    $('.icon-error').fadeOut();
     $(':submit').removeClass('error success');
     $('.messages').removeClass('text-neon-green text-neon-red');
-    $('.icon-send').show(0);
+    $('.icon-send').fadeIn();
 });

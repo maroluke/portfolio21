@@ -6,7 +6,7 @@
     <form method="POST" class="flex" data-context="submitCvEmail">
         {{ csrf_field() }}
         <div class="flex-grow mr-2">
-            <input id="email-cv" type="email" name="email" placeholder="Ihre E-Mail Adresse" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+            <input id="email-cv" class="email-input" type="email" name="email" placeholder="Ihre E-Mail Adresse" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
         </div>
 
         <div class="flex-shrink">
@@ -30,7 +30,7 @@
         </div>
     </form>
 
-    <div class="relative">
-        <p class="messages hidden absolute top-0 left-0 text-sm px-2 pt-2"></p>
+    <div class="relative h-6">
+        <p class="messages text-sm pt-2">E–Mail wird nicht gespeichert</p>
     </div>
 </section>
