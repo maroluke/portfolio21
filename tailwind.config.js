@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'heading': ['hero-new', 'sans-serif'],
-        'body': ['kandal', 'sans-serif'],
+        'body': ['strawfordregular', 'sans-serif'],
         'button': ['hero-new', 'sans-serif'],
       },
 
