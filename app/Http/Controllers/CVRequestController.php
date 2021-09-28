@@ -14,13 +14,13 @@ class CvRequestController extends Controller
             'email' => 'required|email',
         ]);
 
-        $email = 'hello@lukacmarko.com';
+        $email = 'hello@markolukac.ch';
         $title = '';
 
         if ($request->path() === 'submitCvEmail') {
-            $title = 'New CV request from:';
+            $title = 'CV request from:';
         } else {
-            $title = 'New newsletter subscription from:';
+            $title = 'Newsletter subscription from:';
         }
    
         $mailInfo = [
@@ -31,15 +31,5 @@ class CvRequestController extends Controller
         Mail::to($email)->send(new CvRequestMail($mailInfo));
 
         return response()->json([ 'success'=> $request->get('email')]);
-   
-        // // return response()->json([
-        // //     'message' => 'Mail has sent from: '
-        // // ], Response::HTTP_OK);
-
-        // if ($this->validate->passes()) {
-        //     return response()->json(['success'=>'Added new records.']);
-        // }
-
-        // return response()->json(['error'=>$this->validate->errors()]);
     }
 }
