@@ -9,6 +9,11 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 
+import Plausible from 'plausible-tracker'
+const plausible = Plausible({
+  domain: 'markolukac.ch'
+});
+
 /* 
  * Import Swiper JS
  * https://github.com/nolimits4web/swiper

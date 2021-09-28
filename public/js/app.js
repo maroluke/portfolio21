@@ -5263,12 +5263,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_bootstrap__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var swiper_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var simple_parallax_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! simple-parallax-js */ "./node_modules/simple-parallax-js/dist/simpleParallax.min.js");
-/* harmony import */ var simple_parallax_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(simple_parallax_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var plausible_tracker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! plausible-tracker */ "./node_modules/plausible-tracker/build/module/index.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var simple_parallax_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! simple-parallax-js */ "./node_modules/simple-parallax-js/dist/simpleParallax.min.js");
+/* harmony import */ var simple_parallax_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(simple_parallax_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_6__);
 
 /* 
  * Import Alpine JS
@@ -5278,6 +5279,10 @@ __webpack_require__.r(__webpack_exports__);
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"].start();
+
+var plausible = (0,plausible_tracker__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  domain: 'markolukac.ch'
+});
 /* 
  * Import Swiper JS
  * https://github.com/nolimits4web/swiper
@@ -5290,7 +5295,7 @@ alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"].start();
 var w = window.innerWidth;
 
 if (w < 640) {
-  var swiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"]('.swiper', {
+  var swiper = new swiper__WEBPACK_IMPORTED_MODULE_3__["default"]('.swiper', {
     speed: 300,
     slidesPerView: 'auto',
     loop: true,
@@ -5306,7 +5311,7 @@ if (w < 640) {
 
 
 var image = document.querySelectorAll('.parallax');
-new (simple_parallax_js__WEBPACK_IMPORTED_MODULE_4___default())(image, {
+new (simple_parallax_js__WEBPACK_IMPORTED_MODULE_5___default())(image, {
   overflow: true,
   delay: 2,
   transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
@@ -33644,6 +33649,249 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./node_modules/plausible-tracker/build/module/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/plausible-tracker/build/module/index.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _lib_tracker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/tracker */ "./node_modules/plausible-tracker/build/module/lib/tracker.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_lib_tracker__WEBPACK_IMPORTED_MODULE_0__["default"]);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxTQUFTLE1BQU0sZUFBZSxDQUFDO0FBSXRDLGVBQWUsU0FBUyxDQUFDIn0=
+
+/***/ }),
+
+/***/ "./node_modules/plausible-tracker/build/module/lib/request.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/plausible-tracker/build/module/lib/request.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "sendEvent": () => (/* binding */ sendEvent)
+/* harmony export */ });
+/**
+ * @internal
+ * Sends an event to Plausible's API
+ *
+ * @param data - Event data to send
+ * @param options - Event options
+ */
+function sendEvent(eventName, data, options) {
+    const isLocalhost = /^localhost$|^127(?:\.[0-9]+){0,2}\.[0-9]+$|^(?:0*:)*?:?0*1$/.test(location.hostname) || location.protocol === 'file:';
+    if (!data.trackLocalhost && isLocalhost) {
+        return console.warn('[Plausible] Ignoring event because website is running locally');
+    }
+    const payload = {
+        n: eventName,
+        u: data.url,
+        d: data.domain,
+        r: data.referrer,
+        w: data.deviceWidth,
+        h: data.hashMode ? 1 : 0,
+        p: options && options.props ? JSON.stringify(options.props) : undefined,
+    };
+    const req = new XMLHttpRequest();
+    req.open('POST', `${data.apiHost}/api/event`, true);
+    req.setRequestHeader('Content-Type', 'text/plain');
+    req.send(JSON.stringify(payload));
+    // eslint-disable-next-line functional/immutable-data
+    req.onreadystatechange = () => {
+        if (req.readyState !== 4)
+            return;
+        if (options && options.callback) {
+            options.callback();
+        }
+    };
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVxdWVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9saWIvcmVxdWVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyQkE7Ozs7OztHQU1HO0FBQ0gsTUFBTSxVQUFVLFNBQVMsQ0FDdkIsU0FBaUIsRUFDakIsSUFBZ0MsRUFDaEMsT0FBc0I7SUFFdEIsTUFBTSxXQUFXLEdBQ2YsNkRBQTZELENBQUMsSUFBSSxDQUNoRSxRQUFRLENBQUMsUUFBUSxDQUNsQixJQUFJLFFBQVEsQ0FBQyxRQUFRLEtBQUssT0FBTyxDQUFDO0lBRXJDLElBQUksQ0FBQyxJQUFJLENBQUMsY0FBYyxJQUFJLFdBQVcsRUFBRTtRQUN2QyxPQUFPLE9BQU8sQ0FBQyxJQUFJLENBQ2pCLCtEQUErRCxDQUNoRSxDQUFDO0tBQ0g7SUFFRCxNQUFNLE9BQU8sR0FBaUI7UUFDNUIsQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsSUFBSSxDQUFDLEdBQUc7UUFDWCxDQUFDLEVBQUUsSUFBSSxDQUFDLE1BQU07UUFDZCxDQUFDLEVBQUUsSUFBSSxDQUFDLFFBQVE7UUFDaEIsQ0FBQyxFQUFFLElBQUksQ0FBQyxXQUFXO1FBQ25CLENBQUMsRUFBRSxJQUFJLENBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDeEIsQ0FBQyxFQUFFLE9BQU8sSUFBSSxPQUFPLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUztLQUN4RSxDQUFDO0lBRUYsTUFBTSxHQUFHLEdBQUcsSUFBSSxjQUFjLEVBQUUsQ0FBQztJQUNqQyxHQUFHLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFBRSxHQUFHLElBQUksQ0FBQyxPQUFPLFlBQVksRUFBRSxJQUFJLENBQUMsQ0FBQztJQUNwRCxHQUFHLENBQUMsZ0JBQWdCLENBQUMsY0FBYyxFQUFFLFlBQVksQ0FBQyxDQUFDO0lBQ25ELEdBQUcsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO0lBQ2xDLHFEQUFxRDtJQUNyRCxHQUFHLENBQUMsa0JBQWtCLEdBQUcsR0FBRyxFQUFFO1FBQzVCLElBQUksR0FBRyxDQUFDLFVBQVUsS0FBSyxDQUFDO1lBQUUsT0FBTztRQUNqQyxJQUFJLE9BQU8sSUFBSSxPQUFPLENBQUMsUUFBUSxFQUFFO1lBQy9CLE9BQU8sQ0FBQyxRQUFRLEVBQUUsQ0FBQztTQUNwQjtJQUNILENBQUMsQ0FBQztBQUNKLENBQUMifQ==
+
+/***/ }),
+
+/***/ "./node_modules/plausible-tracker/build/module/lib/tracker.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/plausible-tracker/build/module/lib/tracker.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Plausible)
+/* harmony export */ });
+/* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./request */ "./node_modules/plausible-tracker/build/module/lib/request.js");
+/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
+
+/**
+ * Initializes the tracker with your default values.
+ *
+ * ### Example (es module)
+ * ```js
+ * import Plausible from 'plausible-tracker'
+ *
+ * const { enableAutoPageviews, trackEvent } = Plausible({
+ *   domain: 'my-app-domain.com',
+ *   hashMode: true
+ * })
+ *
+ * enableAutoPageviews()
+ *
+ * function onUserRegister() {
+ *   trackEvent('register')
+ * }
+ * ```
+ *
+ * ### Example (commonjs)
+ * ```js
+ * var Plausible = require('plausible-tracker');
+ *
+ * var { enableAutoPageviews, trackEvent } = Plausible({
+ *   domain: 'my-app-domain.com',
+ *   hashMode: true
+ * })
+ *
+ * enableAutoPageviews()
+ *
+ * function onUserRegister() {
+ *   trackEvent('register')
+ * }
+ * ```
+ *
+ * @param defaults - Default event parameters that will be applied to all requests.
+ */
+function Plausible(defaults) {
+    const getConfig = () => ({
+        hashMode: false,
+        trackLocalhost: false,
+        url: location.href,
+        domain: location.hostname,
+        referrer: document.referrer || null,
+        deviceWidth: window.innerWidth,
+        apiHost: 'https://plausible.io',
+        ...defaults,
+    });
+    const trackEvent = (eventName, options, eventData) => {
+        (0,_request__WEBPACK_IMPORTED_MODULE_0__.sendEvent)(eventName, { ...getConfig(), ...eventData }, options);
+    };
+    const trackPageview = (eventData, options) => {
+        trackEvent('pageview', options, eventData);
+    };
+    const enableAutoPageviews = () => {
+        const page = () => trackPageview();
+        // Attach pushState and popState listeners
+        const originalPushState = history.pushState;
+        if (originalPushState) {
+            // eslint-disable-next-line functional/immutable-data
+            history.pushState = function (data, title, url) {
+                originalPushState.apply(this, [data, title, url]);
+                page();
+            };
+            addEventListener('popstate', page);
+        }
+        // Attach hashchange listener
+        if (defaults && defaults.hashMode) {
+            addEventListener('hashchange', page);
+        }
+        // Trigger first page view
+        trackPageview();
+        return function cleanup() {
+            if (originalPushState) {
+                // eslint-disable-next-line functional/immutable-data
+                history.pushState = originalPushState;
+                removeEventListener('popstate', page);
+            }
+            if (defaults && defaults.hashMode) {
+                removeEventListener('hashchange', page);
+            }
+        };
+    };
+    const enableAutoOutboundTracking = (targetNode = document, observerInit = {
+        subtree: true,
+        childList: true,
+        attributes: true,
+        attributeFilter: ['href'],
+    }) => {
+        function trackClick(event) {
+            trackEvent('Outbound Link: Click', { props: { url: this.href } });
+            /* istanbul ignore next */
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            if (!(process && "development" === 'test')) {
+                setTimeout(() => {
+                    // eslint-disable-next-line functional/immutable-data
+                    location.href = this.href;
+                }, 150);
+            }
+            event.preventDefault();
+        }
+        // eslint-disable-next-line functional/prefer-readonly-type
+        const tracked = new Set();
+        function addNode(node) {
+            if (node instanceof HTMLAnchorElement) {
+                if (node.host !== location.host) {
+                    node.addEventListener('click', trackClick);
+                    tracked.add(node);
+                }
+            } /* istanbul ignore next */
+            else if ('querySelectorAll' in node) {
+                node.querySelectorAll('a').forEach(addNode);
+            }
+        }
+        function removeNode(node) {
+            if (node instanceof HTMLAnchorElement) {
+                node.removeEventListener('click', trackClick);
+                tracked.delete(node);
+            } /* istanbul ignore next */
+            else if ('querySelectorAll' in node) {
+                node.querySelectorAll('a').forEach(removeNode);
+            }
+        }
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.type === 'attributes') {
+                    // Handle changed href
+                    removeNode(mutation.target);
+                    addNode(mutation.target);
+                } /* istanbul ignore next */
+                else if (mutation.type === 'childList') {
+                    // Handle added nodes
+                    mutation.addedNodes.forEach(addNode);
+                    // Handle removed nodes
+                    mutation.removedNodes.forEach(removeNode);
+                }
+            });
+        });
+        // Track existing nodes
+        targetNode.querySelectorAll('a').forEach(addNode);
+        // Observe mutations
+        observer.observe(targetNode, observerInit);
+        return function cleanup() {
+            tracked.forEach((a) => {
+                a.removeEventListener('click', trackClick);
+            });
+            tracked.clear();
+            observer.disconnect();
+        };
+    };
+    return {
+        trackEvent,
+        trackPageview,
+        enableAutoPageviews,
+        enableAutoOutboundTracking,
+    };
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHJhY2tlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9saWIvdHJhY2tlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQWdCLFNBQVMsRUFBRSxNQUFNLFdBQVcsQ0FBQztBQTRLcEQ7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztHQW9DRztBQUNILE1BQU0sQ0FBQyxPQUFPLFVBQVUsU0FBUyxDQUMvQixRQUErQjtJQU8vQixNQUFNLFNBQVMsR0FBRyxHQUErQixFQUFFLENBQUMsQ0FBQztRQUNuRCxRQUFRLEVBQUUsS0FBSztRQUNmLGNBQWMsRUFBRSxLQUFLO1FBQ3JCLEdBQUcsRUFBRSxRQUFRLENBQUMsSUFBSTtRQUNsQixNQUFNLEVBQUUsUUFBUSxDQUFDLFFBQVE7UUFDekIsUUFBUSxFQUFFLFFBQVEsQ0FBQyxRQUFRLElBQUksSUFBSTtRQUNuQyxXQUFXLEVBQUUsTUFBTSxDQUFDLFVBQVU7UUFDOUIsT0FBTyxFQUFFLHNCQUFzQjtRQUMvQixHQUFHLFFBQVE7S0FDWixDQUFDLENBQUM7SUFFSCxNQUFNLFVBQVUsR0FBZSxDQUFDLFNBQVMsRUFBRSxPQUFPLEVBQUUsU0FBUyxFQUFFLEVBQUU7UUFDL0QsU0FBUyxDQUFDLFNBQVMsRUFBRSxFQUFFLEdBQUcsU0FBUyxFQUFFLEVBQUUsR0FBRyxTQUFTLEVBQUUsRUFBRSxPQUFPLENBQUMsQ0FBQztJQUNsRSxDQUFDLENBQUM7SUFFRixNQUFNLGFBQWEsR0FBa0IsQ0FBQyxTQUFTLEVBQUUsT0FBTyxFQUFFLEVBQUU7UUFDMUQsVUFBVSxDQUFDLFVBQVUsRUFBRSxPQUFPLEVBQUUsU0FBUyxDQUFDLENBQUM7SUFDN0MsQ0FBQyxDQUFDO0lBRUYsTUFBTSxtQkFBbUIsR0FBd0IsR0FBRyxFQUFFO1FBQ3BELE1BQU0sSUFBSSxHQUFHLEdBQUcsRUFBRSxDQUFDLGFBQWEsRUFBRSxDQUFDO1FBQ25DLDBDQUEwQztRQUMxQyxN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
 
 /***/ }),
 
