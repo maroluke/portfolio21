@@ -20,11 +20,15 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/scss';
 
-const swiper = new Swiper('.swiper', {
-    speed: 300,
-    slidesPerView: 'auto',
-    loop: true,
-});
+var w = window.innerWidth;
+if (w < 640) {
+    const swiper = new Swiper('.swiper', {
+        speed: 300,
+        slidesPerView: 'auto',
+        loop: true,
+        cssMode: true,
+    });
+}
 
 /* 
  * Import Simple Parallax
@@ -58,7 +62,7 @@ function marginFromTop(el, margin) {
 }
 
 setScreenHeight('entry');
-marginFromTop('intro', window.innerHeight);
+marginFromTop('intro-gradient', window.innerHeight);
 
 // AJAX CV Request submit
 $('form').on('submit', function (e) {

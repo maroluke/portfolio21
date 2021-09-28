@@ -22,10 +22,10 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('167.172.183.30')
+host('134.122.73.117')
     ->user('deployer')
     ->identityFile('~/.ssh/deployerkey')
-    ->set('deploy_path', '/var/www/markolukac.ch/html');    
+    ->set('deploy_path', '/var/www/markolukac.ch/html');
     
 // Tasks
 
