@@ -10,7 +10,7 @@ window.Alpine = Alpine;
 Alpine.start();
 
 import Plausible from 'plausible-tracker';
-const plausible = Plausible({
+const { enableAutoPageviews } = Plausible({
   domain: 'markolukac.ch'
 });
 
