@@ -9,10 +9,13 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 
-import Plausible from 'plausible-tracker'
+import Plausible from 'plausible-tracker';
 const plausible = Plausible({
   domain: 'markolukac.ch'
 });
+
+// And override it on this call
+trackPageview({}, { callback: () => console.log("Done!") });
 
 /* 
  * Import Swiper JS

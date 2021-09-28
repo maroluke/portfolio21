@@ -5282,6 +5282,12 @@ alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"].start();
 
 var plausible = (0,plausible_tracker__WEBPACK_IMPORTED_MODULE_2__["default"])({
   domain: 'markolukac.ch'
+}); // And override it on this call
+
+trackPageview({}, {
+  callback: function callback() {
+    return console.log("Done!");
+  }
 });
 /* 
  * Import Swiper JS
