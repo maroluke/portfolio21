@@ -9,6 +9,11 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 
+/* 
+ * Import Plausible.io
+ * https://github.com/plausible/
+ */
+
 import Plausible from 'plausible-tracker';
 const { enableAutoPageviews } = Plausible({
   domain: 'markolukac.ch'
