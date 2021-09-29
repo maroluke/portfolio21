@@ -1,12 +1,11 @@
-<section id="cta-employers" class="px-6 py-10 z-20 relative">
-    <h2>Suchen Sie <span class="bg-clip-text neon neon-flat">Verstärkung</span> Für Ihr Team?</h2>
-    <p class="pt-8 text-small">Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne meinen CV als PDF anfordern.</p>
-    <p class="py-8 text-small">Ich freue mich auf Ihre Kontaktaufnahme.</p>
+<section class="px-6 py-10 z-20 relative">
+    <h2><span class="bg-clip-text neon neon-flat">Neugierig</span> auf weitere spannende Projekte?</h2>
+    <p class="py-8 text-small">Es würde mich freuen, Sie mit Neuigkeiten auf dem Laufenden zu halten.</p>
 
-    <form method="POST" class="flex" data-context="submitCvEmail">
+    <form method="POST" class="flex" data-context="submitNlEmail">
         {{ csrf_field() }}
         <div class="flex-grow mr-2">
-            <input id="email-cv" class="email-input" type="email" name="email" placeholder="Ihre E-Mail Adresse" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+            <input id="email-nl" class="email-input" type="email" name="email" placeholder="Ihre E-Mail Adresse" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
         </div>
 
         <div class="flex-shrink">
@@ -31,6 +30,6 @@
     </form>
 
     <div class="relative h-6">
-        <p class="messages text-sm pt-2 opacity-30">E–Mail wird nicht gespeichert</p>
+        <p class="messages text-sm pt-2 opacity-30">Sichere Datenübertragung</p>
     </div>
 </section>

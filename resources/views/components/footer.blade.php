@@ -59,7 +59,7 @@
 
         <div class="pt-12 leading-6">
             <div class="text-tiny ">
-                <p>Last update: September 14 2021</p>
+                <p>Last update: September 29, 2021</p>
                 <p>Public github repository: <a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
             </div>
         </div>
