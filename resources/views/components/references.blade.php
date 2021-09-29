@@ -8,17 +8,19 @@
         <div class="swiper">
             <div class="swiper-wrapper items-stretch sm:flex-col sm:gap-6">
                 <!-- Slides -->
-                <div class="swiper-slide px-2 sm:px-0 sm:max-w-full sm:my-6">
+                <div class="swiper-slide px-2 sm:px-6 sm:max-w-full sm:my-6">
                     <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white transition-opacity duration-300 ease-in-out opacity-50 sm:opacity-100 sm:flex-row sm:rounded-none">
-                        <div class="image relative max-h-48 overflow-hidden flex items-center sm:flex-shrink sm:flex-1 sm:max-h-full sm:-mr-10">
-                            <img class="opacity-75 sm:self-start sm:rounded-r sm:parallax" src="{{ asset('media/restaurant.png') }}" alt="Working at naanu restaurant">
+                        <div class="image relative max-h-48 overflow-hidden flex items-center sm:flex-shrink sm:w-2/5">
+                            <img class="opacity-75 sm:self-start sm:rounded" src="{{ asset('media/webpage-fundament.png') }}" alt="Fundament Web Page">
                         </div>
 
-                        <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between relative sm:py-0 sm:flex-1 sm:bg-transparent sm:text-white sm:-ml-10 sm:pr-20">
-                            <h3 class="py-6 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-0">naanu</h3>
-
-                            <p class="font-medium py-6">naanu ist ein Restaurant, Take-Away und Delivery Service in Zürich welches mit dem Bedürfnis einen neuen <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://naanu.ch" target="_blank">digitalen Auftritt</a> zu bekommen an mich herangetreten ist. 
-                                Entstanden ist eine integrale Lösung mit Anbindung ans betriebsinterne Reservations-, Kassen-, und Buchaltungssystem sowie an die gängigen Auslieferungsdienstleister.</p>
+                        <div class="bg-white text-black p-5 sm:py-0 flex flex-col flex-grow justify-between relative sm:flex-1 sm:bg-transparent sm:text-white sm:order-first">
+                            <h3 class="py-5 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-6">Fundament</h3>
+                            <p class="font-medium py-6">Das schweizer Investment–Startup Fundament AG, investiert in nachhaltige Geschäftsmodelle und Unternehmen. Mit einem von mir selektierten Team sowie einem starken Fokus auf <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://naanu.ch" target="_blank">Online–Präsenz</a> und digitale Zusammenarbeit, wurde die Corporate Identity von Fundament und die dazugehörigen digitalen Plattformen entwickelt.</p>
+                            {{-- <a href="https://fundament.swiss" target="_blank" class="pt-10 pb-5 uppercase font-bold text-base">
+                                <x-icon-icon-link class="hover:opacity-75 w-7 inline bg-black p-1 mr-2 rounded"/>
+                                <span class="">Zum Produkt</span>
+                            </a> --}}
                         </div>
                     </div>
                 </div>
@@ -40,19 +42,17 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide px-2 sm:px-6 sm:max-w-full sm:my-6">
+                <div class="swiper-slide px-2 sm:px-0 sm:max-w-full sm:my-6">
                     <div class="rounded-2xl flex flex-col h-full overflow-hidden text-white transition-opacity duration-300 ease-in-out opacity-50 sm:opacity-100 sm:flex-row sm:rounded-none">
-                        <div class="image relative max-h-48 overflow-hidden flex items-center sm:flex-shrink sm:w-2/5">
-                            <img class="opacity-75 sm:self-start sm:rounded" src="{{ asset('media/webpage-fundament.png') }}" alt="Fundament Web Page">
+                        <div class="image relative max-h-48 overflow-hidden flex items-center sm:flex-shrink sm:flex-1 sm:max-h-full sm:-mr-10">
+                            <img class="opacity-75 sm:self-start sm:rounded-r sm:parallax" src="{{ asset('media/restaurant.png') }}" alt="Working at naanu restaurant">
                         </div>
 
-                        <div class="bg-white text-black p-5 sm:py-0 flex flex-col flex-grow justify-between relative sm:flex-1 sm:bg-transparent sm:text-white sm:order-first">
-                            <h3 class="py-5 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-6">Fundament</h3>
-                            <p class="font-medium py-6">Das schweizer Investment–Startup Fundament AG, investiert in nachhaltige Geschäftsmodelle und Unternehmen. Mit einem von mir selektierten Team sowie einem starken Fokus auf <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://naanu.ch" target="_blank">Online–Präsenz</a> und digitale Zusammenarbeit, wurde die Corporate Identity von Fundament und die dazugehörigen digitalen Plattformen entwickelt.</p>
-                            {{-- <a href="https://fundament.swiss" target="_blank" class="pt-10 pb-5 uppercase font-bold text-base">
-                                <x-icon-icon-link class="hover:opacity-75 w-7 inline bg-black p-1 mr-2 rounded"/>
-                                <span class="">Zum Produkt</span>
-                            </a> --}}
+                        <div class="bg-white text-black p-5 flex flex-col flex-grow justify-between relative sm:py-0 sm:flex-1 sm:bg-transparent sm:text-white sm:-ml-10 sm:pr-20">
+                            <h3 class="py-6 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-0">naanu</h3>
+
+                            <p class="font-medium py-6">naanu ist ein Restaurant, Take-Away und Delivery Service in Zürich welches mit dem Bedürfnis einen neuen <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://naanu.ch" target="_blank">digitalen Auftritt</a> zu bekommen an mich herangetreten ist. 
+                                Entstanden ist eine integrale Lösung mit Anbindung ans betriebsinterne Reservations-, Kassen-, und Buchaltungssystem sowie an die gängigen Auslieferungsdienstleister.</p>
                         </div>
                     </div>
                 </div>
