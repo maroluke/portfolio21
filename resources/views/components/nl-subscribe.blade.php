@@ -1,4 +1,4 @@
-<section class="px-6 py-10 z-20 relative">
+<section class="px-6 py-10 z-20 relative max-w-lg mx-auto">
     <h2><span class="bg-clip-text neon neon-flat">Neugierig</span> auf weitere spannende Projekte?</h2>
     <p class="py-8 text-small">Es würde mich freuen, Sie mit Neuigkeiten auf dem Laufenden zu halten.</p>
 

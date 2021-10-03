@@ -1,4 +1,4 @@
-<section id="cta-employers" class="px-6 py-10 z-20 relative">
+<section id="cta-employers" class="px-6 py-10 z-20 relative max-w-lg mx-auto">
     <h2>Suchen Sie <span class="bg-clip-text neon neon-flat">Verstärkung</span> Für Ihr Team?</h2>
     <p class="pt-8 text-small">Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne meinen CV als PDF anfordern.</p>
     <p class="py-8 text-small">Ich freue mich auf Ihre Kontaktaufnahme.</p>

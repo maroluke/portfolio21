@@ -20,7 +20,7 @@
 
             <x-cta-support />
 
-            <section class="full-image z-10 relative">
+            <section class="full-image z-10 relative max-w-lg mx-auto">
                 <img class="floating" src="{{ asset('media/macbook-2.png') }}" alt="MacBook">
             </section>
 

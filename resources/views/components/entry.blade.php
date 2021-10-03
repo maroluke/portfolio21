@@ -2,7 +2,7 @@
     <div class="entry-bg top-0 right-0 bg-contain bg-no-repeat fixed w-full h-full xs:bg-cover sm:w-2/3 sm:justify-self-end"></div>
 
     <div class="flex flex-col text-white h-full justify-end w-full">
-        <h1 class="bg-clip-text neon neon-wide sm:w-2/3">
+        <h1 class="bg-clip-text neon neon-wide md:w-2/3">
             <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Web & Mobile Apps</span>
             {{-- <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Lösungen für Web und Mobile.</span> --}}
         </h1>

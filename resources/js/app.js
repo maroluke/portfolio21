@@ -1,7 +1,7 @@
 import './bootstrap';
 
 /* 
- * Import Alpine JS
+ * Initialize Alpine JS
  * https://github.com/alpinejs/alpine/
  */
 
@@ -10,7 +10,7 @@ window.Alpine = Alpine;
 Alpine.start();
 
 /* 
- * Import Plausible.io
+ * Initialize Plausible.io
  * https://github.com/plausible/
  */
 
@@ -23,7 +23,7 @@ const { enableAutoPageviews } = Plausible({
 enableAutoPageviews();
 
 /* 
- * Import Swiper JS
+ * Initialize Swiper JS
  * https://github.com/nolimits4web/swiper
  */
 
@@ -44,7 +44,7 @@ if (w < 640) {
 }
 
 /* 
- * Import Simple Parallax
+ * Initialize Simple Parallax
  * https://github.com/geosigno/simpleParallax.js/
  */
 
@@ -56,7 +56,7 @@ new simpleParallax(image, {
     overflow: true,
     delay: 2,
 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.3,
+    scale: 1.6,
 });
 
 /* 
