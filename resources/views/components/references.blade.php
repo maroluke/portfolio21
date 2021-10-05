@@ -16,7 +16,7 @@
 
                         <div class="reference-text bg-white text-black p-5 flex flex-col flex-grow justify-start relative sm:py-0 sm:flex-1 sm:bg-transparent sm:text-white sm:pr-20">
                             <h3 class="py-6 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-0">Fundament</h3>
-                            <p class="font-medium py-6">Das schweizer Investment–Startup Fundament AG, investiert in nachhaltige Geschäftsmodelle und Unternehmen. Mit einem von mir selektierten Team sowie einem starken Fokus auf <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://naanu.ch" target="_blank">Online–Präsenz</a> und digitale Zusammenarbeit, wurde die Corporate Identity von Fundament und die dazugehörigen digitalen Plattformen entwickelt.</p>
+                            <p class="font-medium py-6">Das schweizer Investment–Startup Fundament AG, investiert in nachhaltige Geschäftsmodelle und Unternehmen. Mit einem von mir selektierten Team sowie einem starken Fokus auf <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://fundament.swiss" target="_blank">Online–Präsenz</a> und digitale Zusammenarbeit, wurde die Corporate Identity von Fundament und die dazugehörigen digitalen Plattformen entwickelt.</p>
                             {{-- <a href="https://fundament.swiss" target="_blank" class="pt-10 pb-5 uppercase font-bold text-base">
                                 <x-icon-icon-link class="hover:opacity-75 w-7 inline bg-black p-1 mr-2 rounded"/>
                                 <span class="">Zum Produkt</span>
@@ -33,7 +33,7 @@
 
                         <div class="reference-text bg-white text-black p-5 flex flex-col flex-grow justify-start relative sm:py-0 sm:flex-1 sm:bg-transparent sm:text-white sm:pr-20">
                             <h3 class="py-6 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-0">coffaina</h3>
-                            <p class="font-medium py-6">Die wohl stärkste Cola der Welt. coffaina ist eine Berliner Indie-Cola, die bei ewigen Partynächten, Abi–Stress oder einem 24–Stunden–Drag–Race zuverlässig wach hält. In einem desing-sprint-workshop in Berlin konnte ich mit dem Kunden den <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://naanu.ch" target="_blank">digitalen Auftritt</a> entwickeln und diesen in einem zweiten Schritt umsetzen.</p>
+                            <p class="font-medium py-6">Die wohl stärkste Cola der Welt. coffaina ist eine Berliner Indie-Cola, die bei ewigen Partynächten, Abi–Stress oder einem 24–Stunden–Drag–Race zuverlässig wach hält. In einem desing-sprint-workshop in Berlin konnte ich mit dem Kunden den <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="http://coffaina.com" target="_blank">digitalen Auftritt</a> entwickeln und diesen in einem zweiten Schritt umsetzen.</p>
                             {{-- <a href="http://coffaina.com" target="_blank" class="pt-10 pb-5 uppercase font-bold text-base">
                                 <x-icon-icon-link class="hover:opacity-75 w-7 inline bg-black p-1 mr-2 rounded"/>
                                 <span class="">Zum Produkt</span>
@@ -65,7 +65,7 @@
 
                         <div class="reference-text bg-white text-black p-5 flex flex-col flex-grow justify-start relative sm:py-0 sm:flex-1 sm:bg-transparent sm:text-white sm:pr-20">
                             <h3 class="py-6 text-white align-text-bottom bottom-full absolute sm:relative sm:bottom-0 sm:p-0 sm:pb-0">Generation Purpose</h3>
-                            <p class="font-medium py-6">Generation Purpose hilft Organi&shy;sationen und Einzel&shy;personen, ihren Purpose zu finden und diesen im Alltag zu imple&shy;men&shy;tieren. In Zusam&shy;men&shy;arbeit mit den Gründern durfte ich einerseits die <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://naanu.ch" target="_blank">Online–Präsenz</a> entwickeln sowie eine digitalen Plattform aufbauen, auf welcher die Facili&shy;tators (Mit&shy;arbeiter) und Kunden täglich arbeiten können.</p>
+                            <p class="font-medium py-6">Generation Purpose hilft Organi&shy;sationen und Einzel&shy;personen, ihren Purpose zu finden und diesen im Alltag zu imple&shy;men&shy;tieren. In Zusam&shy;men&shy;arbeit mit den Gründern durfte ich einerseits die <a class="bg-yellow-100 sm:bg-opacity-25 px-1 hover:bg-yellow-200 rounded" href="https://generation-purpose.org" target="_blank">Online–Präsenz</a> entwickeln sowie eine digitalen Plattform aufbauen, auf welcher die Facili&shy;tators (Mit&shy;arbeiter) und Kunden täglich arbeiten können.</p>
                             {{-- <a href="https://generation-purpose.org" target="_blank" class="pt-10 pb-5 uppercase font-bold text-base">
                                 <x-icon-icon-link class="hover:opacity-75 w-7 inline bg-black p-1 mr-2 rounded"/>
                                 <span class="">Zum Produkt</span>
