@@ -1,4 +1,11 @@
-<div class="language self-end flex">
-    <a class="pl-6 py-3 opacity-75 text-white font-heading text-sm tracking-widest" href="">English</a>
-    <a class="pl-6 py-3 opacity-75 text-white font-heading text-sm tracking-widest" href="">Hrvatski</a>
-</div>
+<ul class="language flex gap-8">
+    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        @if(LaravelLocalization::getCurrentLocale() !== $localeCode)
+            <li class="py-6">
+                <a class="py-6 opacity-75 text-white font-heading text-sm tracking-widest" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                    {{ ucfirst($properties['native']) }}
+                </a>
+            </li>
+        @endif
+    @endforeach
+</ul>

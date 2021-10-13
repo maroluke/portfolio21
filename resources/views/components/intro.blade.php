@@ -7,11 +7,12 @@
         </div>
 
         <div class="px-6 relative z-10 xs:w-8/12">
-            <h2>Hallo,<br />mein Name ist <span class="bg-clip-text neon neon-flat">Marko</span></h2>
+            <h2>{{ __('Hallo,') }}<br />{{ __('mein Name ist ') }}<span class='bg-clip-text neon neon-flat'>Marko</span></h2>
             
-            <p class="mt-10 text-small xs:text-tiny">Als erfahrener Softwareentwickler, verstehe ich es Ideen mit den fortschrittlichsten Technologien umzusetzen, um daraus effektive, digitale Erlebnisse zu <!-- entwickeln --> schaffen.</p>
-            <p class="mt-10 text-small xs:text-tiny">Durch meine Expertise in der digitalen Produktentwicklung, verfüge ich über die nötigen Mittel und ein Netzwerk, um umfassend nutzerzentrierte Web & Mobile Apps zu realisieren. Das Kundenbedürfnis steht dabei maximal im Fokus.</p>
-            <p class="mt-10 text-small xs:text-tiny">Swipen Sie nachfolgend durch ausgewählte Projekte, die ich zusammen mit Kunden und Teams realisieren durfte.</p>
+            {{-- <p class="mt-10 text-small xs:text-tiny">Als erfahrener Softwareentwickler verstehe ich es, Ideen mit den fortschrittlichsten Technologien umzusetzen, um daraus effektive, digitale Erlebnisse zu <!-- entwickeln --> schaffen.</p> --}}
+            <p class="mt-10 text-small xs:text-tiny">{{ __('Als erfahrener Softwareentwickler, verstehe ich es aus Ideen nutzerzentrierte, digitale Erlebnisse zu entwickeln.') }}</p>
+            <p class="mt-10 text-small xs:text-tiny">{{ __('Mit agilen Arbeitsmethoden und einem Experten–Netzwerk kümmere ich mich umfassend um Ihr Bedürfnis, um individuelle Lösungen für Web & Mobile zu realisieren.') }}</p>
+            {{-- <p class="mt-10 text-small xs:text-tiny">{{ __('Swipen Sie nachfolgend durch ausgewählte Projekte, die ich zusammen mit Kunden realisieren durfte.') }}</p> --}}
         </div>
 
         {{-- <div class="px-6">

@@ -22,6 +22,19 @@
                 </div>
             </div>
 
+            {{-- <div class="text-base pt-12 leading-6">
+                <h4 class="uppercase tracking-wider mb-2 ">Translation</h4>
+                
+                <div class="grid grid-cols-2 gap-2">
+                    <p>English</p>
+                    <p><a class="hover:text-gray-300 underline" target="_blank" href="https://easytranslate.com/en/">Annie C.</a></p>
+                    <p>Croatian</p>
+                    <p><a class="hover:text-gray-300 underline" target="_blank" href="https://easytranslate.com/en/">Iva Šeler</a></p>
+                    <p>Chinese</p>
+                    <p><a class="hover:text-gray-300 underline" target="_blank" href="https://easytranslate.com/en/">Lindy L.</a></p>
+                </div>
+            </div> --}}
+
             <div class="text-base pt-12 leading-6 ">
                 <h4 class="uppercase tracking-wider mb-2">Framework stack</h4>
 
@@ -67,7 +80,7 @@
 
             <div class="text-base py-12 leading-6">
                 <div class="">
-                    <p class="">© 2021 Marko Lukac</p>
+                    <p class="">© 2021 Marko Lukac – Zurich – Switzerland</p>
                     <p class=""><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
                 </div>
             </div>

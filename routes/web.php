@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\CVRequestController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+{
+	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+	Route::get('/', function()
+	{
+		return view('welcome');
+	});
+});
 
 // Route::post('/', function(Request $request) {
 //     // Mail::send(new ForwardEmailInput($request));
