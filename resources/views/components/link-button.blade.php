@@ -16,6 +16,6 @@
     '
 @endphp
 
-<div class="{{ $classes }}">
+<div class="{{ $classes }} border-2 border-neon-blue border-opacity-75 hover:border-opacity-100 shadow-button">
     <a {{ $attributes->merge() }}>{{$slot}}</a>
 </div>

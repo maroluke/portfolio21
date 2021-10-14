@@ -230,6 +230,10 @@ button {
     content: "刷卡";
 }
 
+.reference-text a {
+    white-space: nowrap;
+}
+
 @screen sm {
     .swiper {
         overflow: visible !important;
