@@ -2450,16 +2450,16 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.6.1",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "04ad32c1a3328081097a181875733fa51f402083"
+                "reference": "c808a7227f97ecfd9219fbf913bad842ea854ddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/04ad32c1a3328081097a181875733fa51f402083",
-                "reference": "04ad32c1a3328081097a181875733fa51f402083",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/c808a7227f97ecfd9219fbf913bad842ea854ddc",
+                "reference": "c808a7227f97ecfd9219fbf913bad842ea854ddc",
                 "shasum": ""
             },
             "require": {
@@ -2512,9 +2512,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.6.1"
+                "source": "https://github.com/laravel/tinker/tree/v2.6.2"
             },
-            "time": "2021-03-02T16:53:12+00:00"
+            "time": "2021-09-28T15:47:34+00:00"
         },
         {
             "name": "laravel/ui",
@@ -4837,16 +4837,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.8",
+            "version": "v0.10.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3"
+                "reference": "01281336c4ae557fe4a994544f30d3a1bc204375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e4573f47750dd6c92dca5aee543fa77513cbd8d3",
-                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/01281336c4ae557fe4a994544f30d3a1bc204375",
+                "reference": "01281336c4ae557fe4a994544f30d3a1bc204375",
                 "shasum": ""
             },
             "require": {
@@ -4906,9 +4906,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.8"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.9"
             },
-            "time": "2021-04-10T16:23:39+00:00"
+            "time": "2021-10-10T13:37:39+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -8384,19 +8384,20 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.13.1",
+            "version": "2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "e3f49bef7b4165fa4b8a9dc579e7b63fa06aef78"
+                "reference": "3ee6e94815462bcf09bca0efc1c9069685df8da3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/e3f49bef7b4165fa4b8a9dc579e7b63fa06aef78",
-                "reference": "e3f49bef7b4165fa4b8a9dc579e7b63fa06aef78",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/3ee6e94815462bcf09bca0efc1c9069685df8da3",
+                "reference": "3ee6e94815462bcf09bca0efc1c9069685df8da3",
                 "shasum": ""
             },
             "require": {
+                "ext-curl": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "facade/flare-client-php": "^1.9.1",
@@ -8456,7 +8457,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-09-13T13:01:30+00:00"
+            "time": "2021-10-11T15:24:06+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -8578,21 +8579,21 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.14.3",
+            "version": "2.14.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "89584ce67dd32307f1063cc43846674f4679feda"
+                "reference": "f056f1fe935d9ed86e698905a957334029899895"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/89584ce67dd32307f1063cc43846674f4679feda",
-                "reference": "89584ce67dd32307f1063cc43846674f4679feda",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f056f1fe935d9ed86e698905a957334029899895",
+                "reference": "f056f1fe935d9ed86e698905a957334029899895",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9 || ^7.0 || ^8.0",
-                "psr/log": "^1.0.1"
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
             },
             "require-dev": {
                 "mockery/mockery": "^0.9 || ^1.0",
@@ -8637,7 +8638,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.3"
+                "source": "https://github.com/filp/whoops/tree/2.14.4"
             },
             "funding": [
                 {
@@ -8645,7 +8646,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-19T12:00:00+00:00"
+            "time": "2021-10-03T12:00:00+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -8700,16 +8701,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v12.6.0",
+            "version": "v12.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "ee603d727918d5366af41db4d2cebbee9bf6c9b3"
+                "reference": "cd25cb0215380571da116f8a5ffd8be1e0fc891c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/ee603d727918d5366af41db4d2cebbee9bf6c9b3",
-                "reference": "ee603d727918d5366af41db4d2cebbee9bf6c9b3",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/cd25cb0215380571da116f8a5ffd8be1e0fc891c",
+                "reference": "cd25cb0215380571da116f8a5ffd8be1e0fc891c",
                 "shasum": ""
             },
             "require": {
@@ -8748,22 +8749,22 @@
             "description": "A virtual machine for web artisans.",
             "support": {
                 "issues": "https://github.com/laravel/homestead/issues",
-                "source": "https://github.com/laravel/homestead/tree/v12.6.0"
+                "source": "https://github.com/laravel/homestead/tree/v12.7.0"
             },
-            "time": "2021-09-22T01:12:59+00:00"
+            "time": "2021-10-04T14:18:19+00:00"
         },
         {
             "name": "laravel/sail",
-            "version": "v1.10.1",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "267fafeaf0e0311952316ae0f3c765abc7516469"
+                "reference": "80f6cd93844e87ebc2e7310f9a9b9917473f5eb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/267fafeaf0e0311952316ae0f3c765abc7516469",
-                "reference": "267fafeaf0e0311952316ae0f3c765abc7516469",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/80f6cd93844e87ebc2e7310f9a9b9917473f5eb0",
+                "reference": "80f6cd93844e87ebc2e7310f9a9b9917473f5eb0",
                 "shasum": ""
             },
             "require": {
@@ -8810,7 +8811,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-08-23T13:43:27+00:00"
+            "time": "2021-10-12T15:38:11+00:00"
         },
         {
             "name": "mockery/mockery",

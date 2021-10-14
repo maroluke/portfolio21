@@ -16,6 +16,16 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
+// Route::get('/{locale}', function ($locale) {
+//     App::setLocale($locale);
+//     return view('welcome');
+// })->name('home');
+
+// Route::get('/', function ($locale) {
+//     App::setLocale('de');
+//     return view('welcome');
+// })->name('home');
+
 Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 {
 	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
