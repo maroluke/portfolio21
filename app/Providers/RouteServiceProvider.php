@@ -11,6 +11,13 @@ use Illuminate\Support\Facades\Route;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
+     * https://github.com/mcamara/laravel-localization
+     * For the route caching solution to work, it is required to make a minor adjustment to your application route provision.
+     * In your App's RouteServiceProvider, use the LoadsTranslatedCachedRoutes trait:
+     */
+    //use \Mcamara\LaravelLocalization\Traits\LoadsTranslatedCachedRoutes;
+
+    /**
      * The path to the "home" route for your application.
      *
      * This is used by Laravel authentication to redirect users after login.

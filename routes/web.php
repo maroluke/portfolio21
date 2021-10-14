@@ -16,24 +16,29 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-// Route::get('/{locale}', function ($locale) {
-//     App::setLocale($locale);
-//     return view('welcome');
-// });
-
-// Route::get('/', function () {
-//     App::setLocale('de');
-//     return view('welcome');
-// });
-
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-{
-	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-	Route::get('/', function()
-	{
-		return view('welcome');
-	});
+Route::get('/{locale}', function ($locale) {
+    App::setLocale($locale);
+    return view('welcome');
 });
+
+Route::get('/', function () {
+    App::setLocale('de');
+    return view('welcome');
+});
+
+// Route::group(
+// 	[
+// 		'prefix' => LaravelLocalization::setLocale(),
+// 		'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+// 	],
+// 	function()
+// 	{
+// 		/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+// 		Route::get('/', function($)
+// 		{
+// 			return view('welcome');
+// 		});
+// 	});
 
 // Route::post('/', function(Request $request) {
 //     // Mail::send(new ForwardEmailInput($request));
