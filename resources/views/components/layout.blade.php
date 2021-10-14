@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/slr3uaj.css">
 </head>
 
-<body class="text-white antialiased">
+<body class="text-white antialiased lang-{{ App::currentLocale() }}">
     <div id="app">
         {{-- @include('layouts.navigation') --}}
         <main>
             @yield('content')
+            App::
         </main>
     </div>
 </body>

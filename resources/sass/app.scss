@@ -210,19 +210,24 @@ button {
 }
 
 .animate-swipe-x {
-    @apply font-heading text-center text-sm tracking-wide relative w-24;
+    @apply font-heading text-sm tracking-wide relative w-24 text-right;
 }
 
 .animate-swipe-x::before {
-    @apply animate-swipe-x-out absolute w-full h-full top-0 left-0 block;
+    @apply animate-swipe-x-out absolute w-full h-full top-0 right-6 block;
 
     content: "Swipe";
 }
 
 .animate-swipe-x::after {
-    @apply animate-swipe-x-in absolute w-full h-full top-0 left-0 block;
+    @apply animate-swipe-x-in absolute w-full h-full top-0 right-6 block;
 
     content: "Swipe";
+}
+
+.lang-zh .animate-swipe-x::before,
+.lang-zh .animate-swipe-x::after {
+    content: "刷卡";
 }
 
 @screen sm {

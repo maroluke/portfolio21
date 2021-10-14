@@ -1,6 +1,6 @@
 <section class="px-6 py-10 z-20 relative max-w-lg mx-auto">
     @if (App::isLocale('zh'))
-        <h2>您对其他令人兴奋的项目感到<br /><span class="bg-clip-text neon neon-flat">好奇吗</span> ?</h2>
+        <h2>您对其他令人兴奋的项目感到<br /><span class="bg-clip-text neon neon-flat">好奇吗</span>？</h2>
     @else
         <h2><span class="bg-clip-text neon neon-flat">@lang('Neugierig')</span>@lang(' auf weitere spannende Projekte?')</h2>
     @endif

@@ -56,7 +56,7 @@ new simpleParallax(image, {
     overflow: true,
     delay: 2,
 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.6,
+    scale: 1.3,
 });
 
 /* 
