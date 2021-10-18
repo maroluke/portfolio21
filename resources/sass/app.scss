@@ -230,6 +230,11 @@ button {
     content: "刷卡";
 }
 
+.lang-hr .animate-swipe-x::before,
+.lang-hr .animate-swipe-x::after {
+    content: "Svajpaj";
+}
+
 .reference-text a {
     white-space: nowrap;
 }

@@ -10,7 +10,7 @@
         items-center
         justify-center
         relative
-        bg-white
+        bg-neon-blue
         bg-opacity-10
         rounded-xl
     '
