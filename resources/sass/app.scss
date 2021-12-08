@@ -2,32 +2,32 @@
 
 @import url("fonts.scss");
 
-#intro-gradient,
-.entry-bg::after {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0086472) 6.67%, rgba(0, 0, 0, 0.03551) 13.33%, rgba(0, 0, 0, 0.0816599) 20%, rgba(0, 0, 0, 0.147411) 26.67%, rgba(0, 0, 0, 0.231775) 33.33%, rgba(0, 0, 0, 0.331884) 40%, rgba(0, 0, 0, 0.442691) 46.67%, rgba(0, 0, 0, 0.557309) 53.33%, rgba(0, 0, 0, 0.668116) 60%, rgba(0, 0, 0, 0.768225) 66.67%, rgba(0, 0, 0, 0.852589) 73.33%, rgba(0, 0, 0, 0.91834) 80%, rgba(0, 0, 0, 0.96449) 86.67%, rgba(0, 0, 0, 0.991353) 93.33%, #000000 100%);
-}
+// #intro-gradient,
+// .entry-bg::after {
+//     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0086472) 6.67%, rgba(0, 0, 0, 0.03551) 13.33%, rgba(0, 0, 0, 0.0816599) 20%, rgba(0, 0, 0, 0.147411) 26.67%, rgba(0, 0, 0, 0.231775) 33.33%, rgba(0, 0, 0, 0.331884) 40%, rgba(0, 0, 0, 0.442691) 46.67%, rgba(0, 0, 0, 0.557309) 53.33%, rgba(0, 0, 0, 0.668116) 60%, rgba(0, 0, 0, 0.768225) 66.67%, rgba(0, 0, 0, 0.852589) 73.33%, rgba(0, 0, 0, 0.91834) 80%, rgba(0, 0, 0, 0.96449) 86.67%, rgba(0, 0, 0, 0.991353) 93.33%, #000000 100%);
+// }
 
-.entry-bg {
-    z-index: -1;
-    background-position: 0 -6rem;
-    background-image: url('../media/macbook-1.png');
-    margin-top: -40px;
-    animation-name: slideIn;
-    animation-duration: 4s;
-    // animation-delay: 1s;
-    animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
-    animation-fill-mode: forwards;
+// .entry-bg {
+//     z-index: -1;
+//     background-position: 0 -6rem;
+//     background-image: url('../media/macbook-1.png');
+//     margin-top: -40px;
+//     animation-name: slideIn;
+//     animation-duration: 4s;
+//     // animation-delay: 1s;
+//     animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
+//     animation-fill-mode: forwards;
 
-    &::after {
-        @apply  absolute w-full h-full top-0 left-0 bottom-0 right-0;
+//     &::after {
+//         @apply  absolute w-full h-full top-0 left-0 bottom-0 right-0;
     
-        content: "";
+//         content: "";
 
-        @screen sm {
-            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0086472) 6.67%, rgba(0, 0, 0, 0.03551) 13.33%, rgba(0, 0, 0, 0.0816599) 20%, rgba(0, 0, 0, 0.147411) 26.67%, rgba(0, 0, 0, 0.231775) 33.33%, rgba(0, 0, 0, 0.331884) 40%, rgba(0, 0, 0, 0.442691) 46.67%, rgba(0, 0, 0, 0.557309) 53.33%, rgba(0, 0, 0, 0.668116) 60%, rgba(0, 0, 0, 0.768225) 66.67%, rgba(0, 0, 0, 0.852589) 73.33%, rgba(0, 0, 0, 0.91834) 80%, rgba(0, 0, 0, 0.96449) 86.67%, rgba(0, 0, 0, 0.991353) 93.33%, #000000 100%);
-        }
-    }
-}
+//         @screen sm {
+//             background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0086472) 6.67%, rgba(0, 0, 0, 0.03551) 13.33%, rgba(0, 0, 0, 0.0816599) 20%, rgba(0, 0, 0, 0.147411) 26.67%, rgba(0, 0, 0, 0.231775) 33.33%, rgba(0, 0, 0, 0.331884) 40%, rgba(0, 0, 0, 0.442691) 46.67%, rgba(0, 0, 0, 0.557309) 53.33%, rgba(0, 0, 0, 0.668116) 60%, rgba(0, 0, 0, 0.768225) 66.67%, rgba(0, 0, 0, 0.852589) 73.33%, rgba(0, 0, 0, 0.91834) 80%, rgba(0, 0, 0, 0.96449) 86.67%, rgba(0, 0, 0, 0.991353) 93.33%, #000000 100%);
+//         }
+//     }
+// }
 
 h1, h2, h3, h4 {
     @apply tracking-tight;
@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
 }
 
 #entry {
-    @apply bg-gradient-to-t from-black;
+    // @apply bg-gradient-to-t from-black;
 
     h1 {
         span {
@@ -59,10 +59,6 @@ p {
 
     &.swiper-slide-active > div {
         @apply opacity-100;
-    }
-
-    p {
-        @apply sm:text-base;
     }
 }
 
@@ -186,8 +182,8 @@ button {
     }
 }
 
-#intro {
-    //margin-top: 100vh;
+.blured-bg {
+    @apply filter blur-sm bg-blend-multiply transform relative opacity-60;
 }
 
 .entry-fade {

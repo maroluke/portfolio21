@@ -20,4 +20,4 @@ mix.sass('resources/sass/app.scss', 'public/css')
       postCss: [ tailwindcss('tailwind.config.js') ],
 })
 
-mix.browserSync({proxy: 'http://192.168.10.10/'});
+mix.browserSync({proxy: 'http://192.168.56.56/'});

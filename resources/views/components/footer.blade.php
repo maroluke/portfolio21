@@ -36,7 +36,7 @@
             </div> --}}
 
             <div class="text-base pt-12 leading-6 ">
-                <h4 class="uppercase tracking-wider mb-2">Framework stack</h4>
+                <h4 class="uppercase tracking-wider mb-2">Framework</h4>
 
                 <div class="flex flex-wrap">
                     <a href="https://github.com/laravel/framework" target="_blank" class="flex items-center w-1/3 h-12">
@@ -73,15 +73,20 @@
 
             <div class="pt-12 leading-6">
                 <div class="text-tiny ">
-                    <p>Last update: September 29, 2021</p>
+                    <p>Last update: December 8, 2021</p>
                     <p>Public github repository: <a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
                 </div>
             </div>
 
             <div class="text-base py-12 leading-6">
                 <div class="">
-                    <p class="">© 2021 Marko Lukac – Zurich – Switzerland</p>
                     <p class=""><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
+                    <br />
+                    <p class="">Lukac Interactive</p>
+                    <p class="">CHE-494.796.673</p>
+                    <br />
+                    <p class="">Zürich – Switzerland</p>
+                    <p class="">© 2021 Marko Lukac</p>
                 </div>
             </div>
         </div>

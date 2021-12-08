@@ -49,14 +49,28 @@ if (w < 640) {
  */
 
 import simpleParallax from 'simple-parallax-js';
-import { functions } from 'lodash';
+
+// delete if nothing breaks
+// import { functions } from 'lodash';
 
 var image = document.querySelectorAll('.parallax');
 new simpleParallax(image, {
     overflow: true,
-    delay: 2,
+    delay: .6,
 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
     scale: 1.3,
+    orientation: "down",
+});
+
+// background blured squares
+var bgImage = document.querySelectorAll('.blured-bg');
+var randomScale = getRandomFloat(0.2, 0.6, 1);
+var randomDelay = getRandomFloat(0.2, 0.8, 1);
+new simpleParallax(bgImage, {
+    overflow: true,
+    // delay: randomDelay,
+    scale: randomScale,
+    orientation: "up left",
 });
 
 /* 
@@ -136,3 +150,13 @@ $('.email-input').focus(function() {
     $('.messages').removeClass('text-neon-green text-neon-red');
     $('.icon-send').fadeIn();
 });
+
+$('#call-btn').on('click', function (e) {
+    
+});
+
+// get random float between 0.8 - 2.0
+function getRandomFloat(min, max, decimals) {
+    const str = (Math.random() * (max - min) + min).toFixed(decimals);
+    return parseFloat(str);
+}
