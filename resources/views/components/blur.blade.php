@@ -1,4 +1,4 @@
-<div class="max-w-screen h-auto absolute overflow-hidden py-32">
+<div class="w-full absolute top-0 left-0 overflow-x-hidden pb-32">
     <svg class="blured-bg w-64" style="left: {{ rand(-15, 15) }}%; margin-top: {{ rand(-10, 10) }}%;" viewBox="0 0 687 687" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g>
             <path

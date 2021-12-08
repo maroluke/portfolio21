@@ -184,6 +184,12 @@ button {
 
 .blured-bg {
     @apply filter blur-sm bg-blend-multiply transform relative opacity-60;
+
+    animation-name: fadeInBgBlur;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 .entry-fade {
@@ -192,6 +198,11 @@ button {
     animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes fadeInBgBlur {
+    0% { opacity: 0; }
+    100% { opacity: .6; }
 }
 
 @keyframes fadeOutEntry {

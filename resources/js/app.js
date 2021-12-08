@@ -65,10 +65,10 @@ new simpleParallax(image, {
 // background blured squares
 var bgImage = document.querySelectorAll('.blured-bg');
 var randomScale = getRandomFloat(0.2, 0.6, 1);
-var randomDelay = getRandomFloat(0.2, 0.8, 1);
 new simpleParallax(bgImage, {
     overflow: true,
     // delay: randomDelay,
+    delay: 2,
     scale: randomScale,
     orientation: "up left",
 });
