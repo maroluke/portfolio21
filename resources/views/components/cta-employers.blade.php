@@ -1,6 +1,6 @@
 <section id="cta-employers" class="px-6 py-10 z-20 relative max-w-lg mx-auto">
     <h2>@lang('Suchen Sie ')<span class="bg-clip-text neon neon-flat">@lang('Verstärkung')</span>@lang(' für Ihr Team?')</h2>
-    <p class="pt-8 text-small">@lang('Im Laufe der Jahre konnte ich mich vor allem im Bereich der Frontend-Entwicklung etablieren. Mittlerweile schöpfe ich mein Potenzial viel besser in operativen und konzeptionellen Rollen der digitalen Produktentwicklung aus.')</p>
+    <p class="pt-8 text-small">@lang('Früher als Web– Entwickler tägig, ist mein Potenzial mittlerweile viel grösser in operativen und konzeptionellen Rollen digitaler Produktentwicklung.')</p>
     <p class="pt-8 text-small">@lang('Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne meinen CV als PDF anfordern.')</p>
     <p class="py-8 text-small">@lang('Ich freue mich auf Ihre Kontaktaufnahme.')</p>
 

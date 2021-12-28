@@ -62,16 +62,57 @@ new simpleParallax(image, {
     orientation: "down",
 });
 
-// background blured squares
-var bgImage = document.querySelectorAll('.blured-bg');
-var randomScale = getRandomFloat(0.2, 0.6, 1);
-new simpleParallax(bgImage, {
-    overflow: true,
-    // delay: randomDelay,
-    delay: 2,
-    scale: randomScale,
-    orientation: "up left",
-});
+import Sparticles from "sparticles";
+
+//
+// I'm hotlinking to some SVG images from flaticon.com
+// for use as the snowflakes. I hope that remains possible
+// especially with the below attribution;
+//
+// ❄ Icons made by Freepik from www.flaticon.com
+// ❄ https://www.flaticon.com/packs/snowflakes
+//
+  
+  let colors = {
+    color1: "rgba(0,0,0,1)",
+    color2: "rgba(255,255,255,1)",
+    color3: "rgba(56,235,228,1)",
+    color4: "rgba(235,80,204,1)",
+    color5: "rgba(87,0,199,1)"
+  };
+  
+  let options = {
+    alphaSpeed: 2,
+    alphaVariance: 10,
+    color: [colors.color1, colors.color2, colors.color3, colors.color4],
+    composition: "source-over",
+    count: 20,
+    direction: 45,
+    drift: 0,
+    glow: 0,
+    maxAlpha: .6,
+    maxSize: 34,
+    minAlpha: -0.2,
+    minSize: 13,
+    parallax: 1,
+    rotation: 0.3,
+    shape: ["triangle", "square", "circle"],
+    speed: 3,
+    style: "stroke",
+    twinkle: false,
+    xVariance: 0,
+    yVariance: 0,
+  };
+  
+  window.onload = function() {
+    initSparticles();
+  }
+  
+  window.initSparticles = function() {
+    var $main = document.getElementById("flying-shapes");
+    window.mySparticles = new Sparticles($main,options);
+  };  
+  
 
 /* 
  * Fix Height Issue with Mobile Browser Navigation Element

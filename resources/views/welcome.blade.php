@@ -1,17 +1,15 @@
 <x-layout>
     @section('content')
-        <div class="entry-fade fixed top-0 left-0 right-0 bottom-0 w-full opacity-100 z-50">
+        <div class="entry-fade absolute top-0 left-0 right-0 bottom-0 w-full opacity-100 z-50">
             <div class="absolute -top-full left-0 right-0 bottom-0 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
             <div class="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-black"></div>
         </div>
 
-        <x-blur />
-
         <x-entry />
 
-        {{-- <div id="intro-gradient" class="h-64 w-full relative z-10"></div> --}}
+        <div id="intro-gradient" class="h-64 w-full relative z-10"></div>
 
-        <div class="relative">
+        <div class="bg-black relative">
             <x-intro />
 
             <x-references />
@@ -37,7 +35,6 @@
 
         {{-- <div x-data="{ open: false }">
             <button @click="open = true">Open Dropdown</button>
-
             <ul
                 x-show="open"
                 @click.away="open = false"

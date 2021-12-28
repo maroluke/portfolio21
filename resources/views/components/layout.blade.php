@@ -8,6 +8,7 @@
 
 <body class="text-white antialiased lang-{{ App::currentLocale() }}">
     <div id="app">
+        <div id="flying-shapes"></div>
         {{-- @include('layouts.navigation') --}}
         <main x-data="{ open: false }">
             @yield('content')

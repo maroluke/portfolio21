@@ -38,3 +38,12 @@
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
+
+/**!
+ * Sparticles - Lightweight, High Performance Particles in Canvas
+ * @version 1.3.1
+ * @license MPL-2.0
+ * @author simeydotme <simey.me@gmail.com>
+ * @website http://sparticlesjs.dev
+ * @repository https://github.com/simeydotme/sparticles.git
+ */
