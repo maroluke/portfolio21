@@ -53,12 +53,30 @@ import simpleParallax from 'simple-parallax-js';
 // delete if nothing breaks
 // import { functions } from 'lodash';
 
-var image = document.querySelectorAll('.parallax');
-new simpleParallax(image, {
+var image1 = document.getElementsByClassName('parallax');
+new simpleParallax(image1, {
+    overflow: true,
+    delay: .6,
+	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+    scale: 1.4,
+    orientation: "up",
+});
+
+var image2 = document.getElementsByClassName('parallax-2');
+new simpleParallax(image2, {
     overflow: true,
     delay: .6,
 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
     scale: 1.3,
+    orientation: "down",
+});
+
+var image3 = document.getElementsByClassName('parallax-3');
+new simpleParallax(image3, {
+    overflow: true,
+    delay: .6,
+	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+    scale: 1.4,
     orientation: "down",
 });
 
@@ -74,34 +92,34 @@ import Sparticles from "sparticles";
 //
   
   let colors = {
-    color1: "rgba(0,0,0,1)",
-    color2: "rgba(255,255,255,1)",
+    color4: "rgba(255,255,255,1)",
     color3: "rgba(56,235,228,1)",
-    color4: "rgba(235,80,204,1)",
-    color5: "rgba(87,0,199,1)"
+    color2: "rgba(235,80,204,1)",
+    color1: "rgba(87,0,199,1)"
   };
   
   let options = {
-    alphaSpeed: 2,
+    alphaSpeed: 1,
     alphaVariance: 10,
     color: [colors.color1, colors.color2, colors.color3, colors.color4],
     composition: "source-over",
-    count: 20,
+    count: 13,
     direction: 45,
-    drift: 0,
-    glow: 0,
-    maxAlpha: .6,
+    drift: 30,
+    glow: 50,
+    maxAlpha: .4,
     maxSize: 34,
-    minAlpha: -0.2,
-    minSize: 13,
-    parallax: 1,
-    rotation: 0.3,
-    shape: ["triangle", "square", "circle"],
-    speed: 3,
-    style: "stroke",
+    minAlpha: .1,
+    minSize: 5,
+    parallax: 2,
+    rotation: .3,
+    shape: "random",
+    speed: .5,
+    style: "fill",
     twinkle: false,
     xVariance: 0,
     yVariance: 0,
+    bounce: false,
   };
   
   window.onload = function() {
@@ -109,9 +127,12 @@ import Sparticles from "sparticles";
   }
   
   window.initSparticles = function() {
-    var $main = document.getElementById("flying-shapes");
-    window.mySparticles = new Sparticles($main,options);
-  };  
+    let $main = document.getElementById('flying-shapes');
+    $main.style.opacity = 1;
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    window.mySparticles = new Sparticles($main, options, width, height);
+  };
   
 
 /* 
@@ -130,7 +151,7 @@ function marginFromTop(el, margin) {
 }
 
 setScreenHeight('entry');
-marginFromTop('intro-gradient', window.innerHeight);
+// marginFromTop('flying-shapes', window.innerHeight);
 
 // AJAX CV Request submit
 $('form').on('submit', function (e) {
@@ -184,7 +205,7 @@ $('form').on('submit', function (e) {
 });
 
 // reset CV request state
-$('.email-input').focus(function() {
+$('.email-input').on('focus', function() {
     $('.icon-submitted').fadeOut();
     $('.icon-error').fadeOut();
     $(':submit').removeClass('error success');
@@ -195,9 +216,3 @@ $('.email-input').focus(function() {
 $('#call-btn').on('click', function (e) {
     
 });
-
-// get random float between 0.8 - 2.0
-function getRandomFloat(min, max, decimals) {
-    const str = (Math.random() * (max - min) + min).toFixed(decimals);
-    return parseFloat(str);
-}

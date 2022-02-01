@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     './resources/views/**/*.blade.php',
     './resources/css/**/*.css',
     './resources/sass/**/*.scss',
@@ -23,6 +23,7 @@ module.exports = {
         'medium-x': '2.125rem',
         small: '1.5rem',
         tiny: '1.25rem',
+        'small-screen': '0.75rem',
       },
       colors: {
         'neon-pink': {

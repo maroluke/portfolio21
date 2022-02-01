@@ -1,17 +1,17 @@
-<section id="entry" class="px-6 flex gap-8 fixed top-0 bottom-0 left-0 right-0">
-    <div class="entry-bg top-0 right-0 bg-contain bg-no-repeat fixed w-full h-full xs:bg-cover sm:w-2/3 sm:justify-self-end"></div>
+<section id="entry" class="px-6 flex gap-8 relative">
+    <div class="entry-bg top-0 right-0 bg-contain sm:bg-cover bg-no-repeat fixed w-full max-w-xl h-full"></div>
 
-    <div class="flex flex-col text-white h-full justify-end w-full">
-        <div class="absolute top-0 left-0 px-6">
-            <x-lang-switch />
+    <div class="flex flex-col justify-between text-white md:items-center w-full z-10 max-w-screen-lg m-auto relative md:text-center md:container">
+        <div>
+            <h1 class="bg-clip-text neon neon-wide text-4xl leading-snug md:text-6xl">
+                <span class="block bg-clip-text text-transparent md:leading-loose">@lang('Apps, Usability, Design, Testing.')</span>
+                {{-- <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Lösungen für Web und Mobile.</span> --}}
+            </h1>
+
+            <p class="pt-8 text-small font-bolder max-w-screen-sm md:m-auto xs:text-tiny md:text-small">{{ __('Möchten Sie sich im Internet neu positionieren, Ihren Kunden ein online–Shopping–Erlebnis bieten, oder Arbeitsprozesse digitalisieren?') }}</p>
         </div>
 
-        <h1 class="bg-clip-text neon neon-wide md:w-2/3 text-4xl leading-snug">
-            <span class="block bg-clip-text text-transparent">@lang('Nutzerzentrierte Anwendungen für Web und Mobile')</span>
-            {{-- <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Lösungen für Web und Mobile.</span> --}}
-        </h1>
-
-        <div class="flex justify-between my-12">
+        <div id="swipe-down" class="flex justify-between items-center mt-12">
             <div class="opacity-30">
                 <span class="font-heading text-sm tracking-widest animate-swipe-y opacity-0 transform translate-y-full inline-block py-3">@lang('Swipe')</span>
             </div>

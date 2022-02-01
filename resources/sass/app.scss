@@ -23,10 +23,14 @@
     
         content: "";
 
-        @screen sm {
+        @screen xs {
             background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0086472) 6.67%, rgba(0, 0, 0, 0.03551) 13.33%, rgba(0, 0, 0, 0.0816599) 20%, rgba(0, 0, 0, 0.147411) 26.67%, rgba(0, 0, 0, 0.231775) 33.33%, rgba(0, 0, 0, 0.331884) 40%, rgba(0, 0, 0, 0.442691) 46.67%, rgba(0, 0, 0, 0.557309) 53.33%, rgba(0, 0, 0, 0.668116) 60%, rgba(0, 0, 0, 0.768225) 66.67%, rgba(0, 0, 0, 0.852589) 73.33%, rgba(0, 0, 0, 0.91834) 80%, rgba(0, 0, 0, 0.96449) 86.67%, rgba(0, 0, 0, 0.991353) 93.33%, #000000 100%);
         }
     }
+}
+
+.hide span {
+    animation-iteration-count: 1;
 }
 
 h1, h2, h3, h4 {
@@ -200,12 +204,7 @@ html {
 
 #flying-shapes {
     z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
+}
 
 @supports ( pointer-events: none ) {
     #flying-shapes {
@@ -258,6 +257,22 @@ html {
 
 .reference-text a {
     white-space: nowrap;
+}
+
+.swipe-down {
+    transition: visibility 1s;
+}
+
+.device-shadow {
+    filter: drop-shadow(25px -25px 20px #000);
+}
+
+.music-icon {
+    @apply border border-white opacity-25;
+
+    svg {
+        @apply fill-white;
+    }
 }
 
 @screen sm {

@@ -7,15 +7,15 @@
 
         <x-entry />
 
-        <div id="intro-gradient" class="h-64 w-full relative z-10"></div>
+        {{-- <div id="intro-gradient" class="h-64 w-full relative z-10"></div> --}}
 
         <div class="bg-black relative">
             <x-intro />
 
             <x-references />
 
-            <section class="full-image z-10 relative -my-20 sm:-my-64">
-                <img class="parallax" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lisboa">
+            <section class="full-image relative -my-20 sm:-my-64">
+                <img class="parallax-3" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lisboa">
             </section>
 
             <x-cta-support />
