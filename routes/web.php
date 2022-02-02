@@ -50,6 +50,6 @@ Route::get('/', function ($locale) {
 //     return Redirect::back()->width('email', $request);
 // });
 
-Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
+// Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
 
-Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
+// Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
