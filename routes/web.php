@@ -23,7 +23,7 @@ Route::get('/{locale}', function ($locale) {
     return redirect()->back();
 });
 
-Route::get('', function ($locale) {
+Route::get('/', function ($locale) {
     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     app()->setLocale($locale);
     session()->put($lang, $locale);
