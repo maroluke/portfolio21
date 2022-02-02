@@ -16,17 +16,17 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::get('/{locale}', function ($locale) {
-    // app()->setLocale($locale);
-    // session()->put('locale', $locale);
+Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+{
+	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+	Route::get('/', function()
+	{
+		return view('welcome');
+	});
 
-    // return redirect()->back();
-
-    if (! in_array($locale, ['en', 'de', 'hr', 'zh'])) {
-        abort(400);
-    }
-
-    App::setLocale($locale);
+	// Route::get('test',function(){
+	// 	return View::make('test');
+	// });
 });
 
 // Route::get('/', function ($locale) {
