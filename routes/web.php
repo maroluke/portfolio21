@@ -16,25 +16,41 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::group(
-    [
-        'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localeViewPath' ]
-    ], function () {
-        /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-        Route::get('/', function()
-        {
-            return view('welcome');
-        });
+// Route::get('/{locale?}', function ($locale = null) {
+//     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
+//         app()->setLocale($locale);
+//     }
+    
+//     return view('welcome');
+// });
 
-        // Route::get('test',function(){
-        // 	return View::make('test');
-        // });
-
-        Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
-
-        Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
+Route::get('/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
 });
+
+Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
+
+Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
+
+// Route::group(
+//     [
+//         'prefix' => LaravelLocalization::setLocale(),
+//         'middleware' => [ 'localeSessionRedirect', 'localeViewPath' ]
+//     ], function () {
+//         /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+//         Route::get('/', function()
+//         {
+//             return view('welcome');
+//         });
+
+//         // Route::get('test',function(){
+//         // 	return View::make('test');
+//         // });
+
+//         
+// });
 
 // Route::get('/', function ($locale) {
 //     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
