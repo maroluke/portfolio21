@@ -16,20 +16,26 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::get('/{locale}', function ($locale) {
-    app()->setLocale($locale);
-    session()->put('locale', $locale);
+Route::group(['prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [ 'localize' ]], function () {
+        /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+        Route::get('', function()
+        {
+            return view('welcome');
+        });
 
-    return redirect()->back();
+        // Route::get('test',function(){
+        // 	return View::make('test');
+        // });
 });
 
-Route::get('', function ($locale) {
-    $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-    app()->setLocale($locale);
-    session()->put($lang, $locale);
+// Route::get('/', function ($locale) {
+//     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+//     app()->setLocale($locale);
+//     session()->put($lang, $locale);
 
-    return redirect()->back();
-});
+//     return redirect()->back();
+// });
 
 // Route::group(
 // 	[
