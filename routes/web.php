@@ -17,10 +17,16 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 Route::get('/{locale}', function ($locale) {
-    app()->setLocale($locale);
-    session()->put('locale', $locale);
+    // app()->setLocale($locale);
+    // session()->put('locale', $locale);
 
-    return redirect()->back();
+    // return redirect()->back();
+
+    if (! in_array($locale, ['en', 'de', 'hr', 'zh'])) {
+        abort(400);
+    }
+
+    App::setLocale($locale);
 });
 
 // Route::get('/', function ($locale) {
