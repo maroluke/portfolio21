@@ -17,13 +17,12 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 Route::get('/{locale?}', function ($locale = null) {
+    $clientLocale = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
         app()->setLocale($locale);
-    } else {
-        $clientLocale = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-        if (!empty($clientLocale)) {
-            app()->setLocale($clientLocale);
-        }
+    } elseif (isset($clientLocale) && in_array($clientLocale, config('app.available_locales'))) {
+        app()->setLocale($clientLocale);
     }
 
     return view('welcome');
