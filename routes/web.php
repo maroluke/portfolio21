@@ -21,7 +21,7 @@ Route::get('/{locale?}', function ($locale = null) {
 
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
         app()->setLocale($locale);
-    } elseif (!empty($clientLocale) && in_array($clientLocale, config('app.available_locales'))) {
+    } elseif (($clientLocale) && (in_array($clientLocale, config('app.available_locales')))) {
         app()->setLocale($clientLocale);
     }
 
