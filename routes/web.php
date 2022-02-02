@@ -21,7 +21,9 @@ Route::get('/{locale?}', function ($locale = null) {
         app()->setLocale($locale);
     } else {
         $clientLocale = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-        app()->setLocale($clientLocale);
+        if (!empty($clientLocale)) {
+            app()->setLocale($clientLocale);
+        }
     }
 
     return view('welcome');
