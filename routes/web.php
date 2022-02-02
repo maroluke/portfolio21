@@ -16,23 +16,19 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-// Route::get('/{locale}', function ($locale) {
-//     app()->setLocale($locale);
-//     session()->put('locale', $locale);
+Route::get('/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
 
-//     return redirect()->back();
-// });
+    return redirect()->back();
+});
 
-// Route::get('', function ($locale) {
-//     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-//     app()->setLocale($locale);
-//     session()->put($lang, $locale);
+Route::get('', function ($locale) {
+    $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    app()->setLocale($locale);
+    session()->put($lang, $locale);
 
-//     return redirect()->back();
-// });
-
-Route::get('/', function () {
-    return view('welcome');
+    return redirect()->back();
 });
 
 // Route::group(
@@ -54,6 +50,6 @@ Route::get('/', function () {
 //     return Redirect::back()->width('email', $request);
 // });
 
-// Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
+Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
 
-// Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
+Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
