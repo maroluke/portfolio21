@@ -22,5 +22,5 @@
             {{-- <div class="grid grid-cols-2 gap-2">
                 <x-button route="home" class="flex-1 bg-white">Kontaktieren</x-button>
                 <x-button route="home" class="flex-1 bg-white">CV holen</x-button>
-            </div> --}}
+            </div> --}} 
 </section>
