@@ -16,8 +16,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::group(['prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localize' ]], function () {
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function () {
         /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
         Route::get('', function()
         {
@@ -27,6 +30,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
         // Route::get('test',function(){
         // 	return View::make('test');
         // });
+
+        Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
+
+        Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
 });
 
 // Route::get('/', function ($locale) {
@@ -55,7 +62,3 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 //     // Mail::send(new ForwardEmailInput($request));
 //     return Redirect::back()->width('email', $request);
 // });
-
-Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
-
-Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
