@@ -32,12 +32,25 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 //     return view('welcome');
 // });
 
+// Route::get('/{locale?}', function ($locale = null) {
+//     if(!isset($locale)) {
+//         $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+//     }
+//     app()->setLocale($locale);
+//     session()->put('locale', $locale);
+//     return view('welcome');
+// });
+
 Route::get('/{locale?}', function ($locale = null) {
-    if(!isset($locale)) {
-        $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    if (isset($locale) && in_array($locale, config('app.available_locales'))) {
+        App::setLocale($locale);
     }
-    app()->setLocale($locale);
-    session()->put('locale', $locale);
+
+    if (!isset($locale) && in_array($locale, config('app.available_locales'))) {
+        $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+        App::setLocale($locale);
+    }
+
     return view('welcome');
 });
 
