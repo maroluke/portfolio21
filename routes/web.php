@@ -44,11 +44,6 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 Route::get('/{locale?}', function ($locale = null) {
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
         App::setLocale($locale);
-    } else {
-        $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-        if (in_array($locale, config('app.available_locales'))) {
-            App::setLocale($locale);
-        }
     }
 
     return view('welcome');
