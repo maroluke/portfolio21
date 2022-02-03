@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\CLocale;
+use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\CVRequestController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
@@ -17,7 +17,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::get('/{locale?}', [CLocale::class, 'setLocale']);
+Route::get('/{locale?}', [LocaleController::class, 'setLocale']);
 
 // Route::get('/{locale?}', function ($locale = null) {
 //     $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);

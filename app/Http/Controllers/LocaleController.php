@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CLocale extends Controller
+class LocaleController extends Controller
 {
-    public function setLocale($locale) {
+    public function setLocale(Request $request, $locale) {
         $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 
         if (!empty($locale) && in_array($locale, config('app.available_locales'))) {
