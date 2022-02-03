@@ -33,8 +33,6 @@ task('build', function () {
     run('cd {{release_path}} && build');
 });
 
-task('artisan:route:cache', artisan('route:cache'));
-
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
