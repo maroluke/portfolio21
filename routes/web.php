@@ -18,17 +18,26 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 // Route::get('/{locale?}', [LocaleController::class, 'setLocale']);
+// Route::get('/{locale?}', function ($locale = null) {
+//     $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+
+//     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
+//         app()->setLocale($locale);
+//         session()->put('locale', $locale);
+//     } elseif (in_array($clientLocale, config('app.available_locales'))) {
+//         app()->setLocale($clientLocale);
+//         session()->put('locale', $clientLocale);
+//     }
+
+//     return view('welcome');
+// });
+
 Route::get('/{locale?}', function ($locale = null) {
-    $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-
-    if (isset($locale) && in_array($locale, config('app.available_locales'))) {
-        app()->setLocale($locale);
-    } elseif (in_array($clientLocale, config('app.available_locales'))) {
-        app()->setLocale($clientLocale);
-    } else {
-        app()->setLocale(config('app.fallback_locale'));
+    if(!isset($locale)) {
+        $locale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
     }
-
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
     return view('welcome');
 });
 
