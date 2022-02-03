@@ -17,7 +17,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::get('{locale?}', [CLocale::class, 'setLocale']);
+Route::get('/{locale?}', [CLocale::class, 'setLocale']);
 
 // Route::get('/{locale?}', function ($locale = null) {
 //     $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
