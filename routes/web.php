@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CLocale;
 use App\Http\Controllers\CVRequestController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
@@ -16,17 +17,19 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::get('/{locale?}', function ($locale = null) {
-    $clientLocale = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+Route::get('{locale?}', [CLocale::class, 'setLocale']);
 
-    if (isset($locale) && in_array($locale, config('app.available_locales'))) {
-        app()->setLocale($locale);
-    } elseif (in_array($clientLocale, config('app.available_locales'))) {
-        app()->setLocale($clientLocale);
-    }
+// Route::get('/{locale?}', function ($locale = null) {
+//     $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 
-    return view('welcome');
-});
+//     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
+//         app()->setLocale($locale);
+//     } elseif (in_array($clientLocale, config('app.available_locales'))) {
+//         app()->setLocale($clientLocale);
+//     }
+
+//     return view('welcome');
+// });
 
 // Route::get('/{locale}', function ($locale) {
 //     app()->setLocale($locale);
