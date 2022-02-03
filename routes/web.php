@@ -51,7 +51,7 @@ Route::get('/{locale?}', function ($locale = null) {
         }
     }
 
-    return view('welcome', ['locale' => $locale]);
+    return view('welcome');
 });
 
 // Route::get('/{locale?}', function ($locale = null) {

@@ -5,10 +5,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/slr3uaj.css">
 </head>
 
-@php
-    var_dump($locale);
-@endphp
-
 <body class="text-white antialiased lang-{{ App::currentLocale() }}">
     <div id="app">
         <div id="flying-shapes" class="fixed h-full w-full"></div>
