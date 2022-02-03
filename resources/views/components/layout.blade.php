@@ -5,11 +5,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/slr3uaj.css">
 </head>
 
-@php
-    $clientLocale = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
-    var_dump($clientLocale);
-@endphp
-
 <body class="text-white antialiased lang-{{ App::currentLocale() }}">
     <div id="app">
         <div id="flying-shapes" class="fixed h-full w-full"></div>
