@@ -41,17 +41,24 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 //     return view('welcome');
 // });
 
-Route::get('/{locale?}', function ($locale = null) {
-    $clientLocale = 'hr';
+Route::get('/{locale?}', function ($locale = null, $langs = null) {
+    if ( !empty( $_SERVER[ 'HTTP_ACCEPT_LANGUAGE' ] )) {
+        $langs = explode( ',', $_SERVER['HTTP_ACCEPT_LANGUAGE'] );
+    }
 
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
         App::setLocale($locale);
-    } else if (in_array($clientLocale, config('app.available_locales'))) {
-        App::setLocale($clientLocale);
-        session()->put('locale', $clientLocale);
+    } else {
+        foreach ( $langs as $lang ){
+			$lang = substr( $lang, 0, 2 );
+			if( in_array( $lang, config('app.available_locales') ) ) {
+				App::setLocale($lang);
+                session()->put('locale', $lang);
+			}
+        }
     }
 
-    return view('welcome');
+    return view('welcome', ['local']);
 });
 
 // Route::get('/{locale?}', function ($locale = null) {
