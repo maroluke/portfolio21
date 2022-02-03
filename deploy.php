@@ -36,9 +36,9 @@ task('build', function () {
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
-task('deploy:done', function () {
-    artisan('route:cache');
-});
+task('deploy:done', [
+    'artisan:route:cache',
+]);
 
 after('deploy', 'deploy:done');
 
