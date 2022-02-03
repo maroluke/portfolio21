@@ -42,7 +42,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 // });
 
 Route::get('/{locale?}', function ($locale = null) {
-    $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    $clientLocale = 'hr';
 
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
         App::setLocale($locale);
