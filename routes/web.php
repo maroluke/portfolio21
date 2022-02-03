@@ -46,14 +46,13 @@ Route::get('/{locale?}', function ($locale = null) {
 
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
         App::setLocale($locale);
-    } elseif (in_array($clientLocale, config('app.available_locales'))) {
+    }
+    
+    if (in_array($clientLocale, config('app.available_locales'))) {
         App::setLocale($clientLocale);
     }
 
-    return view('welcome', [
-        'clientLocale' => $clientLocale,
-        'locale' => $locale]
-    );
+    return view('welcome');
 });
 
 // Route::get('/{locale?}', function ($locale = null) {
