@@ -41,7 +41,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 //     return view('welcome');
 // });
 
-Route::get('/{locale?}', function ($locale = null) {
+Route::get('/{locale?}', function ($locale = null, $clientLocale = null) {
     $clientLocale = locale_accept_from_http($_SERVER['HTTP_ACCEPT_LANGUAGE']);
 
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
@@ -50,7 +50,10 @@ Route::get('/{locale?}', function ($locale = null) {
         App::setLocale($clientLocale);
     }
 
-    return view('welcome', ['clientLocale', $clientLocale]);
+    return view('welcome', [
+        'clientLocale' => $clientLocale,
+        'locale' => $locale]
+    );
 });
 
 // Route::get('/{locale?}', function ($locale = null) {

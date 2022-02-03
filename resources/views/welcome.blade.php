@@ -1,3 +1,8 @@
+@php
+    var_dump( $clientLocale );
+    var_dump( $locale );
+@endphp
+
 <x-layout>
     @section('content')
         <div class="entry-fade absolute top-0 left-0 right-0 bottom-0 w-full opacity-100 z-50">
