@@ -46,10 +46,9 @@ Route::get('/{locale?}', function ($locale = null) {
 
     if (isset($locale) && in_array($locale, config('app.available_locales'))) {
         App::setLocale($locale);
-    }
-    
-    if (!isset($locale) && in_array($clientLocale, config('app.available_locales'))) {
+    } else if (in_array($clientLocale, config('app.available_locales'))) {
         App::setLocale($clientLocale);
+        session()->put('locale', $clientLocale);
     }
 
     return view('welcome');
