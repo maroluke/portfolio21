@@ -36,6 +36,10 @@ task('build', function () {
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
+after('deploy', function () {
+    task('artisan:route:cache', artisan('route:cache'));
+});
+
 // before('deploy', function () {
 
 // });
