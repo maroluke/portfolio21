@@ -7,7 +7,7 @@
     <form action="POST" class="flex" data-context="submitCvEmail">
         {{ csrf_field() }}
         <div class="flex-grow mr-2">
-            <input id="email-cv" class="email-input border-2 border-neon-blue border-opacity-75 shadow-button bg-neon-blue bg-opacity-10 hover:border-opacity-100 focus:outline-none focus:border-opacity-100 focus:bg-white focus:bg-opacity-75" type="email" name="email" placeholder="@lang('Ihre E–Mail Adresse')" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+            <input id="email-cv" class="email-input border-2 border-neon-blue border-opacity-75 shadow-button bg-neon-blue bg-opacity-10 hover:border-opacity-100 focus:outline-none focus:border-opacity-100 focus:bg-black focus:bg-opacity-75" type="email" name="email" placeholder="@lang('Ihre E–Mail Adresse')" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
         </div>
 
         <div class="flex-shrink">
@@ -32,7 +32,7 @@
     </form>
 
     <div class="relative h-6">
-        <p class="messages text-sm pt-2 opacity-50">@lang('E-Mail wird nicht gespeichert')</p>
+        <p class="messages text-sm pt-2 opacity-50">@lang('Ihre E-Mail Adresse wird nicht erfasst.')</p>
     </div>
 
     <p class="pt-8 text-small">@lang('Ich freue mich auf Ihre Kontaktaufnahme.')</p>

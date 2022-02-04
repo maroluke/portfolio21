@@ -14,8 +14,8 @@
 
             <x-references />
 
-            <section class="full-image relative -my-20 sm:-my-64">
-                <img class="parallax-3" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lisboa">
+            <section class="relative -my-24 xs:-mt-64 xs:-mb-24">
+                <img class="parallax-2 self-center" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lisboa">
             </section>
 
             <x-cta-support />

@@ -56,27 +56,18 @@ import simpleParallax from 'simple-parallax-js';
 var image1 = document.getElementsByClassName('parallax');
 new simpleParallax(image1, {
     overflow: true,
-    delay: .6,
+    delay: .3,
 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.4,
+    scale: 1.1,
     orientation: "up",
 });
 
 var image2 = document.getElementsByClassName('parallax-2');
 new simpleParallax(image2, {
     overflow: true,
-    delay: .6,
+    delay: .3,
 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.3,
-    orientation: "down",
-});
-
-var image3 = document.getElementsByClassName('parallax-3');
-new simpleParallax(image3, {
-    overflow: true,
-    delay: .6,
-	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.4,
+    scale: 1.2,
     orientation: "down",
 });
 
@@ -103,15 +94,15 @@ import Sparticles from "sparticles";
     alphaVariance: 10,
     color: [colors.color1, colors.color2, colors.color3, colors.color4],
     composition: "source-over",
-    count: 13,
+    count: 8,
     direction: 45,
-    drift: 30,
+    drift: 0,
     glow: 50,
     maxAlpha: .4,
     maxSize: 34,
     minAlpha: .1,
     minSize: 5,
-    parallax: 2,
+    parallax: 1.3,
     rotation: .3,
     shape: "random",
     speed: .5,

@@ -1,4 +1,4 @@
-<section id="portrait" class="px-6 py-10 z-20 relative max-w-lg mx-auto">
+<section id="portrait" class="px-6 py-10 z-20 relative max-w-sm mx-auto">
     <div class="flex gap-2 justify-between">
         <div class="relative flex-grow">
             <img 

@@ -35,6 +35,6 @@
     </form>
 
     <div class="relative h-6">
-        <p class="messages text-sm pt-2 opacity-50">@lang('Sichere Datenübertragung')</p>
+        <p class="messages text-sm pt-2 opacity-50">@lang('Ihre E-Mail Adresse wird nicht erfasst.')</p>
     </div>
 </section>

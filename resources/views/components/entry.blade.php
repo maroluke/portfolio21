@@ -1,13 +1,13 @@
 <section id="entry" class="px-6 flex gap-8 relative">
     <div class="entry-bg top-0 right-0 bg-contain sm:bg-cover bg-no-repeat fixed w-full max-w-xl h-full"></div>
 
-    <div class="flex flex-col justify-between text-white md:items-center w-full z-10 max-w-screen-lg m-auto relative md:text-center md:container">
+    <div class="flex flex-col justify-between text-white md:items-center w-full z-10 max-w-screen-xs m-auto relative md:text-center">
         <div class="py-6">
             <x-lang-switch />
         </div>
 
         <h1 class="bg-clip-text neon neon-wide text-4xl leading-snug md:text-6xl">
-            <span class="block bg-clip-text text-transparent md:leading-loose">@lang('Apps, Usability, Design, Testing.')</span>
+            <span class="block bg-clip-text text-transparent md:leading-snug">@lang('Apps, Usability, Design, Testing.')</span>
             {{-- <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Lösungen für Web und Mobile.</span> --}}
         </h1>
 

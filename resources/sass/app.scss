@@ -111,7 +111,7 @@ p {
 }
 
 input {
-    @apply font-bold text-base tracking-wide text-gray-400 py-3 px-6 w-full rounded-xl;
+    @apply font-bold text-base tracking-wide text-gray-400 py-3 px-6 w-full rounded-xl focus:text-neon-blue-dark focus:bg-sky-500/50;
 
     height: 50px;
 }
@@ -264,8 +264,13 @@ html {
 }
 
 .device-shadow {
-    filter: drop-shadow(25px -25px 20px #000);
+    filter: drop-shadow(25px -25px 20px rgba(0, 0, 0, .8));
 }
+
+.bg-shadow {
+    filter: drop-shadow(25px -25px 20px rgba(0, 0, 0, .5));
+}
+
 
 .music-icon {
     @apply border border-white opacity-25;
