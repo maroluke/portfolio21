@@ -1,11 +1,16 @@
 import './bootstrap';
+import Alpine from 'alpinejs';
+import Plausible from 'plausible-tracker';
+import Swiper from 'swiper';
+import 'swiper/scss';
+import simpleParallax from 'simple-parallax-js';
+import Sparticles from "sparticles";
 
 /* 
  * Initialize Alpine JS
  * https://github.com/alpinejs/alpine/
  */
 
-import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 
@@ -14,7 +19,6 @@ Alpine.start();
  * https://github.com/plausible/
  */
 
-import Plausible from 'plausible-tracker';
 const { enableAutoPageviews } = Plausible({
   domain: 'markolukac.ch'
 });
@@ -26,12 +30,6 @@ enableAutoPageviews();
  * Initialize Swiper JS
  * https://github.com/nolimits4web/swiper
  */
-
-// core version:
-import Swiper from 'swiper';
-
-// import Swiper styles
-import 'swiper/scss';
 
 var w = window.innerWidth;
 if (w < 640) {
@@ -47,8 +45,6 @@ if (w < 640) {
  * Initialize Simple Parallax
  * https://github.com/geosigno/simpleParallax.js/
  */
-
-import simpleParallax from 'simple-parallax-js';
 
 // delete if nothing breaks
 // import { functions } from 'lodash';
@@ -71,7 +67,14 @@ new simpleParallax(image2, {
     orientation: "down",
 });
 
-import Sparticles from "sparticles";
+var image3 = document.getElementsByClassName('parallax-3');
+new simpleParallax(image3, {
+    overflow: true,
+    delay: .3,
+	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+    scale: 1.4,
+    orientation: "up",
+});
 
 //
 // I'm hotlinking to some SVG images from flaticon.com

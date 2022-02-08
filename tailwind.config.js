@@ -23,6 +23,7 @@ module.exports = {
         'medium-x': '2.125rem',
         small: '1.5rem',
         tiny: '1.25rem',
+        micro: '0.75rem',
         'small-screen': '0.75rem',
       },
       colors: {
@@ -32,9 +33,9 @@ module.exports = {
           dark: '#EB50CC',
         },
         'neon-blue': {
-          light: '#4499EB',
+          light: '#48A2F7',
           DEFAULT: '#4499EB',
-          dark: '#4499EB',
+          dark: '#3D89D1',
         },
         'neon-laguna': {
           dark: '#38EBE4',
@@ -50,6 +51,10 @@ module.exports = {
           dark: '#EB645B',
           DEFAULT: '#EB645B',
           light: '#EB645B',
+        },
+        'dirty-white': {
+          dark: '#F7F8FC',
+          DEFAULT: '#F7F8FC',
         },
       },
       borderRadius: {
@@ -102,9 +107,12 @@ module.exports = {
         }
       },
       animation: {
-          'swipe-y': 'swipe-y 5s cubic-bezier(0, 0.55, 0.45, 1) 1s infinite',
-          'swipe-x-out': 'swipe-x-out 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0s infinite',
-          'swipe-x-in': 'swipe-x-in 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0s infinite',
+        'swipe-y': 'swipe-y 5s cubic-bezier(0, 0.55, 0.45, 1) 1s infinite',
+        'swipe-x-out': 'swipe-x-out 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0s infinite',
+        'swipe-x-in': 'swipe-x-in 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0s infinite',
+      },
+      maxWidth: {
+        'xxs': '16rem',
       }
     },
     screens: {

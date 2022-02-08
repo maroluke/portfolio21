@@ -14,8 +14,8 @@
 
             <x-references />
 
-            <section class="relative -my-24 xs:-mt-64 xs:-mb-24">
-                <img class="parallax-2 self-center" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lisboa">
+            <section class="box-shadow relative sm:z-30 -my-24 xs:-mt-64 xs:-mb-24 sm:-mt-24 sm:mb-12 sm:w-8/12 sm:h-52 sm:overflow-hidden sm:rounded sm:mx-auto sm:flex sm:items-center">
+                <img class="parallax-3 sm:w-full" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lisboa">
             </section>
 
             <x-cta-support />
@@ -27,8 +27,6 @@
             <x-cta-employers />
 
             <x-portrait />
-
-            <x-nl-subscribe />
 
             <x-footer />
         </div>

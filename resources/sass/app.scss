@@ -177,7 +177,7 @@ button {
 }
 
 #footer {
-    @apply bg-no-repeat bg-bottom bg-black bg-contain;
+    @apply bg-no-repeat bg-bottom bg-contain sm:bg-cover bg-opacity-10;
 
     background-image: url('../media/repository.png');
 
@@ -230,17 +230,17 @@ html {
 }
 
 .animate-swipe-x {
-    @apply font-heading text-sm tracking-wide relative w-24 text-right;
+    @apply font-heading text-sm tracking-wide relative w-24 ml-6;
 }
 
 .animate-swipe-x::before {
-    @apply animate-swipe-x-out absolute w-full h-full top-0 right-6 block;
+    @apply animate-swipe-x-out absolute w-full h-full top-0 left-0 block;
 
     content: "Swipe";
 }
 
 .animate-swipe-x::after {
-    @apply animate-swipe-x-in absolute w-full h-full top-0 right-6 block;
+    @apply animate-swipe-x-in absolute w-full h-full top-0 left-0 block;
 
     content: "Swipe";
 }
@@ -267,6 +267,14 @@ html {
     filter: drop-shadow(25px -25px 20px rgba(0, 0, 0, .8));
 }
 
+.memoji-sticker {
+    filter: drop-shadow(2px -2px 2px rgba(0, 0, 0, .4));
+}
+
+.box-shadow {
+    filter: drop-shadow(0 -10px 20px rgba(0, 0, 0, .4));
+}
+
 .bg-shadow {
     filter: drop-shadow(25px -25px 20px rgba(0, 0, 0, .5));
 }
@@ -285,19 +293,19 @@ html {
         overflow: visible !important;
     }
 
-    .swiper-wrapper .swiper-slide:nth-of-type(even) {
-        .image {
-            @apply order-2;
+    // .swiper-wrapper .swiper-slide:nth-of-type(even) {
+    //     .image {
+    //         @apply order-2;
 
-            img {
-                @apply rounded-l rounded-r-none;
-            }
-        }
+    //         img {
+    //             @apply rounded-l rounded-r-none;
+    //         }
+    //     }
 
-        .reference-text {
-            @apply pr-5 pl-20;
-        }
-    }
+    //     .reference-text {
+    //         @apply pr-5 pl-20;
+    //     }
+    // }
 }
 
 @import "tailwindcss/components";

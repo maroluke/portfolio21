@@ -1,8 +1,7 @@
 <section id="footer" class="z-20 relative">
-    <div class="max-w-lg mx-auto">
-        <div class="bg-white h-px opacity-25 mx-6"></div>
-
-        <div class="py-10 flex flex-col opacity-50 mx-6">
+    <div class="absolute left-0 top-0 w-full h-full bg-black/50"></div>
+    <div class="mx-auto sm:container xl:max-w-screen-lg">
+        <div class="py-10 opacity-50 mx-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20">
             <div class="text-base leading-6">
                 <h4 class="uppercase tracking-wider mb-2 ">Credits</h4>
                 
@@ -35,7 +34,7 @@
                 </div>
             </div> --}}
 
-            <div class="text-base pt-12 leading-6 ">
+            <div class="text-base leading-6 ">
                 <h4 class="uppercase tracking-wider mb-2">Framework</h4>
 
                 <div class="flex flex-wrap">
@@ -61,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="text-base pt-12 leading-6">
+            <div class="text-base leading-6">
                 <h4 class="uppercase tracking-wider mb-2 ">Runs on a Droplet by</h4>
 
                 <div class="flex flex-wrap">
@@ -71,14 +70,14 @@
                 </div>
             </div>
 
-            <div class="pt-12 leading-6">
+            <div class="leading-6">
                 <div class="text-tiny ">
                     <p>Last update: December 8, 2021</p>
                     <p>Public github repository: <a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
                 </div>
             </div>
 
-            <div class="text-base py-12 leading-6">
+            <div class="text-base leading-6">
                 <div class="">
                     <p class=""><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
                     <br />
