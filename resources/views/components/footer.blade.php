@@ -1,7 +1,7 @@
 <section id="footer" class="z-20 relative">
     <div class="absolute left-0 top-0 w-full h-full bg-black/50"></div>
     <div class="mx-auto sm:container xl:max-w-screen-lg">
-        <div class="py-10 opacity-50 mx-6 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-20 md:grid-cols-3">
+        <div class="py-10 mx-6 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-20 md:grid-cols-3">
             <div class="text-base leading-6">
                 <h4 class="uppercase tracking-wider mb-2 ">Credits</h4>
                 
@@ -34,59 +34,56 @@
                 </div>
             </div> --}}
 
-            <div class="text-base leading-6 ">
-                <h4 class="uppercase tracking-wider mb-2">Framework</h4>
+            <div>
+                <div class="text-base leading-6">
+                    <h4 class="uppercase tracking-wider mb-2">Framework</h4>
 
-                <div class="flex flex-wrap">
-                    <a href="https://github.com/laravel/framework" target="_blank" class="flex items-center w-1/3 h-12">
-                        <x-icon-logo-laravel class="hover:opacity-75"/>
-                    </a>
+                    <div class="flex flex-wrap">
+                        <a href="https://github.com/laravel/framework" target="_blank" class="flex items-center w-1/3 h-12">
+                            <x-icon-logo-laravel class="hover:opacity-75"/>
+                        </a>
 
-                    <a href="https://github.com/alpinejs/alpine/" target="_blank" class="flex items-center w-1/3 h-12">
-                        <x-icon-logo-alpinejs class="hover:opacity-75"/>
-                    </a>
+                        <a href="https://github.com/alpinejs/alpine/" target="_blank" class="flex items-center w-1/3 h-12">
+                            <x-icon-logo-alpinejs class="hover:opacity-75"/>
+                        </a>
 
-                    <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="flex items-center w-1/3 h-12">
-                        <x-icon-logo-tailwindcss class="hover:opacity-75"/>
-                    </a>
+                        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="flex items-center w-1/3 h-12">
+                            <x-icon-logo-tailwindcss class="hover:opacity-75"/>
+                        </a>
+                        
+                        <a href="https://github.com/deployphp/deployer" target="_blank" class="flex items-center w-1/3 h-12">
+                            <x-icon-logo-deployer class="hover:opacity-75"/>
+                        </a>
+
+                        <a href="https://github.com/nolimits4web/swiper" target="_blank" class="flex items-center w-1/3 h-12">
+                            <x-icon-logo-swiperjs class="hover:opacity-75"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-base leading-6 mt-8">
+                    <h4 class="uppercase tracking-wider mb-2 ">Runs on a Droplet by</h4>
                     
-                    <a href="https://github.com/deployphp/deployer" target="_blank" class="flex items-center w-1/3 h-12">
-                        <x-icon-logo-deployer class="hover:opacity-75"/>
-                    </a>
-
-                    <a href="https://github.com/nolimits4web/swiper" target="_blank" class="flex items-center w-1/3 h-12">
-                        <x-icon-logo-swiperjs class="hover:opacity-75"/>
-                    </a>
+                    <div class="flex flex-wrap">
+                        <a href="https://www.digitalocean.com/products/droplets/" class="flex items-center w-1/3 h-12">
+                            <x-icon-logo-digitalocean class="hover:opacity-75"/>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="text-base leading-6">
-                <h4 class="uppercase tracking-wider mb-2 ">Runs on a Droplet by</h4>
+            <img class="memoji-sticker w-2/3 max-w-xxs pt-5 mx-auto sm:w-5/6 lg:mx-0" src="{{ asset('media/memoji-sticker-05.png') }}" alt="Memoji Sticker">
+        </div>
 
-                <div class="flex flex-wrap">
-                    <a href="https://www.digitalocean.com/products/droplets/" class="flex items-center w-1/3 h-12">
-                        <x-icon-logo-digitalocean class="hover:opacity-75"/>
-                    </a>
-                </div>
+        <div class="py-10 opacity-50 mx-6 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-20 md:grid-cols-3">
+            <div class="text-base leading-6 flex flex-col gap-4">
+                <p class="flex-1">Zürich – Switzerland<br />© 2021 Marko Lukac<br /><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
+                <p class="flex-1">Lukac Interactive<br />CHE-494.796.673</p>
             </div>
 
-            <div class="leading-6">
-                <div class="text-tiny ">
-                    <p>Last update: December 8, 2021</p>
-                    <p>Public github repository: <a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
-                </div>
-            </div>
-
-            <div class="text-base leading-6">
-                <div class="">
-                    <p class=""><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
-                    <br />
-                    <p class="">Lukac Interactive</p>
-                    <p class="">CHE-494.796.673</p>
-                    <br />
-                    <p class="">Zürich – Switzerland</p>
-                    <p class="">© 2021 Marko Lukac</p>
-                </div>
+            <div class="text-tiny leading-6">
+                <p>Last update: December 8, 2021</p>
+                <p>Public github repository: <a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">maroluke/portfolio21</a></p>
             </div>
         </div>
     </div>
