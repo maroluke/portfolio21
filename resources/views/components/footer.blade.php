@@ -1,7 +1,7 @@
 <section id="footer" class="z-20 relative">
     <div class="absolute left-0 top-0 w-full h-full bg-black/50"></div>
     <div class="mx-auto sm:container xl:max-w-screen-lg">
-        <div class="py-10 opacity-50 mx-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20">
+        <div class="py-10 opacity-50 mx-6 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-20 md:grid-cols-3">
             <div class="text-base leading-6">
                 <h4 class="uppercase tracking-wider mb-2 ">Credits</h4>
                 

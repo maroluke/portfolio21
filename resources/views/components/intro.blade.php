@@ -5,7 +5,7 @@
             {{-- <p class="mt-10 text-small xs:text-tiny">{{ __('Als erfahrener Softwareentwickler realisiere ich individuelle, nutzerzentrierte Applikationen für Web und Mobile.') }}</p> --}}
             <div class="sm:w-2/6 flex flex-col justify-between">
                 <h2>{{ __('Hallo,') }} {{ __('mein Name ') }} {{ __('ist ') }}<span class='bg-clip-text neon neon-flat'>Marko</span></h2>
-                <img class="memoji-sticker w-2/3 mx-auto max-w-xxs sm:w-5/6 pt-5" src="{{ asset('media/memoji-sticker-03.png') }}" alt="Memoji Sticker">
+                <img class="memoji-sticker w-2/3 max-w-xxs pt-5 mx-auto sm:w-5/6 lg:mx-0" src="{{ asset('media/memoji-sticker-03.png') }}" alt="Memoji Sticker">
             </div>
             
             <div class="sm:w-4/6 md:w-3/6">
