@@ -188,7 +188,7 @@ $('form').on('submit', function (e) {
             // get errors
             var errors = JSON.parse(error.responseText);
             // store them
-            var errorMessage = errors.errors.email;
+            var errorMessage = errors.email;
             // display error messages if message element is empty
             $('.messages').addClass('text-neon-red').html(errorMessage).fadeIn();
             $(':submit').addClass('error');
