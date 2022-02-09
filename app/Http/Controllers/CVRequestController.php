@@ -14,7 +14,7 @@ class CvRequestController extends Controller
             'email' => 'required|email',
         ]);
 
-        $email = 'markolukac@icloud.com';
+        $email = 'hello@markolukac.ch';
         $title = '';
 
         if ($request->path() === 'submitCvEmail') {

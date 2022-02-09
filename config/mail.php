@@ -84,7 +84,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'markolukac@icloud.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@markolukac.ch'),
         'name' => env('MAIL_FROM_NAME', 'Portfolio 21'),
     ],
 
