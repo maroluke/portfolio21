@@ -149,7 +149,7 @@ setScreenHeight('entry');
 
 // AJAX CV Request submit
 $('form').on('submit', function (e) {
-    $('.icon-send').fadeOut(0);
+    $('.icon-send', this).fadeOut(0);
 
     e.preventDefault(); // prevent the form submit
 
@@ -157,41 +157,49 @@ $('form').on('submit', function (e) {
     // create the FormData object from the form context (this),
     // that will be present, since it is a form event
     var formData = new FormData(this);
+
+    let iconSubmitted = $('.icon-submitted', this);
+    let iconError = $('.icon-error', this);
+    let message = $('.messages', this);
+    let btnSubmit = $('.btn-submit', this);
+    let iconLoading = $('.icon-loading', this)
+    let emailInput = $('.email-input', this);
     // build the ajax call
     $.ajax({
         url: url,
         method: 'POST',
         data: formData,
         beforeSend: function () {
-            $('.icon-submitted').fadeOut();
-            $('.icon-error').fadeOut();
-            $('.messages').fadeOut();
-            $(':submit').removeClass('error success');
-            $('.messages').removeClass('text-neon-green text-neon-red');
-            $('.icon-loading').fadeIn();
+            $(iconSubmitted).fadeOut();
+            $(iconError).fadeOut();
+            $(message).fadeOut().removeClass('text-neon-green text-neon-red');
+            $(btnSubmit).removeClass('error success').addClass('bg-opacity-75 hover:bg-opacity-75');
+            $(iconLoading).fadeIn();
         },
         complete: function () {
-            $('.icon-loading').fadeOut();
-            $('.email-input').html('');
+            $(iconLoading).fadeOut();
+            $(emailInput).html('');
         },
         success: function (response) {
             // handle success response
-            $('.icon-submitted').fadeIn();
+            $(iconSubmitted).fadeIn();
 
-            $('.messages').addClass('text-neon-green').html('Herzlichen Dank!').fadeIn();
-            $(':submit').addClass('success');
+            $(message).addClass('text-neon-green').html('Herzlichen Dank!').fadeIn();
+            $(btnSubmit).addClass('success');
+
+            console.log(response);
         },
         error: function (error) {
             // handle error response
-            $('.icon-error').fadeIn(0);
+            $(iconError).fadeIn(0);
             
             // get errors
             var errors = JSON.parse(error.responseText);
             // store them
             var errorMessage = errors.email;
             // display error messages if message element is empty
-            $('.messages').addClass('text-neon-red').html(errorMessage).fadeIn();
-            $(':submit').addClass('error');
+            $(message).addClass('text-neon-red').html(errorMessage).fadeIn();
+            $(btnSubmit).addClass('error');
         },
         contentType: false,
         processData: false
@@ -200,11 +208,11 @@ $('form').on('submit', function (e) {
 
 // reset CV request state
 $('.email-input').on('focus', function() {
-    $('.icon-submitted').fadeOut();
-    $('.icon-error').fadeOut();
-    $(':submit').removeClass('error success');
-    $('.messages').removeClass('text-neon-green text-neon-red');
-    $('.icon-send').fadeIn();
+    $('.icon-submitted', this).fadeOut();
+    $('.icon-error', this).fadeOut();
+    $('.btn-submit', this).removeClass('error success bg-opacity-75 hover:bg-opacity-75');
+    $('.messages', this).removeClass('text-neon-green text-neon-red').html('Die E–Mail Adresse wird nicht erfasst.');
+    $('.icon-send', this).fadeIn();
 });
 
 $('#call-btn').on('click', function (e) {

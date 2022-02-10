@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <div class="sm:order-1 md:w-4/6 lg:w-2/6">
+        <div class="pt-10 sm:order-1 md:w-4/6 lg:w-2/6">
             @if (App::isLocale('zh'))
                 <h2>您对其他令人兴奋的项目感到<br /><span class="bg-clip-text neon neon-flat">好奇吗</span>？</h2>
             @else
@@ -27,7 +27,7 @@
 
             <p class="py-8 text-small">@lang('Es würde mich freuen, Sie mit Neuigkeiten über meine Arbeit auf dem Laufenden zu halten.')</p>
 
-            <form method="POST" class="flex" data-context="submitNlEmail">
+            <form method="POST" class="flex flex-wrap" data-context="submitNlEmail">
                 {{ csrf_field() }}
                 <div class="flex-grow mr-2">
                     <input id="email-nl" class="email-input border-2 border-neon-blue border-opacity-75 shadow-button bg-neon-blue bg-opacity-10 hover:border-opacity-100 hover:bg-opacity-20 focus:outline-none focus:border-opacity-100 focus:bg-white focus:bg-opacity-75" type="email" name="email" placeholder="@lang('Ihre E–Mail Adresse')" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
@@ -52,11 +52,11 @@
                         </span>
                     </button>
                 </div>
-            </form>
 
-            <div class="relative h-6">
-                <p class="messages text-sm pt-2 opacity-50">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
-            </div>
+                <div class="relative h-6 flex-none">
+                    <p class="messages text-sm pt-2 opacity-50">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
+                </div>
+            </form>
         </div>
     </div>
 </section>

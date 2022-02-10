@@ -264,11 +264,21 @@ html {
 }
 
 .device-shadow {
-    filter: drop-shadow(25px -25px 20px rgba(0, 0, 0, .8));
+    filter: drop-shadow(10px -15px 25px rgba(0, 0, 0, .2));
 }
 
 .memoji-sticker {
     filter: drop-shadow(2px -2px 2px rgba(0, 0, 0, .4));
+    background-image: url('../media/memoji-sticker-04.png');
+
+    &:hover {
+        background-image: url('../media/memoji-sticker.png');
+    }
+}
+
+.memoji-sticker-2 {
+    filter: drop-shadow(2px -2px 2px rgba(0, 0, 0, .4));
+    background-image: url('../media/memoji-sticker-06.png');
 }
 
 .box-shadow {
