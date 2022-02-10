@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\CVRequestController;
+use App\Notifications\CVrequest;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Illuminate\Support\Facades\Notification;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +42,6 @@ Route::get('/{locale?}', function ($locale = null, $langs = null) {
 Route::post('submitCvEmail', [CvRequestController::class, 'mailSend']);
 
 Route::post('submitNlEmail', [CvRequestController::class, 'mailSend']);
+
+// Notification::route('telegram', '1136465224')
+//             ->notify(new CVrequest($request));
