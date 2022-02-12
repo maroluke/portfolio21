@@ -83,8 +83,8 @@
                 <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
             </div>
 
-            <div class="relative cursor-none w-full h-full flex-grow group">
-                <div class="memoji-sticker-2 absolute bottom-0 right-0 w-full h-44 bg-contain bg-right bg-no-repeat transition-all duration-1000 ease-in-out group-hover:mt-44"></div>
+            <div class="relative h-44 cursor-none w-full mx-auto flex-grow group lg:mx-0">
+                <div class="memoji-sticker-2 h-full bg-contain bg-center bg-no-repeat transition-all duration-1000 ease-in-out group-hover:mt-96"></div>
             </div>
         </div>
     </div>

@@ -5,13 +5,13 @@
         </div>
 
         <div class="md:w-4/6 lg:w-3/6">
-            <p class="pt-8 text-small sm:pt-0">@lang('Zur Zeit bin ich offen für spannende Angebote, wo ich meine Kompetenzen einsetzen und erweitern darf.')</p>
-            <p class="pt-8 text-small">@lang('Gerne stelle ich ihnen meine fachlichen Kompetenzen in den folgenden Bereichen zur Verfügung:')</p>            
+            <p class="pt-8 text-small sm:pt-0">@lang('Ich bin jederzeit offen für neue und spannende Aufgaben, wo ich meine Kompetenzen einsetzen und erweitern darf.')</p>
+            <p class="pt-8 text-small">@lang('Meine Fachkenntnisse stelle ich Ihnen in den folgenden Bereichen zur Verfügung:')</p>            
             
-            <ul class="pt-8 flex flex-col sm:flex-row gap-2">
-                <li class="flex-1 border-2 border-neon-blue/50 border-dashed p-3 rounded-2xl flex items-center"><p class="text-center w-full font-bold font-button text-small-screen uppercase">Fullstack Web Developer</p></li><!-- (Laravel, TailwindCSS, AlpineJS, WordPress) -->
-                <li class="flex-1 border-2 border-neon-blue/50 border-dashed p-3 rounded-2xl flex items-center"><p class="text-center w-full font-bold font-button text-small-screen uppercase">Project Manager Web</p></li>
-                <li class="flex-1 border-2 border-neon-blue/50 border-dashed p-3 rounded-2xl flex items-center"><p class="text-center w-full font-bold font-button text-small-screen uppercase">Product Owner Web</p></li>
+            <ul class="pt-8 flex flex-col gap-4">
+                <li class="flex-1 flex"><p class="w-full text-small uppercase text-blue-200">Fullstack Web Developer</p></li><!-- (Laravel, TailwindCSS, AlpineJS, WordPress) -->
+                <li class="flex-1 flex"><p class="w-full text-small uppercase text-blue-200">Project Manager Web</p></li>
+                <li class="flex-1 flex"><p class="w-full text-small uppercase text-blue-200">Product Owner Web</p></li>
             </ul>
 
             <p class="py-8 text-small">@lang('Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne mein Kurzprofil als PDF anfordern:')</p>
