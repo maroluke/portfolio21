@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div class="pt-10 mx-6 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-20 sm:items-end md:grid-cols-3">
+        <div class="relative overflow-hidden pt-10 mx-6 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-20 sm:items-end md:grid-cols-3">
             <div class="text-base leading-6 flex flex-col gap-4 sm:pb-10">
                 <p class="flex-1">© 2021 Marko Lukac<br />Zürich – Switzerland<br /><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
                 <p class="flex-1">Lukac Interactive<br />CHE-494.796.673</p>
@@ -83,7 +83,9 @@
                 <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
             </div>
 
-            <div class="h-44 cursor-none w-full memoji-sticker-2 mx-auto lg:mx-0 flex-grow bg-contain bg-center bg-no-repeat"></div>
+            <div class="relative cursor-none w-full h-full flex-grow group">
+                <div class="memoji-sticker-2 absolute bottom-0 right-0 w-full h-44 bg-contain bg-right bg-no-repeat transition-all duration-1000 ease-in-out group-hover:mt-44"></div>
+            </div>
         </div>
     </div>
 

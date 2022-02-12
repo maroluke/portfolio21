@@ -2,6 +2,39 @@
 
 @import url("fonts.scss");
 
+@mixin bkg-img-transition($bkg1, $bkg2, $transTime:0.5s) {
+    position: relative;
+    z-index: 100;
+
+    &:before,
+    &:after {
+        @apply bg-contain block h-full absolute top-0 left-0 w-full bg-no-repeat bg-center;
+        content: '';
+        transition: opacity $transTime;
+    }
+
+    &:before {
+        z-index: -101;
+        background-image: url("#{$bkg1}");
+    }
+
+    &:after {
+        z-index: -100;
+        opacity: 0;
+        background-image: url("#{$bkg2}");
+    }
+
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+
+        &:before {
+            opacity: 0;
+        }
+    }
+}
+
 #intro-gradient,
 .entry-bg::after {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0086472) 6.67%, rgba(0, 0, 0, 0.03551) 13.33%, rgba(0, 0, 0, 0.0816599) 20%, rgba(0, 0, 0, 0.147411) 26.67%, rgba(0, 0, 0, 0.231775) 33.33%, rgba(0, 0, 0, 0.331884) 40%, rgba(0, 0, 0, 0.442691) 46.67%, rgba(0, 0, 0, 0.557309) 53.33%, rgba(0, 0, 0, 0.668116) 60%, rgba(0, 0, 0, 0.768225) 66.67%, rgba(0, 0, 0, 0.852589) 73.33%, rgba(0, 0, 0, 0.91834) 80%, rgba(0, 0, 0, 0.96449) 86.67%, rgba(0, 0, 0, 0.991353) 93.33%, #000000 100%);
@@ -19,8 +52,8 @@
     animation-fill-mode: forwards;
 
     &::after {
-        @apply  absolute w-full h-full top-0 left-0 bottom-0 right-0;
-    
+        @apply absolute w-full h-full top-0 left-0 bottom-0 right-0;
+
         content: "";
 
         @screen xs {
@@ -33,7 +66,10 @@
     animation-iteration-count: 1;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     @apply tracking-tight;
 
     line-height: 1.125;
@@ -61,7 +97,7 @@ p {
     max-width: 95%;
     height: auto !important;
 
-    &.swiper-slide-active > div {
+    &.swiper-slide-active>div {
         @apply opacity-100;
     }
 }
@@ -106,8 +142,13 @@ p {
 }
 
 @keyframes spin {
-    0% {transform: rotate(0);}
-    100% {transform: rotate(359deg);}
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
 }
 
 input {
@@ -127,8 +168,13 @@ input {
 }
 
 @keyframes floating {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(10px);}
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 .neon {
@@ -140,9 +186,17 @@ input {
 }
 
 @keyframes animateBg {
-    0%{background-position:0% 73%}
-    50%{background-position:100% 28%}
-    100%{background-position:0% 73%}
+    0% {
+        background-position: 0% 73%
+    }
+
+    50% {
+        background-position: 100% 28%
+    }
+
+    100% {
+        background-position: 0% 73%
+    }
 }
 
 button {
@@ -153,7 +207,7 @@ button {
     }
 
     &.success {
-        @apply bg-neon-green;
+        @apply bg-neon-green bg-opacity-10 border-neon-green hover:bg-opacity-10 cursor-not-allowed;
     }
 }
 
@@ -206,7 +260,7 @@ html {
     z-index: -1;
 }
 
-@supports ( pointer-events: none ) {
+@supports (pointer-events: none) {
     #flying-shapes {
         z-index: 2;
         pointer-events: none;
@@ -214,19 +268,38 @@ html {
 }
 
 @keyframes fadeInBgBlur {
-    0% { opacity: 0; }
-    100% { opacity: .3; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .3;
+    }
 }
 
 @keyframes fadeOutEntry {
-    0% { top: 0; }
-    10% { opacity: 1 }
-    100% { top: 100%; opacity: 0 }
+    0% {
+        top: 0;
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0
+    }
 }
 
 @keyframes slideIn {
-    0% { margin-top: -40px }
-    100% { margin-top: 0 }
+    0% {
+        margin-top: -40px
+    }
+
+    100% {
+        margin-top: 0
+    }
 }
 
 .animate-swipe-x {
@@ -269,11 +342,7 @@ html {
 
 .memoji-sticker {
     filter: drop-shadow(2px -2px 2px rgba(0, 0, 0, .4));
-    background-image: url('../media/memoji-sticker-04.png');
-
-    &:hover {
-        background-image: url('../media/memoji-sticker.png');
-    }
+    @include bkg-img-transition("../media/memoji-sticker-04.png","../media/memoji-sticker.png",0.1s);
 }
 
 .memoji-sticker-2 {

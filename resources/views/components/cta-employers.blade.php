@@ -5,10 +5,10 @@
         </div>
 
         <div class="md:w-4/6 lg:w-3/6">
-            <p class="pt-8 text-small sm:pt-0">@lang('Zur Zeit bin ich offen für spannende Angebote, wo ich meine Kompetenzen einsetzen und weiter entwickeln kann.')</p>
+            <p class="pt-8 text-small sm:pt-0">@lang('Zur Zeit bin ich offen für spannende Angebote, wo ich meine Kompetenzen einsetzen und erweitern darf.')</p>
             <p class="pt-8 text-small">@lang('Gerne stelle ich ihnen meine fachlichen Kompetenzen in den folgenden Bereichen zur Verfügung:')</p>            
             
-            <ul class="pt-8 flex flex-col gap-2">
+            <ul class="pt-8 flex flex-col sm:flex-row gap-2">
                 <li class="flex-1 border-2 border-neon-blue/50 border-dashed p-3 rounded-2xl flex items-center"><p class="text-center w-full font-bold font-button text-small-screen uppercase">Fullstack Web Developer</p></li><!-- (Laravel, TailwindCSS, AlpineJS, WordPress) -->
                 <li class="flex-1 border-2 border-neon-blue/50 border-dashed p-3 rounded-2xl flex items-center"><p class="text-center w-full font-bold font-button text-small-screen uppercase">Project Manager Web</p></li>
                 <li class="flex-1 border-2 border-neon-blue/50 border-dashed p-3 rounded-2xl flex items-center"><p class="text-center w-full font-bold font-button text-small-screen uppercase">Product Owner Web</p></li>
@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="flex-shrink">
-                    <button type="submit" class="group relative btn-submit bg-neon-blue bg-opacity-10 rounded-xl flex justify-center items-center border-2 border-neon-blue border-opacity-75 hover:border-opacity-100 hover:bg-opacity-20 shadow-button">
+                    <button type="submit" class="group relative btn-submit bg-neon-blue bg-opacity-10 rounded-xl flex justify-center items-center shadow-button border-2 border-neon-blue border-opacity-75 hover:border-opacity-100 hover:bg-opacity-30">
                         <span class="icon-send top-0 left-0 absolute w-full h-full p-2">
                             <x-icon-icon-send class="w-full h-full stroke-neon-blue group-hover:stroke-neon-blue-dark" />
                         </span>
@@ -33,7 +33,7 @@
                         </span>
 
                         <span class="icon-submitted hidden top-0 left-0 absolute w-full h-full p-2">
-                            <x-icon-icon-submitted class="w-full h-full stroke-neon-blue group-hover:stroke-neon-blue-dark" />
+                            <x-icon-icon-submitted class="w-full h-full stroke-neon-green" />
                         </span>
 
                         <span class="icon-error hidden top-0 left-0 absolute w-full h-full p-2">
@@ -42,8 +42,8 @@
                     </button>
                 </div>
 
-                <div class="relative h-6 error flex-none">
-                    <p class="messages text-sm pt-2 opacity-50">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
+                <div class="relative h-6 error flex-none w-full">
+                    <p class="messages text-sm pt-2 text-gray-500">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
                 </div>
             </form>
 

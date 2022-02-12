@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="flex-shrink">
-                    <button type="submit" class="relative btn-submit bg-neon-blue bg-opacity-10 rounded-xl flex justify-center items-center border-2 border-neon-blue border-opacity-75 hover:border-opacity-100 shadow-button hover:bg-opacity-20">
+                    <button type="submit" class="relative btn-submit bg-neon-blue bg-opacity-10 rounded-xl flex justify-center items-center border-2 border-neon-blue border-opacity-75 hover:border-opacity-100 hover:bg-opacity-30">
                         <span class="icon-send top-0 left-0 absolute w-full h-full p-2">
                             <x-icon-icon-send class="w-full h-full stroke-neon-blue group-hover:stroke-neon-blue-dark" />
                         </span>
@@ -44,7 +44,7 @@
                         </span>
 
                         <span class="icon-submitted hidden top-0 left-0 absolute w-full h-full p-2">
-                            <x-icon-icon-submitted class="w-full h-full stroke-neon-blue group-hover:stroke-neon-blue-dark" />
+                            <x-icon-icon-submitted class="w-full h-full stroke-neon-green" />
                         </span>
 
                         <span class="icon-error hidden top-0 left-0 absolute w-full h-full p-2">
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="relative h-6 flex-none">
-                    <p class="messages text-sm pt-2 opacity-50">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
+                    <p class="messages text-sm pt-2 text-gray-500">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
                 </div>
             </form>
         </div>

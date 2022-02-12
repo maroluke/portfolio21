@@ -14,7 +14,8 @@
 
             <x-references />
 
-            <section class="box-shadow relative sm:z-30 -my-24 xs:-mt-64 xs:-mb-24 sm:-mt-24 sm:mb-12 sm:w-8/12 sm:h-52 sm:overflow-hidden sm:rounded sm:mx-auto sm:flex sm:items-center">
+            <section class="box-shadow relative -my-24 xs:-mt-64 xs:-mb-24 sm:-my-12 sm:w-8/12 sm:h-96 sm:overflow-hidden sm:rounded sm:mx-auto sm:flex sm:items-center">
+                <div class="absolute left-0 top-0 w-full h-full sm:bg-gradient-to-b sm:from-black sm:via-transparent sm:to-black z-20"></div>
                 <img class="parallax-3 sm:w-full" src="{{ asset('media/hello-world.png') }}" alt="Hello World - Lisboa">
             </section>
 

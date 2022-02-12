@@ -5,13 +5,13 @@
             {{-- <p class="mt-10 text-small xs:text-tiny">{{ __('Als erfahrener Softwareentwickler realisiere ich individuelle, nutzerzentrierte Applikationen für Web und Mobile.') }}</p> --}}
             <div class="sm:w-2/6 flex flex-col justify-between">
                 <h2>{{ __('Hallo,') }} {{ __('mein Name ') }} {{ __('ist ') }}<span class='bg-clip-text neon neon-flat'>Marko</span></h2>
-                <div class="cursor-none memoji-sticker h-72 lg:mx-0 flex-grow bg-contain bg-center bg-no-repeat sm:h-80"></div>
+                <div class="cursor-grabbing memoji-sticker h-72 flex-grow lg:mx-0 sm:h-80"></div>
             </div>
             
             <div class="sm:w-4/6 md:w-3/6">
-                <p class="mt-8 text-small leading-tight md:flex-1 sm:mt-0">{{ __('Als erfahrener Softwareentwickler realisiere ich nutzerzentrierte Anwendungen und aussagekräftige Websites sowohl für Mobile als auch für Desktop.') }}</p>
-                <p class="mt-8 text-small leading-tight md:flex-1">{{ __('Ich begleite Sie dabei von der ersten Idee, den Absichten und Auswirkungen, bis hin zum marktreifen Produkt.') }}</p>
-                <p class="mt-8 text-small leading-tight md:flex-1">{{ __('Bei Bedarf unterstützt mich mein Team aus Fachleuten in Design und Entwicklung.') }}</p>
+                <p class="mt-8 text-small leading-tight md:flex-1 sm:mt-0">{{ __('Als erfahrener Software­entwickler realisiere ich nutzer­zentrierte Anwendungen und ausdrucks­starke Websites sowohl für Mobile als auch für Desktop.') }}</p>
+                <p class="mt-8 text-small leading-tight md:flex-1">{{ __('Ich begleite Sie dabei von der ersten Idee und den Absichten sowie Auswirkungen, bis hin zum marktreifen Produkt.') }}</p>
+                <p class="mt-8 text-small leading-tight md:flex-1">{{ __('Bei Bedarf unterstützt mich mein Team bestehend aus Fachleuten in den Bereichen Branding, UX/UI, und Entwicklung.') }}</p>
             </div>
         </div>
     </div>

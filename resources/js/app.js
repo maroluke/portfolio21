@@ -172,7 +172,6 @@ $('form').on('submit', function (e) {
         beforeSend: function () {
             $(iconSubmitted).fadeOut();
             $(iconError).fadeOut();
-            $(message).fadeOut().removeClass('text-neon-green text-neon-red');
             $(btnSubmit).removeClass('error success').addClass('bg-opacity-75 hover:bg-opacity-75');
             $(iconLoading).fadeIn();
         },
@@ -184,10 +183,10 @@ $('form').on('submit', function (e) {
             // handle success response
             $(iconSubmitted).fadeIn();
 
-            $(message).addClass('text-neon-green').html('Herzlichen Dank!').fadeIn();
-            $(btnSubmit).addClass('success');
+            $(message).html('Vielen Dank! <span class="text-neon-red-light">&#10084;</span>').fadeIn();
+            $(btnSubmit).addClass('success').prop('disabled', true);
 
-            console.log(response);
+            console.log(emailInput);
         },
         error: function (error) {
             // handle error response
@@ -208,11 +207,12 @@ $('form').on('submit', function (e) {
 
 // reset CV request state
 $('.email-input').on('focus', function() {
-    $('.icon-submitted', this).fadeOut();
-    $('.icon-error', this).fadeOut();
-    $('.btn-submit', this).removeClass('error success bg-opacity-75 hover:bg-opacity-75');
-    $('.messages', this).removeClass('text-neon-green text-neon-red').html('Die E–Mail Adresse wird nicht erfasst.');
-    $('.icon-send', this).fadeIn();
+    $('.icon-submitted').fadeOut();
+    $('.icon-error').fadeOut();
+    $('.btn-submit').removeClass('error success bg-opacity-75 hover:bg-opacity-75');
+    $('.messages').html('Die E–Mail Adresse wird nicht erfasst.');
+    $('.icon-send').fadeIn();
+    $('.btn-submit').prop('disabled', false);
 });
 
 $('#call-btn').on('click', function (e) {

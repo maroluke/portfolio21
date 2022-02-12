@@ -1,11 +1,6 @@
 {
     "Apps, Usability, Design, Testing.": "Aplikacije, Upotrebljivost, Dizajn, Testiranje.",
     "Möchten Sie sich im Internet neu positionieren, Ihren Kunden ein online–Shopping–Erlebnis bieten, oder Arbeitsprozesse digitalisieren?": "Želite li se iznova digitalno pozicionirati, svojim kupcima ponuditi digitalno iskustvo kupovine ili digitalizirati poslovne procese?",
-    
-    "Nutzerzentrierte Anwendungen für Web und Mobile": "Aplikacije za web i mobilne uređaje usmjerene na korisnike",
-    "Bei Bedarf unterstützt mich ein Netzwerk von Fachleuten aus Design und Entwicklung.": "Prema potrebi, imam mrežu stručnjaka za dizajn i razvoj koji će me podržati.",
-    "Meine Erfahrungen sammelte ich in über 10 Jahren als Web– Entwickler. Danach befasste ich mich vermehrt mit operativer Produktplanung sowie Produktentwicklung.": "Iskustvo sam stekao u više od 10 godina kao web developer. Nakon toga sam se sve više bavio operativnim planiranjem i razvojem proizvoda.",
-    "Mittlerweile konnte ich meine Fähigkeiten in mehreren Projekten erfolgreich unter Beweis stellen.": "U međuvremenu sam uspješno pokazao svoje sposobnosti u nekoliko projekata.",
 
     "Hallo,": "Pozdrav,",
     "mein Name ": "zovem se ",
@@ -13,8 +8,9 @@
 
     "Expertise": "Iskustvo",
 
-    "Als erfahrener Softwareentwickler realisiere ich nutzerzentrierte Anwendungen und aussagekräftige Websites sowohl für Mobile als auch für Desktop.": "Kao iskusan programer softvera, stvaram aplikacije usmjerene na korisnika i učinkovite web stranice za mobile i desktop.",
-    "Ich begleite Sie dabei von der ersten Idee, den Absichten und Auswirkungen, bis hin zum marktreifen Produkt.": "Pratim vas od prve ideje, namjera i učinaka, do proizvoda spremnog za tržište.",
+    "Als erfahrener Software­entwickler realisiere ich nutzer­zentrierte Anwendungen und ausdrucks­starke Websites sowohl für Mobile als auch für Desktop.": "Kao iskusan programer softvera, stvaram aplikacije usmjerene na korisnika i učinkovite web stranice za mobile i desktop.",
+    "Ich begleite Sie dabei von der ersten Idee und den Absichten sowie Auswirkungen, bis hin zum marktreifen Produkt.": "Pratim vas od prve ideje, namjera i učinaka, do proizvoda spremnog za tržište.",
+    "Bei Bedarf unterstützt mich mein Team bestehend aus Fachleuten in den Bereichen Branding, UX/UI, und Entwicklung.": "Po potrebi, moj tim profesionalaca podržava me u područjima brendiranja, UX/UI i razvoja.",
 
     "Das schweizer Investment–Startup Fundament AG, investiert in nachhaltige Geschäftsmodelle und Unternehmen.": "Švicarski investicijski startup Fundament AG ulaže u održive poslovne modele i tvrtke.",
     "Mit einem von mir selektierten Team sowie einem starken Fokus auf ": "S timom koji sam osobno odabrao i snažnim fokusom na ",
@@ -26,14 +22,14 @@
     "digitalen Auftritt": "digitalnu prisutnost",
     " entwickeln und diesen in einem zweiten Schritt umsetzen.": " i implementirati je u drugom koraku.",
 
-    "naanu ist ein Restaurant, Take-Away und Delivery Service in Zürich welches mit dem Bedürfnis ihre Arbeitsprozesse zu digitalisieren an mich herangetreten ist.": "naanu je restoran, usluga za ponijeti i dostave u Zürichu koja mi se obratila s potrebom da digitaliziraju svoje poslovne procese. ",
-    "Entstanden ist eine ": "Rezultat je jedno ",
-    "integrale Lösung": "sveobuhvatno rješenje",
-    " bestehend aus Online– Shop, Produktverwaltung, Belegdruck und Anbindung ans betriebsinterne Reservations-, Kassen-, und Buchaltungssystem sowie an die gängigen Auslieferungsdienstleister.": " s poveznicama na interne rezervacije, blagajnu i računovodstveni sustav, kao i na uobičajene pružatelje usluga dostave.",
+    "naanu ist ein Restaurant, Take-Away und Delivery Service in Zürich welches mit dem Bedürfnis ihre Arbeits­prozesse zu digita­li­sieren an mich herangetreten ist.": "naanu je restoran, usluga za ponijeti i dostave u Zürichu koja mi se obratila s potrebom da digitaliziraju svoje poslovne procese. ",
+    "Entstanden ist eine integrale Lösung bestehend aus ": "Rezultat je jedno sveobuhvatno rješenje koje se sastoji od upravljanja proizvodom ",
+    "Online– Shop": "online trgovine",
+    " Produktverwaltung, Belegdruck und Anbindung ans betriebsinterne Reservations- und Kassensystem sowie an die gängigen Auslieferungsdienstleister.": ", ispisa računa i povezivanja na interni sustav rezervacija i blagajne kao i na uobičajene pružatelje usluga dostave.",
     
     "Generation Purpose hilft Organi­sationen und Einzel­personen, ihren Purpose zu finden und diesen im Alltag zu imple­men­tieren.": "Generation Purpose pomaže organizacijama i pojedincima da pronađu svoju svrhu i primijene je u svakodnevnom životu.",
     "In Zusam­men­arbeit mit den Gründern durfte ich einerseits die ": "U suradnji s osnivačima razvio sam ",
-    " entwickeln sowie eine digitale Plattform aufbauen, auf welcher die Facilitators (Mitarbeiter) und Kunden täglich arbeiten können.": " i postavio digitalnu platformu na kojoj voditelji (zaposlenici) i korisnici mogu svakodnevno raditi.",
+    " Produkt­verwaltung, Belegdruck und Anbindung ans betriebsinterne Reservations- und Kassen­system sowie an die gängigen Auslieferungs­dienst­leister.": ", ispisa računa i povezivanja na interni sustav rezervacija i blagajne kao i na uobičajene pružatelje usluga dostave.",
 
     "Sie haben eine spannende ": "Imate li uzbudljivu ",
     "Idee?": "ideju?",
@@ -45,15 +41,16 @@
     "Suchen Sie ": "Tražite li ",
     "Verstärkung": "pojačanje",
     " für Ihr Team?": " za svoj tim?",
-    "Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne meinen CV als PDF anfordern:": "Ako sam probudio vaše zanimanje, možete zatražiti moj životopis u PDF-u:",
+    "Zur Zeit bin ich offen für spannende Angebote, wo ich meine Kompetenzen einsetzen und erweitern darf.": "Trenutno sam otvoren za uzbudljive ponude u kojima mogu koristiti i proširiti svoje vještine.",
+    "Gerne stelle ich ihnen meine fachlichen Kompetenzen in den folgenden Bereichen zur Verfügung:": "Drago mi je što vam mogu staviti na raspolaganje svoje profesionalne vještine u sljedećim područjima:",
+    "Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne mein Kurzprofil als PDF anfordern:": "Ako sam probudio vaše zanimanje, možete zatražiti moj životopis u PDF-u:",
     "Ich freue mich auf Ihre Kontaktaufnahme.": "Veselim se vašem odgovoru.",
     "Ihre E–Mail Adresse": "Vaša email adresa",
-    "E-Mail wird nicht gespeichert": "E-mail se ne sprema",
+    "Die E–Mail Adresse wird nicht erfasst.": "E-mail adresa nije zabilježena.",
     
-    "Neugierig": "Zanimaju",
+    "Neugierig": "Znatiželjni",
     " auf weitere spannende Projekte?": " vas drugi uzbudljivi projekti?",
-    "Es würde mich freuen, Sie mit Neuigkeiten auf dem Laufenden zu halten.": "Volio bih vas informirati o svim novostima.",
-    "Sichere Datenübertragung": "Siguran prijenos podataka",
+    "Es würde mich freuen, Sie mit Neuigkeiten über meine Arbeit auf dem Laufenden zu halten.": "Volio bih vas informirati o svim novostima, vezane za moj rad.",
 
     "Swipe": "Svajpaj"
 }

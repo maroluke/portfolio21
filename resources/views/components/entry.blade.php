@@ -1,7 +1,7 @@
 <section id="entry" class="px-6 flex gap-8 relative">
     <div class="entry-bg top-0 right-0 bg-contain sm:bg-cover bg-no-repeat fixed w-full max-w-xl h-full"></div>
 
-    <div class="flex flex-col justify-between text-white md:items-center w-full z-10 max-w-screen-xs m-auto relative md:text-center">
+    <div class="flex flex-col justify-between text-white md:items-center w-full z-10 max-w-screen-sm m-auto relative md:text-center">
         <div class="py-6">
             <x-lang-switch />
         </div>
