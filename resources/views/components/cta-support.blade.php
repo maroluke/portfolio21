@@ -13,8 +13,8 @@
             <div class="grid grid-cols-4 gap-2 mt-8">
                 <x-link-button class="z-10 px-1" @click="open = true">@lang('Anruf')</x-link-button>
                 <x-link-button class="z-10 px-1" href="mailto:hello@markolukac.ch">@lang('E-Mail')</x-link-button>
-                <x-link-button class="z-10 px-1" href="sms:+41763887018">SMS</x-link-button>
-                <x-link-button class="z-10 px-1" href="https://t.me/maroluke">Tlgrm</x-link-button>
+                <x-link-button class="z-10 px-1" href="sms:+41763887018">@lang('SMS')</x-link-button>
+                <x-link-button class="z-10 px-1" href="https://t.me/maroluke">@lang('Tlgrm')</x-link-button>
             </div>
         </div>
     </div>
