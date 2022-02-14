@@ -59,12 +59,12 @@
             </div>
         
             <div class="text-base leading-6 flex flex-col gap-4 sm:col-span-3 sm:pb-10">
-                <p class="flex-1">© 2021 Marko Lukac<br />Zürich – Switzerland<br /><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
+                <p class="flex-1">© 2022 Marko Lukac<br />Zürich – Switzerland<br /><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
                 <p class="flex-1">Lukac Interactive<br />CHE-494.796.673</p>
             </div>
 
             <div class="text-tiny leading-6 sm:col-span-2 sm:pb-10">
-                <p>Last update: December 8, 2021</p>
+                <p>Last update: February 14, 2022</p>
                 <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
             </div>
 
