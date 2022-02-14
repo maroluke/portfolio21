@@ -35,7 +35,6 @@ var w = window.innerWidth;
 if (w < 640) {
     const swiper = new Swiper('.swiper', {
         speed: 300,
-        slidesPerView: 'auto',
         loop: true,
         cssMode: true,
     });

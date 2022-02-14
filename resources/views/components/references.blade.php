@@ -1,6 +1,6 @@
-<section id="references" class="z-50 relative">
+<section id="references" class="z-50 relative -mt-32">
     <div class="card-slider relative py-12 sm:pb-24">
-        <div class="pb-8 relative z-50 flex flex-col justify-end overflow-hidden">
+        <div class="py-8 relative z-50 flex flex-col justify-end overflow-hidden bg-black">
             <h2 class="px-6 flex-grow sm:text-center text-white">@lang('Expertise')</h2>
             <p class="animate-swipe-x opacity-30 flex-shrink sm:hidden text-white mt-6"></p>
         </div>
