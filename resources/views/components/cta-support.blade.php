@@ -11,7 +11,7 @@
         <div class="md:w-4/6 lg:w-3/6">
             <p class="pt-8 text-small md:pt-0">@lang('Egal vor welchen Herausforderungen Sie stehen, lassen Sie uns in einem gemeinsamen Brainstorming herausfinden was Ihre Bedürfnisse sind und wie wir sie gemeinsam umsetzen können.')</p>
             <div class="grid grid-cols-4 gap-2 mt-8">
-                <x-link-button class="z-10 px-1" @click="open = true">@lang('Anruf')</x-link-button>
+                <x-link-button class="z-10 px-1" href="tel:+41763887018">@lang('Anruf')</x-link-button>
                 <x-link-button class="z-10 px-1" href="mailto:hello@markolukac.ch">@lang('E-Mail')</x-link-button>
                 <x-link-button class="z-10 px-1" href="sms:+41763887018">@lang('SMS')</x-link-button>
                 <x-link-button class="z-10 px-1" href="https://t.me/maroluke">@lang('Tlgrm')</x-link-button>

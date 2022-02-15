@@ -14,7 +14,7 @@
                 <li class="flex-1 flex"><p class="w-full text-small font-bolder"><span class="text-blue-400">&#8680;</span> @lang('Product Owner')</p></li>
             </ul>
 
-            <p class="py-8 text-small">@lang('Falls ich Ihr Interesse geweckt habe, dürfen Sie gerne mein Kurzprofil als PDF anfordern:')</p>
+            <p class="py-8 text-small">@lang('Falls Sie interessiert sind, dürfen Sie gerne mein Kurzprofil als PDF anfordern:')</p>
 
             <form action="POST" class="flex flex-wrap max-w-sm" data-context="submitCvEmail">
                 {{ csrf_field() }}
@@ -47,10 +47,8 @@
                 </div>
             </form>
 
-            <p class="pt-8 text-small">@lang('Ich freue mich auf Ihre Kontaktaufnahme.')</p>
-
             <div class="grid grid-cols-4 gap-2 mt-8">
-                <x-link-button class="z-10 px-1" @click="open = true">@lang('Anruf')</x-link-button>
+                <x-link-button class="z-10 px-1" href="tel:+41763887018">@lang('Anruf')</x-link-button>
                 <x-link-button class="z-10 px-1" href="mailto:hello@markolukac.ch">@lang('E-Mail')</x-link-button>
                 <x-link-button class="z-10 px-1" href="sms:+41763887018">@lang('SMS')</x-link-button>
                 <x-link-button class="z-10 px-1" href="https://t.me/maroluke">Tlgrm</x-link-button>

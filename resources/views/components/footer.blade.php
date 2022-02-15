@@ -1,14 +1,12 @@
 <section id="footer" class="z-20 relative">
     <div class="relative mx-auto z-20 sm:container xl:max-w-screen-lg">
-        <div class="pt-10 mx-6 grid grid-cols-1 gap-8 xs:grid-cols-2 sm:gap-20 sm:grid-cols-6">
-            <div class="text-base leading-6 sm:col-span-3">
+        <div class="pt-10 mx-6 grid grid-cols-1 gap-8 xxs:grid-cols-6 xxs:py-10 sm:grid-cols-6">
+            <div class="text-base leading-6 max-w-screen-xxs xxs:col-span-6 sm:col-span-3">
                 <h4 class="uppercase tracking-wider mb-2 ">Credits</h4>
                 
                 <div class="grid grid-cols-2 gap-2">
                     <p>MacBook #1</p>
                     <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/RcqjrGPDWl4">Hustler's Fuel</a></p>
-                    <p>Mobile Phone</p>
-                    <p><a class="hover:text-gray-300 underline" target="_blank" href="/">Marko Lukac</a></p>
                     <p>MacBook #2</p>
                     <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/5sT07dJl65s">Anthony Garand</a></p>
                     <p>Portrait</p>
@@ -20,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="sm:col-span-3">
+            <div class="max-w-screen-xxs xxs:col-span-6 sm:col-span-3">
                 <div class="text-base leading-6">
                     <h4 class="uppercase tracking-wider mb-2">Made with</h4>
 
@@ -58,19 +56,19 @@
                 </div>
             </div>
         
-            <div class="text-base leading-6 flex flex-col gap-4 sm:col-span-3 sm:pb-10">
-                <p class="flex-1">© 2022 Marko Lukac<br />Zürich – Switzerland<br /><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
-                <p class="flex-1">Lukac Interactive<br />CHE-494.796.673</p>
-            </div>
-
-            <div class="text-tiny leading-6 sm:col-span-2 sm:pb-10">
-                <p>Last update: February 14, 2022</p>
+            <div class="text-tiny leading-6 z-20 xxs:col-span-6 sm:col-span-3">
+                <p>Last update: February 15, 2022</p>
                 <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
             </div>
 
-            <div class="relative h-44 cursor-none w-full mx-auto flex-grow group xs:col-span-2 sm:col-span-1 lg:mx-0">
-                <div class="overflow-hidden w-full h-full sm:absolute sm:w-44 sm:top-0 sm:-left-24">
-                    <div class="memoji-sticker-2 h-full bg-contain bg-center bg-no-repeat transition-all duration-1000 ease-in-out group-hover:mt-96"></div>
+            <div class="text-base leading-6 flex flex-col z-20 gap-8 xxs:col-span-5 sm:col-span-3 lg:flex-row">
+                <p>© 2022 Marko Lukac<br />Zürich – Switzerland<br /><a href="mailto:hello@markolukac.ch" target="_blank" class="hover:opacity-75 underline">hello@markolukac.ch</a></p>
+                <p>Lukac Interactive<br />CHE-494.796.673</p>
+            </div>
+
+            <div class="relative w-full mx-auto flex-grow z-10 xxs:col-span-1 xxs:absolute xxs:right-10 xxs:bottom-0 lg:mx-0">
+                <div class="overflow-hidden group cursor-none h-44 xxs:absolute xxs:w-44 xxs:bottom-0 xxs:right-0">
+                    <div class="memoji-sticker-2 h-full bg-contain bg-no-repeat bg-center transition-all duration-1000 ease-in-out group-hover:mt-96 xxs:bg-right-bottom"></div>
                 </div>
             </div>
         </div>

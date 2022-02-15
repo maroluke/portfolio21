@@ -34,10 +34,11 @@ enableAutoPageviews();
 var w = window.innerWidth;
 if (w < 640) {
     const swiper = new Swiper('.swiper', {
-        speed: 300,
-        loop: true,
-        loopedSlides: 4,
+        speed: 400,
         cssMode: true,
+        roundLengths: true,
+        slidesPerView: 'auto',
+        loop: true,
     });
 }
 
@@ -213,8 +214,4 @@ $('.email-input').on('focus', function() {
     $('.messages').html('Die E–Mail Adresse wird nicht erfasst.');
     $('.icon-send').fadeIn();
     $('.btn-submit').prop('disabled', false);
-});
-
-$('#call-btn').on('click', function (e) {
-    
 });

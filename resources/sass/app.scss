@@ -89,12 +89,8 @@ p {
     @apply leading-tight text-tiny;
 }
 
-// .card-slider p {
-//     @apply text-base;
-// }
-
 .swiper-slide {
-    //max-width: 95%;
+    max-width: 90%;
     height: auto !important;
 
     &.swiper-slide-active>div {
