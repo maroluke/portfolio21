@@ -18,8 +18,8 @@
             </div>
         </div>
 
-        <div class="pt-10 max-w-xs sm:order-1 md:w-3/6">
-            <h2><span class="bg-clip-text neon neon-flat">@lang('Neugierig')</span>?</h2>
+        <div class="pt-10 sm:order-1 md:w-3/6">
+            <h2><span class="bg-clip-text neon neon-flat inline-block">@lang('Neugierig')?</span></h2>
 
             <p class="py-8 text-small">@lang('Es würde mich freuen, Sie mit Neuigkeiten über meine Arbeit auf dem Laufenden zu halten.')</p>
 
