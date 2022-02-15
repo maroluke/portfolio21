@@ -17,12 +17,12 @@
     </div>
 
     <div class="flex relative w-full z-10 px-8 sm:px-0">
-        <div class="flex-1 parallax flex justify-end z-20">
-            <img class="device-shadow w-48 self-center -mr-4" src="{{ asset('media/mobile-screen-fundament-15.png') }}" alt="Mobile Screen">
+        <div class="flex-1 flex justify-end z-20">
+            <img class="device-shadow parallax w-48 self-center -mr-4" src="{{ asset('media/mobile-screen-fundament-15.png') }}" alt="Mobile Screen">
         </div>
 
-        <div class="flex-1 parallax-2 flex justify-start z-10">
-            <img class="device-shadow w-48 self-center -ml-2 -mt-8" src="{{ asset('media/mobile-screen-naanu-01.png') }}" alt="Mobile Screen">
+        <div class="flex-1 flex justify-start z-10">
+            <img class="device-shadow parallax-2 w-48 self-center -ml-2 -mt-8" src="{{ asset('media/mobile-screen-naanu-01.png') }}" alt="Mobile Screen">
         </div>
     </div>
 </section>
