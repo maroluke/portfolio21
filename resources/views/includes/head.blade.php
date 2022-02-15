@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <meta title="Marko Lukac – Portfolio 21" >
 <meta description="Hi there, My name is Marko. As an experienced software developer, I implement user-centric applications and meaningful websites for both mobile and desktop.">
 

@@ -8,9 +8,9 @@
         <div class="swiper">
             <div class="swiper-wrapper items-stretch sm:flex-col sm:mx-auto max-w-screen-md sm:gap-4">
                 <!-- Slides -->
-                <div class="swiper-slide px-2 relative sm:px-0 sm:mx-auto xl:flex-1">
-                    <div class="relative text-black bg-dirty-white rounded-2xl overflow-hidden border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
-                        <div class="h-44 bg-cover bg-no-repeat image sm:bg-center sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/mobile-screen-generation-purpose-01.png') }});"></div>
+                <div class="swiper-slide relative px-2 sm:px-0 sm:mx-auto xl:flex-1">
+                    <div class="relative text-black bg-dirty-white rounded-2xl border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
+                        <div class="rounded-t-2xl h-44 bg-cover bg-no-repeat image sm:rounded-l-2xl sm:bg-center sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/mobile-screen-generation-purpose-01.png') }});"></div>
 
                         <div class="reference-text backdrop-blur-xl rounded-b-2xl p-5 flex flex-col flex-grow justify-start relative sm:p-5 sm:col-span-2">
                             <h3 class="align-text-bottom text-small font-bolder">Generation Purpose</h3>
@@ -24,9 +24,9 @@
                     </div>
                 </div>
                 
-                <div class="swiper-slide px-2 relative sm:px-0 sm:mx-auto xl:flex-1">
-                    <div class="relative text-black bg-dirty-white rounded-2xl overflow-hidden border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
-                        <div class="h-44 bg-cover bg-center image sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/desktop-screen-fundament-02.png') }});"></div>
+                <div class="swiper-slide relative px-2 sm:px-0 sm:mx-auto xl:flex-1">
+                    <div class="relative text-black bg-dirty-white rounded-2xl border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
+                        <div class="rounded-t-2xl h-44 bg-cover bg-center image sm:rounded-l-2xl sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/desktop-screen-fundament-02.png') }});"></div>
 
                         <div class="reference-text backdrop-blur-xl rounded-b-2xl p-5 flex flex-col flex-grow justify-start relative sm:p-5 sm:col-span-2">
                             <h3 class="align-text-bottom text-small font-bolder">Fundament</h3>
@@ -40,9 +40,9 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide px-2 relative sm:px-0 sm:mx-auto xl:flex-1">
-                    <div class="relative text-black bg-dirty-white rounded-2xl overflow-hidden border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
-                        <div class="h-44 bg-cover bg-center image sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/mobile-screen-coffaina-04.png') }});"></div>
+                <div class="swiper-slide relative px-2 sm:px-0 sm:mx-auto xl:flex-1">
+                    <div class="relative text-black bg-dirty-white rounded-2xl border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
+                        <div class="rounded-t-2xl h-44 bg-cover bg-center image sm:rounded-l-2xl sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/mobile-screen-coffaina-04.png') }});"></div>
 
                         <div class="reference-text backdrop-blur-xl rounded-b-2xl p-5 flex flex-col flex-grow justify-start relative sm:p-5 sm:col-span-2">
                             <h3 class="align-text-bottom text-small font-bolder">coffaina</h3>
@@ -56,9 +56,9 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide px-2 relative sm:px-0 sm:mx-auto xl:flex-1">
-                    <div class="relative text-black bg-dirty-white rounded-2xl overflow-hidden border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
-                        <div class="h-44 bg-cover bg-center image sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/desktop-screen-naanu-02.png') }});"></div>
+                <div class="swiper-slide relative px-2 sm:px-0 sm:mx-auto xl:flex-1">
+                    <div class="relative text-black bg-dirty-white rounded-2xl border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
+                        <div class="rounded-t-2xl h-44 bg-cover bg-center image sm:rounded-l-2xl sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/desktop-screen-naanu-02.png') }});"></div>
 
                         <div class="reference-text backdrop-blur-xl rounded-b-2xl p-5 flex flex-col flex-grow justify-start relative sm:p-5 sm:col-span-2">
                             <h3 class="align-text-bottom text-small font-bolder">naanu</h3>

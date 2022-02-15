@@ -94,7 +94,7 @@ p {
 // }
 
 .swiper-slide {
-    max-width: 95%;
+    //max-width: 95%;
     height: auto !important;
 
     &.swiper-slide-active>div {
@@ -365,26 +365,6 @@ html {
     svg {
         @apply fill-white;
     }
-}
-
-@screen sm {
-    .swiper {
-        overflow: visible !important;
-    }
-
-    // .swiper-wrapper .swiper-slide:nth-of-type(even) {
-    //     .image {
-    //         @apply order-2;
-
-    //         img {
-    //             @apply rounded-l rounded-r-none;
-    //         }
-    //     }
-
-    //     .reference-text {
-    //         @apply pr-5 pl-20;
-    //     }
-    // }
 }
 
 @import "tailwindcss/components";

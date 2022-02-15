@@ -36,6 +36,7 @@ if (w < 640) {
     const swiper = new Swiper('.swiper', {
         speed: 300,
         loop: true,
+        loopedSlides: 4,
         cssMode: true,
     });
 }
