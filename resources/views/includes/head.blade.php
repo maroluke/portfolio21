@@ -8,11 +8,11 @@
 
 <meta property="og:title" content="Portfolio 21">
 <meta property="og:description" content="Hi there, My name is Marko. As an experienced software developer, I implement user-centric applications and meaningful websites for both mobile and desktop.">
-<meta property="og:image" content="https://markolukac.ch/media/memoji-sticker-07.png">
+<meta property="og:image" content="https://markolukac.ch/media/share-image.png">
 <meta property="og:url" content="https://markolukac.ch/">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://markolukac.ch/media/memoji-sticker-07.png"
+<meta name="twitter:image" content="https://markolukac.ch/media/share-image.png"
   />
 
 {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
