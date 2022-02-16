@@ -98,7 +98,7 @@ new simpleParallax(image3, {
     alphaVariance: 10,
     color: [colors.color1, colors.color2, colors.color3, colors.color4],
     composition: "source-over",
-    count: 21,
+    count: 10,
     direction: 45,
     drift: 0,
     glow: 50,
