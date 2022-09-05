@@ -19,12 +19,13 @@ module.exports = {
 
             fontSize: {
                 large: '3.4375rem',
-                normal: '2.625rem',
+                normal: '2.25rem',
                 'medium-x': '2.125rem',
-                small: '1.5rem',
-                tiny: '1.25rem',
+                medium: '1.5rem',
+                small: '1.25rem',
+                tiny: '1.00rem',
                 micro: '0.75rem',
-                'small-screen': '0.75rem',
+                'small-screen': '0.5rem',
             },
             colors: {
                 'neon-pink': {

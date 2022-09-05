@@ -11,7 +11,7 @@
             {{-- <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Lösungen für Web und Mobile.</span> --}}
         </h1>
 
-        <p class="pt-8 text-small font-bolder max-w-screen-sm md:m-auto xs:text-tiny md:text-small">{{ __('Möchten Sie sich im Internet neu positionieren, Ihren Kunden ein online–Shopping–Erlebnis bieten, oder Arbeitsprozesse digitalisieren?') }}</p>
+        <p class="pt-8 text-medium font-bolder max-w-screen-sm md:m-auto xs:text-medium md:text-medium">{{ __('Möchten Sie sich im Internet neu positionieren, Ihren Kunden ein online–Shopping–Erlebnis bieten, oder Arbeitsprozesse digitalisieren?') }}</p>
 
         <div id="swipe-down" class="flex justify-between items-center mt-12">
             <div class="opacity-30">

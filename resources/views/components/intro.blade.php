@@ -3,9 +3,8 @@
         <div class="px-6 pt-12 z-10 text-black sm:container sm:flex sm:gap-8 sm:mx-auto sm:justify-end xl:max-w-screen-lg">
             {{-- <p class="mt-10 text-small xs:text-tiny">Als erfahrener Softwareentwickler verstehe ich es, Ideen mit den fortschrittlichsten Technologien umzusetzen, um daraus effektive, digitale Erlebnisse zu <!-- entwickeln --> schaffen.</p> --}}
             {{-- <p class="mt-10 text-small xs:text-tiny">{{ __('Als erfahrener Softwareentwickler realisiere ich individuelle, nutzerzentrierte Applikationen für Web und Mobile.') }}</p> --}}
-            <div class="sm:w-2/6 flex flex-col justify-between">
+            <div class="flex gap-10 relative flex-col sm:w-2/6 xxs:flex-row">
                 <h2>{{ __('Hallo,') }} {{ __('mein Name ') }} {{ __('ist ') }}<span class='bg-clip-text neon neon-flat'>Marko</span></h2>
-                <div class="cursor-grabbing memoji-sticker h-72 flex-grow lg:mx-0 sm:h-80"></div>
             </div>
             
             <div class="sm:w-4/6 md:w-3/6">
