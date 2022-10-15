@@ -92,6 +92,12 @@ p {
 .swiper-slide {
     max-width: 90%;
     height: auto !important;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    -moz-backdrop-filter: blur(0px);
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
 
     &.swiper-slide-active>div {
         @apply opacity-100;

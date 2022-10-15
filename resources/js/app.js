@@ -15,34 +15,6 @@ window.Alpine = Alpine;
 Alpine.start();
 
 /* 
- * Initialize Plausible.io
- * https://github.com/plausible/
- */
-
-const { enableAutoPageviews } = Plausible({
-  domain: 'markolukac.ch'
-});
-
-// This tracks the current page view and all future ones as well
-enableAutoPageviews();
-
-/* 
- * Initialize Swiper JS
- * https://github.com/nolimits4web/swiper
- */
-
-var w = window.innerWidth;
-if (w < 640) {
-    const swiper = new Swiper('.swiper', {
-        speed: 400,
-        cssMode: true,
-        roundLengths: true,
-        slidesPerView: 'auto',
-        loop: true,
-    });
-}
-
-/* 
  * Initialize Simple Parallax
  * https://github.com/geosigno/simpleParallax.js/
  */
@@ -147,6 +119,35 @@ function marginFromTop(el, margin) {
 
 setScreenHeight('entry');
 // marginFromTop('flying-shapes', window.innerHeight);
+
+/* 
+ * Initialize Plausible.io
+ * https://github.com/plausible/
+ */
+
+const { enableAutoPageviews } = Plausible({
+    domain: 'markolukac.ch'
+  });
+  
+  // This tracks the current page view and all future ones as well
+  enableAutoPageviews();
+  
+  /* 
+   * Initialize Swiper JS
+   * https://github.com/nolimits4web/swiper
+   */
+  
+    var w = window.innerWidth;
+    if (w < 640) {
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            cssMode: true,
+            roundLengths: true,
+            slidesPerView: 1,
+            loop: false,
+            removeClippedSubviews: false,
+        });
+    }
 
 // AJAX CV Request submit
 $('form').on('submit', function (e) {
