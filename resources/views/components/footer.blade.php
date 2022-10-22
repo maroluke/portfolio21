@@ -53,7 +53,7 @@
             <div class="border-t border-white/20 pt-6 flex flex-col gap-6 xxs:col-span-6 sm:col-span-5 sm:flex-row">
                 <div class="text-tiny leading-6 z-20 flex-1">
                     <p class="uppercase">Last update</p>
-                    <p>September 5, 2022</p>
+                    <p>October 23, 2022</p>
                     <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
                 </div>
     
