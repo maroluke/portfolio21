@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-    mode: 'jit',
+    //mode: 'jit',
     content: [
         './resources/views/**/*.blade.php',
         './resources/css/**/*.css',
@@ -11,10 +11,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'heading': ['hero-new', 'sans-serif'],
+                'heading': ['new-hero', 'sans-serif'],
                 'body': ['strawfordregular', 'sans-serif'],
-                'bolder': ['strawfordmedium', 'sans-serif'],
-                'button': ['hero-new', 'sans-serif'],
+                'bolder': ['strawfordbold', 'sans-serif'],
+                'button': ['new-hero', 'sans-serif'],
             },
 
             fontSize: {
@@ -159,10 +159,13 @@ module.exports = {
             addBase({
                 'h1, h2, h3, h4': {
                     fontFamily: theme('fontFamily.heading'),
-                    fontWeight: theme('fontWeight.bold')
+                    fontWeight: 700
                 },
-                'h1, h2, h3': {
-                    fontSize: theme('fontSize.normal')
+                'h2': {
+                    fontSize: theme('fontSize.2xl')
+                },
+                'h3': {
+                    fontSize: theme('fontSize.xl')
                 },
                 'h4': {
                     fontSize: theme('fontSize.sm')

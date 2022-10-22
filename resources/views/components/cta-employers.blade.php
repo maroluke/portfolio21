@@ -9,8 +9,8 @@
             <p class="pt-8 text-small">@lang('Meine Fachkenntnisse stelle ich Ihnen in den folgenden Bereichen zur Verfügung:')</p>
             
             <ul class="pt-8 flex flex-col gap-4">
-                <li class="flex-1 flex"><p class="w-full text-small font-bolder"><span class="text-blue-400">&#8680;</span> @lang('Fullstack Web Developer')</p></li><!-- (Laravel, TailwindCSS, AlpineJS, WordPress) -->
-                <li class="flex-1 flex"><p class="w-full text-small font-bolder"><span class="text-blue-400">&#8680;</span> @lang('Project Manager Web')</p></li>
+                <li class="flex-1 flex"><p class="w-full text-small font-bolder"><span class="text-blue-400">&#8680;</span> @lang('Frontend Web Development')</p></li><!-- (Laravel, TailwindCSS, AlpineJS, WordPress) -->
+                <li class="flex-1 flex"><p class="w-full text-small font-bolder"><span class="text-blue-400">&#8680;</span> @lang('Project Management')</p></li>
                 <li class="flex-1 flex"><p class="w-full text-small font-bolder"><span class="text-blue-400">&#8680;</span> @lang('Product Owner')</p></li>
             </ul>
 

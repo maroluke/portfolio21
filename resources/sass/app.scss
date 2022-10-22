@@ -35,6 +35,22 @@
     }
 }
 
+* {
+    hyphens: manual;
+}
+
+.stroke-black path {
+    stroke: black;
+}
+
+.fill-black path {
+    fill: black;
+}
+
+.font-heading {
+    font-weight: 700;
+}
+
 #intro-gradient,
 .entry-bg::after {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0086472) 6.67%, rgba(0, 0, 0, 0.03551) 13.33%, rgba(0, 0, 0, 0.0816599) 20%, rgba(0, 0, 0, 0.147411) 26.67%, rgba(0, 0, 0, 0.231775) 33.33%, rgba(0, 0, 0, 0.331884) 40%, rgba(0, 0, 0, 0.442691) 46.67%, rgba(0, 0, 0, 0.557309) 53.33%, rgba(0, 0, 0, 0.668116) 60%, rgba(0, 0, 0, 0.768225) 66.67%, rgba(0, 0, 0, 0.852589) 73.33%, rgba(0, 0, 0, 0.91834) 80%, rgba(0, 0, 0, 0.96449) 86.67%, rgba(0, 0, 0, 0.991353) 93.33%, #000000 100%);
@@ -73,6 +89,10 @@ h4 {
     @apply tracking-tight;
 
     line-height: 1.125;
+}
+
+h2 {
+    line-height: normal;
 }
 
 #entry {
@@ -306,6 +326,8 @@ html {
 
 .animate-swipe-x {
     @apply font-heading text-sm tracking-wide relative w-24 ml-6;
+
+    transition: opacity 1s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 .animate-swipe-x::before {
@@ -367,6 +389,71 @@ html {
     svg {
         @apply fill-white;
     }
+}
+
+.contact-options {
+    li {
+        a {
+            svg {
+                @apply w-full h-auto;
+
+                path {
+                    @apply stroke-inherit fill-inherit;
+                }
+            }
+        }
+
+        ul {
+            filter: drop-shadow(0 -5px 15px rgba(0, 0, 0, .8));
+        }
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+.continue-content {
+    top: 100vh;
+    background: transparent;
+}
+
+// #intro {
+//     //clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+    
+
+//     &:after {
+//         background: red;
+//         bottom: 0;
+//         content: '';
+//         display: block;
+//         height: 100%;
+//         left: 0;
+//         position: absolute;
+//         right: 0;
+//         transform: skewY(-1.5deg);
+//         transform-origin: 100%;
+//         z-index: -1;
+//       }
+// }
+
+#intro {
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(0 -3mm 8mm rgb(0, 0, 0));
+}
+
+.fade-out {
+    opacity: .25 !important;
+}
+
+.arrow::after {
+    @apply -mt-3 left-1/2 top-0 absolute bg-white block;
+
+    content: "";
+    width: 10px;
+    height: 5px;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    margin-left: -5px;
 }
 
 @import "tailwindcss/components";

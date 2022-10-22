@@ -1,13 +1,31 @@
-<section id="references" class="z-50 relative -mt-32">
+<section id="references" class="z-40 relative -mt-32 md:-mt-0">
     <div class="card-slider relative pb-12 sm:pb-24">
         <div class="pt-16 pb-8 relative z-50 flex flex-col justify-end overflow-hidden bg-black box-shadow">
             <h2 class="px-6 flex-grow sm:text-center text-white">@lang('Expertise')</h2>
-            <p class="animate-swipe-x opacity-30 flex-shrink sm:hidden text-white mt-6"></p>
+            <p class="animate-swipe-x opacity-75 flex-shrink text-micro sm:hidden text-white mt-6"></p>
         </div>
         
         <div class="swiper">
             <div class="swiper-wrapper flex sm:flex-col sm:mx-auto sm:gap-4 max-w-screen-md">
                 <!-- Slides -->
+                <div class="swiper-slide px-2 sm:mx-auto xl:flex-1">
+                    <div class="relative text-black bg-dirty-white rounded-2xl overflow-hidden border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
+                        <div class="h-44 bg-cover bg-center image sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/desktop-screen-naanu-02.png') }});"></div>
+
+                        <div class="reference-text rounded-b-2xl p-5 flex flex-col flex-grow justify-start relative sm:p-5 sm:col-span-2">
+                            <h3 class="align-text-bottom text-small font-bolder">naanu</h3>
+
+                            @if (App::isLocale('zh'))
+                                <p class="text-tiny py-6">naanu 是苏黎世的一家餐厅，提供外卖和送餐服务，它向我提出了建立新<a class="bg-yellow-200 px-1 hover:bg-yellow-400 text-black sm:hover:text-black rounded" href="https://naanu.ch" target="_blank">数字业务</a>的需求。</p>
+                                <p class="text-tiny pb-2">最终结果是一个与企业内部预订、收银机和会计系统以及公共交付服务提供商连接的整体解决方案。</p>
+                            @else
+                                <p class="text-tiny py-6">@lang('naanu ist ein Restaurant, Take-Away und Delivery Service in Zürich welches mit dem Bedürfnis ihre Arbeits­prozesse zu digita­li­sieren an mich heran­getreten ist.')</p>
+                                <p class="text-tiny pb-2">@lang('Entstanden ist eine integrale Lösung bestehend aus ')<a class="bg-yellow-200 px-1 hover:bg-yellow-400 text-black sm:hover:text-black rounded" href="https://naanu.ch" target="_blank">@lang('Online– Shop')</a>@lang(' Produkt­verwaltung, Beleg­druck und Anbindung ans betriebs­interne Reservations- und Kassen­system sowie an die gängigen Auslieferungs­dienst­leister.')</p>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="swiper-slide px-2 sm:mx-auto xl:flex-1">
                     <div class="relative text-black bg-dirty-white rounded-2xl overflow-hidden border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
                         <div class="h-44 bg-cover bg-no-repeat image sm:bg-center sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/mobile-screen-generation-purpose-01.png') }});"></div>
@@ -52,24 +70,6 @@
                                 <x-icon-icon-link class="hover:opacity-75 w-7 inline bg-black p-1 mr-2 rounded"/>
                                 <span class="">Zum Produkt</span>
                             </a> --}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide px-2 sm:mx-auto xl:flex-1">
-                    <div class="relative text-black bg-dirty-white rounded-2xl overflow-hidden border-gray-200 flex flex-col h-full transition-opacity duration-300 ease-in-out sm:border-none drop-shadow sm:grid sm:grid-cols-3 sm:p-0">
-                        <div class="h-44 bg-cover bg-center image sm:h-full sm:min-h-full sm:col-span-1" style="background-image: url({{ asset('media/desktop-screen-naanu-02.png') }});"></div>
-
-                        <div class="reference-text rounded-b-2xl p-5 flex flex-col flex-grow justify-start relative sm:p-5 sm:col-span-2">
-                            <h3 class="align-text-bottom text-small font-bolder">naanu</h3>
-
-                            @if (App::isLocale('zh'))
-                                <p class="text-tiny py-6">naanu 是苏黎世的一家餐厅，提供外卖和送餐服务，它向我提出了建立新<a class="bg-yellow-200 px-1 hover:bg-yellow-400 text-black sm:hover:text-black rounded" href="https://naanu.ch" target="_blank">数字业务</a>的需求。</p>
-                                <p class="text-tiny pb-2">最终结果是一个与企业内部预订、收银机和会计系统以及公共交付服务提供商连接的整体解决方案。</p>
-                            @else
-                                <p class="text-tiny py-6">@lang('naanu ist ein Restaurant, Take-Away und Delivery Service in Zürich welches mit dem Bedürfnis ihre Arbeits­prozesse zu digita­li­sieren an mich heran­getreten ist.')</p>
-                                <p class="text-tiny pb-2">@lang('Entstanden ist eine integrale Lösung bestehend aus ')<a class="bg-yellow-200 px-1 hover:bg-yellow-400 text-black sm:hover:text-black rounded" href="https://naanu.ch" target="_blank">@lang('Online– Shop')</a>@lang(' Produkt­verwaltung, Beleg­druck und Anbindung ans betriebs­interne Reservations- und Kassen­system sowie an die gängigen Auslieferungs­dienst­leister.')</p>
-                            @endif
                         </div>
                     </div>
                 </div>

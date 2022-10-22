@@ -1,6 +1,6 @@
 <section id="portrait" class="px-6 py-16 z-20 relative mx-auto bg-gray-100 text-black">
     <div class="max-w-xs mx-auto justify-between md:max-w-screen-md md:flex lg:justify-around xl:max-w-screen-lg">
-        <div class="flex-1 gap-2 justify-between max-w-xs xxs:flex sm:order-2 md:flex-initial">
+        <div class="flex-1 gap-2 justify-between max-w-xs xxs:flex sm:order-2 md:flex-initial flex-nowrap">
             <div class="relative flex-grow w-full">
                 <img 
                     src="{{ asset('media/marko-portrait.png') }}" 

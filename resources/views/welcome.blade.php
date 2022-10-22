@@ -9,7 +9,7 @@
 
         {{-- <div id="intro-gradient" class="h-64 w-full relative z-10"></div> --}}
 
-        <div class="bg-black relative">
+        <div class="bg-black relative continue-content">
             <x-intro />
 
             <x-references />
@@ -31,15 +31,5 @@
 
             <x-footer />
         </div>
-
-        {{-- <div x-data="{ open: false }">
-            <button @click="open = true">Open Dropdown</button>
-            <ul
-                x-show="open"
-                @click.away="open = false"
-            >
-                Dropdown Body
-            </ul>
-        </div> --}}
     @stop
 </x-layout>
