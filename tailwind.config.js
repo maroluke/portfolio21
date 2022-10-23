@@ -1,10 +1,8 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-    //mode: 'jit',
     content: [
         './resources/views/**/*.blade.php',
-        './resources/css/**/*.css',
         './resources/sass/**/*.scss',
         './resources/js/**/*.js',
     ],
@@ -179,5 +177,4 @@ module.exports = {
             })
         })
     ],
-    variants: {}
 }

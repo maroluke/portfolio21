@@ -21,7 +21,7 @@ import Sparticles from "sparticles";
  */
 
 window.Alpine = Alpine;
-window.Alpine.start();
+Alpine.start();
 
 //
 // I'm hotlinking to some SVG images from flaticon.com
