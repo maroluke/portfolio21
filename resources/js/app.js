@@ -198,9 +198,9 @@ const { enableAutoPageviews } = Plausible({
 
         const swiper5 = new Swiper('.swiper5', options);
 
-        // swiper.on('slideChange', function () {
-        //     $('.animate-swipe-x').addClass('fade-out');
-        // });
+        swiper.on('slideChange', function () {
+            $('.animate-swipe-x').addClass('fade-out');
+        });
 
         // swiper.on('toEdge', function () {
         //     $('.animate-swipe-x').removeClass('fade-out');
