@@ -56,6 +56,10 @@ module.exports = {
                     dark: '#F7F8FC',
                     DEFAULT: '#F7F8FC',
                 },
+                'black': {
+                    DEFAULT: '#111111',
+                    light: 'rgba(17,17,17,0.5)'
+                }
             },
             borderRadius: {
                 'xs': '0.09rem'
@@ -176,9 +180,6 @@ module.exports = {
                 'body': {
                     fontFamily: theme('fontFamily.body'),
                     fontWeight: 400,
-                },
-                'html': {
-                    backgroundColor: theme('backgroundColor.black')
                 },
             })
         })

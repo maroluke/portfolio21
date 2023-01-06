@@ -1,12 +1,12 @@
 import './bootstrap';
 import Alpine from 'alpinejs';
 import Plausible from 'plausible-tracker';
-import { Swiper, SwiperSlide } from 'swiper';
+import Swiper from 'swiper';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-//import simpleParallax from 'simple-parallax-js';
+import simpleParallax from 'simple-parallax-js';
 import Sparticles from "sparticles";
 
 // let gyroscope = new Gyroscope({frequency: 60});
@@ -95,9 +95,6 @@ window.initSparticles = function() {
     $main.style.opacity = 1;
     let width = window.innerWidth;
     let height = window.innerHeight;
-    // alternatives to window.innerHeight
-
-    
     window.mySparticles = new Sparticles($main, options, width, height);
 };
 
@@ -127,14 +124,14 @@ window.initSparticles = function() {
 //     orientation: "down",
 // });
 
-// const image3 = document.getElementsByClassName('parallax-3');
-// new simpleParallax(image3, {
-//     overflow: true,
-//     delay: .3,
-// 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-//     scale: 1.4,
-//     orientation: "up",
-// });
+const image3 = document.getElementsByClassName('parallax-3');
+new simpleParallax(image3, {
+    overflow: true,
+    delay: .3,
+	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+    scale: 1.4,
+    orientation: "up",
+});
   
 
 /* 
@@ -157,6 +154,7 @@ window.initSparticles = function() {
 
 const windowheight = window.outerHeight;
 $('#intro').css('margin-top', windowheight);
+$('#entry > div').css('height', window.innerHeight);
 
 /* 
  * Initialize Plausible.io
@@ -198,9 +196,9 @@ const { enableAutoPageviews } = Plausible({
 
         const swiper5 = new Swiper('.swiper5', options);
 
-        swiper.on('slideChange', function () {
-            $('.animate-swipe-x').addClass('fade-out');
-        });
+        // swiper.on('slideChange', function () {
+        //     $('.animate-swipe-x').addClass('fade-out');
+        // });
 
         // swiper.on('toEdge', function () {
         //     $('.animate-swipe-x').removeClass('fade-out');

@@ -1,6 +1,6 @@
 <section id="entry" class="w-full">
-    <div class="fixed top-0 bottom-0 w-full h-full flex gap-8 justify-start">
-        <div class="entry-bg lazy top-0 right-0 bg-right-top bg-contain bg-no-repeat absolute w-full max-w-screen-sm h-screen"></div>
+    <div class="fixed top-0 bottom-0 w-full flex gap-8 justify-start">
+        <div class="entry-bg top-0 right-0 bg-right-top bg-cover sm:bg-contain bg-no-repeat absolute w-full max-w-screen-xs h-full xs:after:bg-gradient-to-r xs:after:from-black xs:after:to-transparent"></div>
 
         <div class="flex flex-col gap-24 mx-auto text-white md:items-center w-full h-full z-10 max-w-screen-md md:text-center">
             <div class="px-6 pt-6 pb-12 bg-gradient-to-b from-black sm:bg-none">
