@@ -47,6 +47,8 @@
                     <p><a class="hover:text-gray-300 underline" target="_blank" href="https://unsplash.com/photos/vDRhC3PAHx0">Marko Lukac</a></p>
                     <p>Code Editor</p>
                     <p><a class="hover:text-gray-300 underline" target="_blank" href="https://images.unsplash.com/photo-1547954575-855750c57bd3">Reza Namdari</a></p>
+                    <p>Blue Space Box</p>
+                    <p><a class="hover:text-gray-300 underline" target="_blank" href="https://www.facebook.com/Swisscom/photos/pcb.10160310741822630/10160310740082630">Swisscom</a></p>
                 </div>
             </div>
         
