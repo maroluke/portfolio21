@@ -1,12 +1,12 @@
 <section id="cta-employers" class="px-6 py-20 z-20 relative">
-    <div class="mx-auto sm:container md:flex lg:justify-end md:gap-8 xl:max-w-screen-lg">
-        <div class="md:w-2/6">
-            <h2>@lang('Suchen Sie ')<span class="bg-clip-text neon neon-flat">@lang('Verstärkung')</span>@lang(' für Ihr Team?')</h2>
+    <div class="mx-auto max-w-screen-sm flex flex-col">
+        <div>
+            <h2>@lang('Suchen Sie ')<span class="bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500">@lang('Verstärkung')</span>@lang(' für Ihr Team?')</h2>
         </div>
 
-        <div class="md:w-4/6 lg:w-3/6">
-            <p class="pt-8 text-small md:pt-0">@lang('Ich bin jederzeit offen für neue und spannende Aufgaben, wo ich meine Kompetenzen sinnvoll einbringen und erweitern darf.')</p>
-            <p class="pt-8 text-small">@lang('Meine Fachkenntnisse stelle ich Ihnen in den folgenden Bereichen zur Verfügung:')</p>
+        <div>
+            <p class="pt-4 text-small md:pt-0">@lang('Ich bin jederzeit offen für neue und spannende Aufgaben, wo ich meine Kompetenzen sinnvoll einbringen und erweitern darf.')</p>
+            <p class="pt-4 text-small">@lang('Meine Fachkenntnisse stelle ich Ihnen in den folgenden Bereichen zur Verfügung:')</p>
             
             <ul class="pt-8 flex flex-col gap-4">
                 <li class="flex-1 flex"><p class="w-full text-small font-bolder"><span class="text-blue-400">&#8680;</span> @lang('Frontend Web Development')</p></li><!-- (Laravel, TailwindCSS, AlpineJS, WordPress) -->

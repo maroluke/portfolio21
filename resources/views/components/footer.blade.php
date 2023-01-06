@@ -1,4 +1,4 @@
-<section id="footer" class="z-20 relative">
+<section id="footer" class="lazy z-20 relative">
     <div class="relative mx-auto z-20 sm:container xl:max-w-screen-lg">
         <div class="pt-10 mx-6 grid grid-cols-1 gap-8 xxs:grid-cols-6 xxs:py-10 sm:grid-cols-6">
             <div class="max-w-screen-xxs xxs:col-span-6 sm:col-span-3">
@@ -53,7 +53,7 @@
             <div class="border-t border-white/20 pt-6 flex flex-col gap-6 xxs:col-span-6 sm:col-span-5 sm:flex-row">
                 <div class="text-tiny leading-6 z-20 flex-1">
                     <p class="uppercase">Last update</p>
-                    <p>October 23, 2022</p>
+                    <p>Januar 6, 2023</p>
                     <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
                 </div>
     
@@ -69,7 +69,7 @@
     
                 <div class="relative w-full mx-auto flex-grow z-10 xxs:col-span-1 xxs:absolute xxs:right-10 xxs:bottom-0 lg:mx-0">
                     <div class="overflow-hidden group cursor-none h-44 xxs:absolute xxs:w-44 xxs:bottom-0 xxs:right-0">
-                        <div class="memoji-sticker-2 h-full bg-contain bg-no-repeat bg-center transition-all duration-1000 ease-in-out group-hover:mt-96 xxs:bg-right-bottom"></div>
+                        <div class="memoji-sticker-2 lazy h-full bg-contain bg-no-repeat bg-center transition-all duration-1000 ease-in-out group-hover:mt-96 xxs:bg-right-bottom"></div>
                     </div>
                 </div>
             </div>

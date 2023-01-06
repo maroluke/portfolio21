@@ -1,9 +1,12 @@
 import './bootstrap';
 import Alpine from 'alpinejs';
 import Plausible from 'plausible-tracker';
-import Swiper from 'swiper';
-import 'swiper/scss';
-import simpleParallax from 'simple-parallax-js';
+import { Swiper, SwiperSlide } from 'swiper';
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+//import simpleParallax from 'simple-parallax-js';
 import Sparticles from "sparticles";
 
 // let gyroscope = new Gyroscope({frequency: 60});
@@ -14,6 +17,26 @@ import Sparticles from "sparticles";
 //   console.log(`Angular velocity along the Z-axis ${gyroscope.z}`);
 // });
 // gyroscope.start();
+
+// Lazy Loading
+document.addEventListener("DOMContentLoaded", function () {
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
+
+    if ("IntersectionObserver" in window) {
+        let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    lazyBackgroundObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        lazyBackgrounds.forEach(function (lazyBackground) {
+            lazyBackgroundObserver.observe(lazyBackground);
+        });
+    }
+});
 
 /* 
  * Initialize Alpine JS
@@ -72,6 +95,9 @@ window.initSparticles = function() {
     $main.style.opacity = 1;
     let width = window.innerWidth;
     let height = window.innerHeight;
+    // alternatives to window.innerHeight
+
+    
     window.mySparticles = new Sparticles($main, options, width, height);
 };
 
@@ -83,32 +109,32 @@ window.initSparticles = function() {
 // delete if nothing breaks
 // import { functions } from 'lodash';
 
-const image1 = document.getElementsByClassName('parallax');
-new simpleParallax(image1, {
-    overflow: true,
-    delay: .3,
-	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.1,
-    orientation: "up",
-});
+// const image1 = document.getElementsByClassName('parallax');
+// new simpleParallax(image1, {
+//     overflow: true,
+//     delay: .3,
+// 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+//     scale: 1.1,
+//     orientation: "up",
+// });
 
-const image2 = document.getElementsByClassName('parallax-2');
-new simpleParallax(image2, {
-    overflow: true,
-    delay: .3,
-	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.2,
-    orientation: "down",
-});
+// const image2 = document.getElementsByClassName('parallax-2');
+// new simpleParallax(image2, {
+//     overflow: true,
+//     delay: .3,
+// 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+//     scale: 1.2,
+//     orientation: "down",
+// });
 
-const image3 = document.getElementsByClassName('parallax-3');
-new simpleParallax(image3, {
-    overflow: true,
-    delay: .3,
-	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
-    scale: 1.4,
-    orientation: "up",
-});
+// const image3 = document.getElementsByClassName('parallax-3');
+// new simpleParallax(image3, {
+//     overflow: true,
+//     delay: .3,
+// 	transition: 'cubic-bezier(0.33, 1, 0.68, 1)',
+//     scale: 1.4,
+//     orientation: "up",
+// });
   
 
 /* 
@@ -129,6 +155,9 @@ new simpleParallax(image3, {
 // setScreenHeight('entry');
 // marginFromTop('flying-shapes', window.innerHeight);
 
+const windowheight = window.outerHeight;
+$('#intro').css('margin-top', windowheight);
+
 /* 
  * Initialize Plausible.io
  * https://github.com/plausible/
@@ -136,7 +165,7 @@ new simpleParallax(image3, {
 
 const { enableAutoPageviews } = Plausible({
     domain: 'markolukac.ch'
-  });
+});
   
   // This tracks the current page view and all future ones as well
   enableAutoPageviews();
@@ -148,22 +177,34 @@ const { enableAutoPageviews } = Plausible({
   
     const w = window.innerWidth;
     if (w < 640) {
-        const swiper = new Swiper('.swiper', {
+        const options = {
             speed: 400,
             cssMode: true,
             roundLengths: true,
-            slidesPerView: 1,
             loop: false,
             removeClippedSubviews: false,
-        });
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            centeredSlides: true,
+        }
 
-        swiper.on('slideChange', function () {
-            $('.animate-swipe-x').addClass('fade-out');
-        });
+        const swiper1 = new Swiper('.swiper1', options);
 
-        swiper.on('toEdge', function () {
-            $('.animate-swipe-x').removeClass('fade-out');
-        });
+        const swiper2 = new Swiper('.swiper2', options);
+
+        const swiper3 = new Swiper('.swiper3', options);
+
+        const swiper4 = new Swiper('.swiper4', options);
+
+        const swiper5 = new Swiper('.swiper5', options);
+
+        // swiper.on('slideChange', function () {
+        //     $('.animate-swipe-x').addClass('fade-out');
+        // });
+
+        // swiper.on('toEdge', function () {
+        //     $('.animate-swipe-x').removeClass('fade-out');
+        // });
     }
 
 // AJAX CV Request submit

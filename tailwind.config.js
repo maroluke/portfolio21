@@ -1,3 +1,4 @@
+const { upperCase } = require('lodash')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
@@ -9,10 +10,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'heading': ['new-hero', 'sans-serif'],
-                'body': ['strawfordregular', 'sans-serif'],
-                'bolder': ['strawfordbold', 'sans-serif'],
-                'button': ['new-hero', 'sans-serif'],
+                'heading': ['ingra', 'sans-serif'],
+                'body': [' ingra', 'sans-serif'],
+                'bolder': ['ingra', 'sans-serif'],
+                'button': ['ingra-condensed', 'sans-serif'],
             },
 
             fontSize: {
@@ -157,10 +158,14 @@ module.exports = {
             addBase({
                 'h1, h2, h3, h4': {
                     fontFamily: theme('fontFamily.heading'),
-                    fontWeight: 700
+                },
+                'h1': {
+                    fontSize: theme('fontSize.4xl'),
+                    fontWeight: 700,
                 },
                 'h2': {
-                    fontSize: theme('fontSize.2xl')
+                    fontSize: theme('fontSize.2xl'),
+                    fontWeight: 500,
                 },
                 'h3': {
                     fontSize: theme('fontSize.xl')
@@ -169,7 +174,8 @@ module.exports = {
                     fontSize: theme('fontSize.sm')
                 },
                 'body': {
-                    fontFamily: theme('fontFamily.body')
+                    fontFamily: theme('fontFamily.body'),
+                    fontWeight: 400,
                 },
                 'html': {
                     backgroundColor: theme('backgroundColor.black')

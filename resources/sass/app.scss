@@ -15,13 +15,19 @@
 
     &:before {
         z-index: -101;
-        background-image: url("#{$bkg1}");
+        
+        &.visible {
+            background-image: url("#{$bkg1}");
+        }
     }
 
     &:after {
         z-index: -100;
         opacity: 0;
-        background-image: url("#{$bkg2}");
+
+        &.visible {
+            background-image: url("#{$bkg2}");
+        }
     }
 
     &:hover {
@@ -33,6 +39,11 @@
             opacity: 0;
         }
     }
+}
+
+.lazy {
+    background-image: url();
+    /* Placeholder image */
 }
 
 * {
@@ -59,7 +70,6 @@
 .entry-bg {
     z-index: -1;
     background-position: 0 -6rem;
-    background-image: url('../media/macbook-1.png');
     margin-top: -40px;
     animation-name: slideIn;
     animation-duration: 4s;
@@ -67,8 +77,12 @@
     animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
     animation-fill-mode: forwards;
 
+    &.visible {
+        background-image: url('../media/macbook-1.png');
+    }
+
     &::after {
-        @apply absolute w-full h-full top-0 left-0 bottom-0 right-0;
+        @apply absolute w-full max-w-screen-xs h-full top-0 bottom-0 left-0;
 
         content: "";
 
@@ -86,13 +100,15 @@ h1,
 h2,
 h3,
 h4 {
-    @apply tracking-tight;
+    @apply leading-[1.125];
+}
 
-    line-height: 1.125;
+h1 {
+    @apply uppercase;
 }
 
 h2 {
-    line-height: normal;
+    @apply leading-normal;
 }
 
 #entry {
@@ -110,7 +126,8 @@ p {
 }
 
 .swiper-slide {
-    max-width: 90%;
+    width: auto !important;
+    max-width: 80%;
     height: auto !important;
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
@@ -122,6 +139,14 @@ p {
     &.swiper-slide-active>div {
         @apply opacity-100;
     }
+
+    &:first-child {
+        margin-inline-start: auto !important;
+    }
+
+    // &.slide-01 .slide-img {
+    //     background-image: url('../media/desktop-screen-naanu-02.png');
+    // }
 }
 
 .link-line {
@@ -202,8 +227,8 @@ input {
 .neon {
     @apply text-transparent;
 
-    animation: animateBg 15s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-    background: linear-gradient(200deg, #EB50CC, #38EBE4, #EB50CC, #38EBE4);
+    animation: animateBg 10s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    //background: linear-gradient(200deg, #EB50CC, #38EBE4, #EB50CC, #38EBE4);
     background-size: 1200% 1200%;
 }
 
@@ -255,7 +280,9 @@ button {
 #footer {
     @apply bg-no-repeat bg-bottom bg-contain sm:bg-cover bg-opacity-10;
 
-    background-image: url('../media/repository.png');
+    &.visible {
+        background-image: url('../media/repository.png');
+    }
 
     p {
         @apply text-sm;
@@ -371,7 +398,10 @@ html {
 
 .memoji-sticker-2 {
     filter: drop-shadow(2px -2px 2px rgba(0, 0, 0, .4));
-    background-image: url('../media/memoji-sticker-06.png');
+    
+    &.visible {
+        background-image: url('../media/memoji-sticker-06.png');
+    }
 }
 
 .box-shadow {
@@ -414,8 +444,7 @@ html, body {
 }
 
 .continue-content {
-    top: 100vh;
-    background: transparent;
+    //top: 100vh;
 }
 
 // #intro {

@@ -1,11 +1,12 @@
-<section id="portrait" class="px-6 py-16 z-20 relative mx-auto bg-gray-100 text-black">
+<section id="portrait" class="px-6 py-8 z-20 relative mx-auto bg-gray-100 text-black">
     <div class="max-w-xs mx-auto justify-between md:max-w-screen-md md:flex lg:justify-around xl:max-w-screen-lg">
         <div class="flex-1 gap-2 justify-between max-w-xs xxs:flex sm:order-2 md:flex-initial flex-nowrap">
             <div class="relative flex-grow w-full">
                 <img 
+                    loading="lazy"
                     src="{{ asset('media/marko-portrait.png') }}" 
                     alt="Portrait Marko Lukac" 
-                    class="rounded-xl object-cover w-full">
+                    class="lazy rounded-xl object-cover w-full">
             </div>
 
             <div class="grid grid-cols-3 gap-2 justify-items-center mt-2 xxs:flex xxs:flex-col xxs:justify-between xxs:mt-0 xxs:gap-0 xxs:grid-cols-1">
@@ -19,9 +20,9 @@
         </div>
 
         <div class="pt-10 sm:order-1 md:w-3/6">
-            <h2><span class="bg-clip-text neon neon-flat inline-block">@lang('Neugierig')?</span></h2>
+            <h2><span class="bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 inline-block">@lang('Neugierig')?</span></h2>
 
-            <p class="py-8 text-small">@lang('Es würde mich freuen, Sie mit Neuigkeiten über meine Arbeit auf dem Laufenden zu halten.')</p>
+            <p class="py-4 text-small">@lang('Es würde mich freuen, Sie mit Neuigkeiten über meine Arbeit auf dem Laufenden zu halten.')</p>
 
             <form method="POST" class="flex flex-wrap max-w-sm" data-context="submitNlEmail">
                 {{ csrf_field() }}
