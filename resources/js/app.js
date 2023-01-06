@@ -78,7 +78,7 @@ const options = {
     parallax: 5,
     rotation: 2,
     shape: "random",
-    speed: 1,
+    speed: 2,
     style: "fill",
     twinkle: false,
     xVariance: 2,
@@ -152,8 +152,7 @@ new simpleParallax(image3, {
 // setScreenHeight('entry');
 // marginFromTop('flying-shapes', window.innerHeight);
 
-const windowheight = window.outerHeight;
-$('#intro').css('margin-top', windowheight);
+$('#intro').css('margin-top', window.outerHeight);
 $('#entry > div').css('height', window.innerHeight);
 
 /* 
