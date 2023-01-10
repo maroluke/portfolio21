@@ -27,10 +27,13 @@
                     </div>
 
                     <div class="swiper-slide">
+                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-05.png') }}" alt="">
+                    </div>
+                    <div class="swiper-slide">
                         <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-01.png') }}" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-05.png') }}" alt="">
+                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-testing.jpg') }}" alt="">
                     </div>
                     <div class="swiper-slide">
                         <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-03.png') }}" alt="">
