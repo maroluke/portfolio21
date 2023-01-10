@@ -11,7 +11,7 @@
             <div class="flex flex-col gap-12 px-6">
                 {{-- <p class="text-small max-w-screen-sm md:m-auto xs:text-medium md:text-medium">{{ __('Ich entwickle') }}</p> --}}
                 
-                <h1 class="bg-clip-text neon neon-wide bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 text-4xl leading-snug md:text-6xl">
+                <h1 class="bg-clip-text neon neon-wide bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 text-3xl leading-snug md:text-6xl">
                     <span class="block bg-clip-text text-transparent md:leading-snug">@lang('Progressive Web-Lösungen für Agenturen & Unternehmen.')</span>
                     {{-- <span class="block bg-clip-text text-transparent">Ich unterstütze Menschen und Unternehmen bei der Entwicklung von Lösungen für Web und Mobile.</span> --}}
                 </h1>
@@ -23,6 +23,8 @@
                 </div>
         
                 <x-contact-actions class="md:order-1"/>
+
+                {{-- <x-sound-switch class="md:order-3" /> --}}
             </div>
         </div>
     </div>

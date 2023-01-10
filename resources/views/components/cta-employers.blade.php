@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="relative h-6 error flex-none w-full">
-                    <p class="messages text-sm pt-2 text-gray-500">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
+                    <p class="messages text-xs pt-2 text-gray-500">@lang('Die E–Mail Adresse wird nicht erfasst.')</p>
                 </div>
             </form>
 

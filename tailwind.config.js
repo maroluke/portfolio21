@@ -10,10 +10,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'heading': ['ingra', 'sans-serif'],
-                'body': [' ingra', 'sans-serif'],
-                'bolder': ['ingra', 'sans-serif'],
-                'button': ['ingra-condensed', 'sans-serif'],
+                'heading': ['MinSans-Black', 'sans-serif'],
+                'body': ['MinSans-Medium', 'sans-serif'],
+                'bolder': ['MinSans-Black', 'sans-serif'],
+                'button': ['MinSans-Black', 'sans-serif'],
             },
 
             fontSize: {
@@ -57,7 +57,7 @@ module.exports = {
                     DEFAULT: '#F7F8FC',
                 },
                 'black': {
-                    DEFAULT: '#111111',
+                    DEFAULT: '#010409',
                     light: 'rgba(17,17,17,0.5)'
                 }
             },
@@ -90,7 +90,7 @@ module.exports = {
 
                 'swipe-x-out': {
                     '0%': {
-                        opacity: 1,
+                        opacity: .75,
                         transform: 'translate(0%, 0%)'
                     },
                     '100%': {

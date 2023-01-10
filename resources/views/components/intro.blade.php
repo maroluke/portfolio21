@@ -1,36 +1,58 @@
-<section id="intro" class="continue-content z-20 relative text-black mx-auto bg-dirty-white rounded-t-3xl max-w-screen-md">
-    <div class="relative z-20 mx-auto xs:flex xs:items-center max-w-screen-sm">
-        <div class="p-6 sm:py-10 z-10 text-black sm:container sm:flex sm:flex-wrap sm:mx-auto sm:justify-end xl:max-w-screen-lg">
-            {{-- <p class="mt-10 text-small xs:text-tiny">Als erfahrener Softwareentwickler verstehe ich es, Ideen mit den fortschrittlichsten Technologien umzusetzen, um daraus effektive, digitale Erlebnisse zu <!-- entwickeln --> schaffen.</p> --}}
-            {{-- <p class="mt-10 text-small xs:text-tiny">{{ __('Als erfahrener Softwareentwickler realisiere ich individuelle, nutzerzentrierte Applikationen für Web und Mobile.') }}</p> --}}
-            
-            {{-- <h2>{{ __('Hallo,') }} {{ __('mein Name ') }} {{ __('ist ') }}<span class='bg-clip-text neon neon-flat'>Marko</span></h2> --}}
-            <h2 class="basis-4/6 pr-10">
-                {{ __('Ich bin Experte in der Entwicklung von ') }}
-                <span class='bg-clip-text neon neon-flat bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500'>
-                    individuellen Web-Anwendungen
-                </span>{!! __(', die Agenturen und Unternehmen dabei unterstützen, ihr Angebot durch ') !!}
-                <span class='bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500'>
-                    innovative digitale Lösungen
-                </span>
-                {!! __(' zu erweitern.') !!}
-            </h2>
-            
-            <div class="flex relative basis-2/6 z-10 px-8 sm:px-0 md:container">
-                <div class="flex-1 flex justify-end z-20">
-                    <img loading="lazy" class="lazy device-shadow parallax w-32 self-center -mr-4" src="{{ asset('media/mobile-screen-fundament-15.png') }}" alt="Mobile Screen">
+<section id="intro" class="relative continue-content z-20 bg-gradient-to-t from-black">
+    <div class="text-black mx-auto bg-dirty-white rounded-3xl max-w-screen-md">
+        <div class="z-20 mx-auto xs:flex xs:items-center max-w-screen-sm">
+            <div x-data class="p-6 sm:py-10 z-10 text-black sm:container sm:flex sm:flex-wrap sm:mx-auto xl:max-w-screen-lg">
+                {{-- <p class="mt-10 text-small xs:text-tiny">Als erfahrener Softwareentwickler verstehe ich es, Ideen mit den fortschrittlichsten Technologien umzusetzen, um daraus effektive, digitale Erlebnisse zu <!-- entwickeln --> schaffen.</p> --}}
+                {{-- <p class="mt-10 text-small xs:text-tiny">{{ __('Als erfahrener Softwareentwickler realisiere ich individuelle, nutzerzentrierte Applikationen für Web und Mobile.') }}</p> --}}
+                
+                {{-- <h2>{{ __('Hallo,') }} {{ __('mein Name ') }} {{ __('ist ') }}<span class='bg-clip-text neon neon-flat'>Marko</span></h2> --}}
+                <p class="text-xl font-medium">
+                    {{-- {{ __('Wollen Sie Ihr Angebot durch ') }}
+                    <span class='-mr-1 bg-clip-text neon neon-flat bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500'>
+                        innovative digitale Lösungen
+                    </span>erweitern?
+                    <br />
+                    <br />
+                    {!! __('Ich entwickle ') !!}
+                    <span class='bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500'>
+                        individuelle Web-Anwendungen
+                    </span>
+                    {!! __(' für Agenturen und Unternehmen.') !!} --}}
+                    {{-- Lassen Sie uns das Problem identifizieren und gemeinsam eine Lösung finden. --}}
+                    {{ __('Als Frontend Developer bringe ich jahrelange Erfahrung in der Entwicklung von individuellen ') }}
+                    <span class='bg-clip-text neon neon-flat bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500'>
+                        Websites
+                    </span>
+                    {{ __('  und ') }}
+                    <span class='bg-clip-text neon neon-flat bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500'>
+                        Single Page Applications
+                    </span>mit.
+                    <br />
+                    <br />
+                    {!! __('Zudem sammelte ich fundierte Kenntnisse im ') !!}
+                    <span class='-mr-1 bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500'>
+                        Projektmanagement
+                    </span>, der
+                    <span class=' bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500'>
+                        Konzeption
+                    </span>sowie
+                    <span class='bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500'>
+                        Kollaboration
+                    </span>
+                    während meiner Tätigkeit bei renomierten Agenturen sowie meiner Selbstständigkeit.
+                    <br />
+                    <br />
+                    {{ __('Ich bin jederzeit offen für ') }}
+                    <span class='-mr-1 bg-clip-text neon neon-flat bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500'>
+                        spannende Angebote
+                    </span>.
+                    {{-- {!! __(' für Agenturen und Unternehmen.') !!} --}}
+                </p>
+    
+                <div class="flex flex-col sm:flex-row gap-2 mt-8 w-full">
+                    <x-link-button @click="$store.modal.toggleContact()" class="cursor-pointer z-10 px-1 text-black bg-[#fff] rounded-lg bg-opacity-85 tracking-wider">@lang('Termin vereinbaren')</x-link-button>
+                    <x-link-button @click="$store.modal.toggleCV()" class="cursor-pointer z-10 px-1 text-black bg-[#fff] rounded-lg bg-opacity-85 tracking-wider">@lang('CV anfordern')</x-link-button>
                 </div>
-        
-                <div class="flex-1 flex justify-start z-10">
-                    <img loading="lazy" class="lazy device-shadow parallax-2 w-32 self-center -ml-2 -mt-8" src="{{ asset('media/mobile-screen-naanu-01.png') }}" alt="Mobile Screen">
-                </div>
-            </div>
-            
-            <div class="w-full">
-                {{-- <p class="mt-8 text-small leading-tight md:flex-1 sm:mt-0">{{ __('Ich bin spezialisiert auf die Entwicklung von massgeschneiderten Web-Anwendungen, die dazu beitragen, das Angebot von Agenturen sowie Unternehmen um innovative digitale Lösungen zu erweitern.') }}</p> --}}
-                <p class="mt-8 text-small leading-tight md:flex-1">{{ __('Von der Idee bis zum marktreifen Produkt unterstütze ich Sie bei der Verwirklichung Ihres Projekts und berücksichtige dabei auch die potenziellen Auswirkungen. Meine Fähigkeiten gewährleisten die Entwicklung sicherer, zuverlässiger und skalierbarer Applikationen.') }}</p>
-                <p class="mt-8 text-small leading-tight md:flex-1">{!! __('Mein Ziel ist es, nützliche und benutzerfreundliche Produkte zu liefern, die einen echten Mehrwert für das Unternehmen und die Nutzer bieten.') !!}</p>
-                <p class="mt-8 text-small leading-tight md:flex-1">{!! __('Ich bin Marko und stehe Ihnen gerne zur Verfügung. Wie kann ich Ihnen helfen?') !!}</p>
             </div>
         </div>
     </div>

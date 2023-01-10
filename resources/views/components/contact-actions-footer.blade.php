@@ -5,18 +5,18 @@
     <li>
         <button 
             @click="$store.data.triggerContact($store.data.telURI)"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
+            class="w-5 block text-black font-heading text-micro tracking-widest opacity-75"
         >
-            <x-icon-icon-call class="fill-white w-full" />
+            <x-icon-icon-call class="fill-black w-full" />
         </button>
     </li>
 
     <li>
         <button
             @click="$store.data.triggerContact($store.data.emailURI)"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
+            class="w-5 block text-black font-heading text-micro tracking-widest opacity-75"
         >
-            <x-icon-icon-email class="fill-white w-full" />
+            <x-icon-icon-email class="fill-black w-full" />
         </button>
     </li>
 
@@ -27,9 +27,9 @@
         <button 
             :class="!open ? '' : '!opacity-100'"
             @click="open = ! open"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
+            class="w-5 block text-black font-heading text-micro tracking-widest opacity-75"
         >
-            <x-icon-icon-imessage class="stroke-white w-full" />
+            <x-icon-icon-imessage class="stroke-black w-full" />
         </button>
 
         <ul 
@@ -72,9 +72,9 @@
     <li>
         <button
             @click="$store.data.triggerContact('instagram://user?username=maroluke')"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
+            class="w-5 block text-black font-heading text-micro tracking-widest opacity-75"
         >
-            <x-icon-icon-instagram class="stroke-white w-full" />
+            <x-icon-icon-instagram class="stroke-black w-full" />
         </button>
     </li>
 </ul>

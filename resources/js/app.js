@@ -44,6 +44,41 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 
 window.Alpine = Alpine;
+
+Alpine.store('modal', {
+    showModalCV: false,
+    showModalContact: false,
+    modalOpen: false,
+    
+    toggleCV() {
+        this.showModalCV = ! this.showModalCV
+        this.modalOpen = ! this.modalOpen
+
+    },
+
+    toggleContact() {
+        this.showModalContact = ! this.showModalContact
+        this.modalOpen = ! this.modalOpen
+    },
+});
+
+Alpine.store('data', {
+    pn: '+41763887018',
+    email: 'hello@markolukac.ch',
+    subject: 'Website contact',
+    body: 'Hello Marko, ',
+    smsURI: 'sms:+41763887018',
+    telURI: 'tel:+41763887018',
+    emailURI: 'mailto:hello@markolukac.ch?&subject=Website contact&body=Hello Marko',
+    instagramURI: 'instagram://user?username=maroluke',
+    telegramURI: 'https://t.me/maroluke',
+    whatsappURI: ' https://wa.me/+41763887018/?text=Hello Marko, ',
+
+    triggerContact(option) {
+        window.open(option, '_self');
+    }
+});
+
 Alpine.start();
 
 //
@@ -173,36 +208,39 @@ const { enableAutoPageviews } = Plausible({
    */
   
     const w = window.innerWidth;
-    if (w < 640) {
-        const options = {
+    // if (w < 640) {
+    const swiper1 = new Swiper('.swiper1', swiperOptions());
+
+    const swiper2 = new Swiper('.swiper2', swiperOptions());
+
+    const swiper3 = new Swiper('.swiper3', swiperOptions());
+
+    const swiper4 = new Swiper('.swiper4', swiperOptions());
+
+    const swiper5 = new Swiper('.swiper5', swiperOptions());
+
+    function swiperOptions() {
+        return {
             speed: 400,
             cssMode: true,
             roundLengths: true,
-            loop: false,
             removeClippedSubviews: false,
             slidesPerView: "auto",
             spaceBetween: 10,
             centeredSlides: true,
+
+            on: {
+                slideChange: function () {
+                    $('.animate-swipe-x').addClass('fade-out');
+                },
+
+                toEdge: function () {
+                    $('.animate-swipe-x').removeClass('fade-out');
+                }
+            }
         }
-
-        const swiper1 = new Swiper('.swiper1', options);
-
-        const swiper2 = new Swiper('.swiper2', options);
-
-        const swiper3 = new Swiper('.swiper3', options);
-
-        const swiper4 = new Swiper('.swiper4', options);
-
-        const swiper5 = new Swiper('.swiper5', options);
-
-        // swiper.on('slideChange', function () {
-        //     $('.animate-swipe-x').addClass('fade-out');
-        // });
-
-        // swiper.on('toEdge', function () {
-        //     $('.animate-swipe-x').removeClass('fade-out');
-        // });
     }
+    // }
 
 // AJAX CV Request submit
 $('form').on('submit', function (e) {

@@ -14,6 +14,7 @@
     justify-center
     relative
     rounded-xl
+    flex-1
     '
 @endphp
 

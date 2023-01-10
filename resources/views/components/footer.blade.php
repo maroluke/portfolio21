@@ -54,18 +54,18 @@
         
             <div class="border-t border-white/20 pt-6 flex flex-col gap-6 xxs:col-span-6 sm:col-span-5 sm:flex-row">
                 <div class="text-tiny leading-6 z-20 flex-1">
-                    <p class="uppercase">Last update</p>
-                    <p>Januar 6, 2023</p>
+                    <p class="uppercase font-bolder">Last update</p>
+                    <p>Januar 10, 2023</p>
                     <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
                 </div>
     
                 <div class="text-base leading-6 z-20 flex-1 lg:flex-row">
-                    <p class="uppercase">Copyright</p>
+                    <p class="uppercase font-bolder">Copyright</p>
                     <p>© 2022 Marko Lukac<br />Zürich – Switzerland 🇨🇭</p>
                 </div>
 
                 <div class="text-base leading-6 z-20 flex-1 lg:flex-row">
-                    <p class="uppercase">Commercial register</p>
+                    <p class="uppercase font-bolder">Commercial register</p>
                     <p>Lukac Interactive<br />CHE-494.796.673</p>
                 </div>
     
@@ -78,5 +78,5 @@
         </div>
     </div>
 
-    <div class="absolute left-0 top-0 w-full h-full bg-black/50 z-10"></div>
+    {{-- <div class="absolute left-0 top-0 w-full h-full z-10"></div> --}}
 </section>

@@ -1,35 +1,35 @@
 <ul
     x-data="{ open: false }"
-    class="contact-options flex gap-6 z-50"
+    class="contact-options flex gap-6 z-50 w-full justify-center items-center"
 >
-    <li>
+    <li class="w-10 h-10 block p-2 rounded-lg shadow-button bg-[#fff]">
         <button 
             @click="$store.data.triggerContact($store.data.telURI)"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
+            class="text-neon-blue w-full h-full"
         >
-            <x-icon-icon-call class="fill-white w-full" />
+            <x-icon-icon-call class="fill-neon-blue w-full h-full" />
         </button>
     </li>
 
-    <li>
+    <li class="w-10 h-10 block p-2 rounded-lg shadow-button bg-[#fff]">
         <button
             @click="$store.data.triggerContact($store.data.emailURI)"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
+            class="text-neon-blue"
         >
-            <x-icon-icon-email class="fill-white w-full" />
+            <x-icon-icon-email class="fill-neon-blue w-full h-full" />
         </button>
     </li>
 
     <li 
         :class="!open ? '' : 'arrow !opacity-100'"
-        class="relative"
+        class="relative w-10 h-10 block p-2 rounded-lg shadow-button bg-[#fff]"
     >
         <button 
             :class="!open ? '' : '!opacity-100'"
             @click="open = ! open"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
+            class="text-neon-blue"
         >
-            <x-icon-icon-imessage class="stroke-white w-full" />
+            <x-icon-icon-imessage class="stroke-neon-blue w-full h-full" />
         </button>
 
         <ul 
@@ -42,7 +42,7 @@
                     @click="$store.data.triggerContact($store.data.smsURI)"
                     class="text-black font-heading text-sm flex items-center gap-5"
                 >
-                    <x-icon-icon-imessage class="stroke-black w-6" />
+                    <x-icon-icon-imessage class="w-6 stroke-neon-blue" />
                     <span>SMS</span>
                 </button>
             </li>
@@ -52,7 +52,7 @@
                     @click="$store.data.triggerContact($store.data.telegramURI)"
                     class="text-black font-heading text-sm flex items-center gap-5"
                 >
-                    <x-icon-icon-telegram class="fill-black w-6" />
+                    <x-icon-icon-telegram class=" w-6 stroke-neon-blue" />
                     <span>Telegram</span>
                 </button>
             </li>
@@ -62,19 +62,10 @@
                     @click="$store.data.triggerContact($store.data.whatsappURI)"
                     class="text-black font-heading text-sm flex items-center gap-5"
                 >
-                    <x-icon-icon-whatsapp class="stroke-black w-6" />
+                    <x-icon-icon-whatsapp class="w-6 stroke-neon-blue" />
                     <span>Whatsapp</span>
                 </button>
             </li>
         </ul>
-    </li>
-
-    <li>
-        <button
-            @click="$store.data.triggerContact('instagram://user?username=maroluke')"
-            class="w-5 block text-white font-heading text-micro tracking-widest opacity-75"
-        >
-            <x-icon-icon-instagram class="stroke-white w-full" />
-        </button>
     </li>
 </ul>

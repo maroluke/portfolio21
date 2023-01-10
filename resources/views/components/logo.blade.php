@@ -1,3 +1,12 @@
-<p class="uppercase text-white text-sm tracking-widest font-heading">Marko Lukac</p>
-<p class="uppercase text-white text-sm tracking-widest font-thin">Frontend Developer</p>
-<p class="uppercase text-white text-sm tracking-widest font-thin">Project Manager</p>
+@php
+    $classes = '
+        uppercase
+        text-sm
+        tracking-widest
+    ';
+@endphp
+
+<p {{ $attributes->merge(['class' => $classes ]) }} ><span class="font-heading">Marko Lukac</span></p>
+{{-- <hr class="border-gray-400 opacity-30 my-1"> --}}
+<p {{ $attributes->merge(['class' => $classes ]) }} >Frontend Engineer</p>
+<p {{ $attributes->merge(['class' => $classes ]) }} >Project Manager</p>
