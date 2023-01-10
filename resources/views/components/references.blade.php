@@ -74,6 +74,10 @@
                     <div class="swiper-slide">
                         <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/restaurant.png') }}" alt="">
                     </div>
+
+                    <div class="swiper-slide">
+                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/naanu-testing.jpg') }}" alt="">
+                    </div>
                 </div>
             </div>
             
