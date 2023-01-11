@@ -3,7 +3,7 @@
         <div class="relative z-50 px-6 py-8 flex flex-col overflow-hidden box-shadow md:items-center">
             <h2 class="text-4xl bg-clip-text neon neon-flat bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 flex-grow md:text-center">@lang('Expertise')</h2>
             <p class="text-xl font-medium pt-6 max-w-lg md:text-center">Unter anderem durfte ich massgeblich an der Realisierung folgender Projekte beitragen:</p>
-            <p class="animate-swipe-x opacity-75 flex-shrink text-micro text-white mt-6 md:text-center"></p>
+            <p class="animate-swipe-x font-medium opacity-75 flex-shrink text-micro text-white mt-6 md:text-center"></p>
         </div>
         
         

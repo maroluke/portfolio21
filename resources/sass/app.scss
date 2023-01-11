@@ -229,7 +229,7 @@ p {
 }
 
 input {
-    @apply font-bold text-base tracking-wide text-gray-400 py-3 px-6 w-full rounded-xl focus:text-neon-blue-dark focus:bg-sky-500/50;
+    @apply font-medium text-base tracking-wide text-gray-400 py-3 px-6 w-full rounded-xl focus:text-neon-blue-dark focus:bg-sky-500/50;
 
     height: 50px;
 }

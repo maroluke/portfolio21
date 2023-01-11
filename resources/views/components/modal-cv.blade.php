@@ -27,7 +27,7 @@
         </div>
 
         <div class="relative h-6 flex-none w-full">
-            <p class="messages text-xs pt-2 text-gray-500">@lang('Ihre E–Mail Adresse wird nicht erfasst.')</p>
+            <p class="messages pl-1 text-xs pt-2 text-gray-500">@lang('Ihre E–Mail Adresse wird nicht erfasst.')</p>
         </div>
 
         <div @click="$store.modal.toggleCV().prevent" class="mt-5 w-full">

@@ -3,7 +3,7 @@
         <div class="pt-10 mx-6 grid grid-cols-1 gap-8 xxs:grid-cols-6 xxs:py-10 sm:grid-cols-6">
             <div class="max-w-screen-xxs xxs:col-span-6 sm:col-span-3">
                 <div class="text-base leading-6">
-                    <h4 class="uppercase tracking-wider mb-2">Made with</h4>
+                    <h4 class="uppercase font-black tracking-wider mb-2">Made with</h4>
 
                     <div class="flex flex-wrap gap-6">
                         <a href="https://github.com/laravel/framework" target="_blank" class="flex items-center h-12 flex-1">
@@ -34,7 +34,7 @@
             </div>
 
             <div class="text-base leading-6 max-w-screen-xxs xxs:col-span-6 sm:col-span-3">
-                <h4 class="uppercase tracking-wider mb-2 ">Credits</h4>
+                <h4 class="uppercase font-black tracking-wider mb-2 ">Credits</h4>
                 
                 <div class="grid grid-cols-2 gap-2">
                     <p>MacBook #1</p>
@@ -54,18 +54,18 @@
         
             <div class="border-t border-white/20 pt-6 flex flex-col gap-6 xxs:col-span-6 sm:col-span-5 sm:flex-row">
                 <div class="text-tiny leading-6 z-20 flex-1">
-                    <p class="uppercase font-bolder">Last update</p>
+                    <p class="uppercase font-black">Last update</p>
                     <p>Januar 10, 2023</p>
                     <p><a class="hover:text-gray-300 underline" href="https://github.com/maroluke/portfolio21" target="_blank">Public github repository</a></p>
                 </div>
     
                 <div class="text-base leading-6 z-20 flex-1 lg:flex-row">
-                    <p class="uppercase font-bolder">Copyright</p>
+                    <p class="uppercase font-black">Copyright</p>
                     <p>© 2022 Marko Lukac<br />Zürich – Switzerland 🇨🇭</p>
                 </div>
 
                 <div class="text-base leading-6 z-20 flex-1 lg:flex-row">
-                    <p class="uppercase font-bolder">Commercial register</p>
+                    <p class="uppercase font-black">Commercial register</p>
                     <p>Lukac Interactive<br />CHE-494.796.673</p>
                 </div>
     

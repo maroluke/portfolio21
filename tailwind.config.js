@@ -154,25 +154,26 @@ module.exports = {
         }) {
             addBase({
                 'h1, h2, h3, h4': {
-                    fontFamily: theme('fontFamily.heading'),
+                    fontWeight: 900,
                 },
                 'h1': {
                     fontSize: theme('fontSize.4xl'),
-                    fontWeight: 700,
                 },
                 'h2': {
                     fontSize: theme('fontSize.2xl'),
-                    fontWeight: 500,
                 },
                 'h3': {
-                    fontSize: theme('fontSize.xl')
+                    fontSize: theme('fontSize.xl'),
+                    fontWeight: 500,
                 },
                 'h4': {
                     fontSize: theme('fontSize.sm')
                 },
                 'body': {
-                    fontFamily: theme('fontFamily.body'),
                     fontWeight: 400,
+                },
+                'button, .button': {
+                    fontWeight: 900,
                 },
             })
         })

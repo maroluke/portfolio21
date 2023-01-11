@@ -19,7 +19,7 @@
 
             <div id="swipe-down" class="flex justify-between items-center pb-6 px-6 md:flex-col md:gap-10">
                 <div class="opacity-75 md:order-2">
-                    <span class="text-micro font-heading tracking-widest animate-swipe-y opacity-0 transform translate-y-full inline-block">@lang('Swipe')</span>
+                    <span class="text-micro font-medium tracking-widest animate-swipe-y opacity-0 transform translate-y-full inline-block">@lang('Swipe')</span>
                 </div>
         
                 <x-contact-actions class="md:order-1"/>
