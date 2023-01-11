@@ -30,7 +30,7 @@
             <p class="messages pl-1 text-xs pt-2 text-gray-500">@lang('Ihre E–Mail Adresse wird nicht erfasst.')</p>
         </div>
 
-        <div @click="$store.modal.toggleCV().prevent" class="mt-5 w-full">
+        <div @click="$store.modal.toggleCV()" class="mt-5 w-full">
             <x-link-button class="z-10 px-1 text-black bg-[#fff] rounded-lg bg-opacity-85 tracking-wider cursor-pointer">@lang('Abbrechen')</x-link-button>
         </div>
     </form>

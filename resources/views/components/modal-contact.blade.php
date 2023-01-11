@@ -2,7 +2,7 @@
     <div class="p-5 flex flex-wrap max-w-sm bg-dirty-white rounded-xl">
         <p class="text-black mb-5 text-xl">Wie möchten Sie mich kontaktieren?</p>
         <x-contact />
-        <div @click="$store.modal.toggleContact().prevent" class="mt-5 w-full">
+        <div @click="$store.modal.toggleContact()" class="mt-5 w-full">
             <x-link-button class="z-10 px-1 text-black bg-[#fff] rounded-lg bg-opacity-85 tracking-wider cursor-pointer">@lang('Abbrechen')</x-link-button>
         </div>
     </div>
