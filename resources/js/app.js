@@ -232,9 +232,14 @@ const { enableAutoPageviews } = Plausible({
             spaceBetween: 10,
             centeredSlides: true,
             preloadImages: false,
+            effect: 'fade',
             lazy: {
                 enabled: true,
                 loadPrevNext: true,
+                loadPrevNextAmount: 2,
+            },
+            fadeEffect: {
+                crossFade: true
             },
             on: {
                 slideChange: function () {
@@ -243,6 +248,10 @@ const { enableAutoPageviews } = Plausible({
 
                 toEdge: function () {
                     $('.animate-swipe-x').removeClass('fade-out');
+                },
+
+                lazyImageReady: function (swiper, slideEl, imageEl) {
+                    imageEl.style.opacity = 1;
                 }
             }
         }
