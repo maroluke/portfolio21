@@ -18,24 +18,24 @@ import Sparticles from "sparticles";
 // gyroscope.start();
 
 // Lazy Loading
-document.addEventListener("DOMContentLoaded", function () {
-    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
+// document.addEventListener("DOMContentLoaded", function () {
+//     var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
 
-    if ("IntersectionObserver" in window) {
-        let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    lazyBackgroundObserver.unobserve(entry.target);
-                }
-            });
-        });
+//     if ("IntersectionObserver" in window) {
+//         let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+//             entries.forEach(function (entry) {
+//                 if (entry.isIntersecting) {
+//                     entry.target.classList.add("visible");
+//                     lazyBackgroundObserver.unobserve(entry.target);
+//                 }
+//             });
+//         });
 
-        lazyBackgrounds.forEach(function (lazyBackground) {
-            lazyBackgroundObserver.observe(lazyBackground);
-        });
-    }
-});
+//         lazyBackgrounds.forEach(function (lazyBackground) {
+//             lazyBackgroundObserver.observe(lazyBackground);
+//         });
+//     }
+// });
 
 /* 
  * Initialize Alpine JS
@@ -120,7 +120,11 @@ const options = {
     bounce: false,
 };
 
-window.onload = function() {
+// window.onload = function() {
+//     initSparticles();
+// };
+
+window.onload = (event) => {
     initSparticles();
 };
 
