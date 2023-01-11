@@ -9,13 +9,6 @@ module.exports = {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                'heading': ['MinSans-Black', 'sans-serif'],
-                'body': ['MinSans-Medium', 'sans-serif'],
-                'bolder': ['MinSans-Black', 'sans-serif'],
-                'button': ['MinSans-Black', 'sans-serif'],
-            },
-
             fontSize: {
                 large: '3.4375rem',
                 normal: '2.25rem',

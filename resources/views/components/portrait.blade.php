@@ -13,7 +13,8 @@
                     loading="lazy"
                     src="{{ asset('media/marko-portrait.jpg') }}" 
                     alt="Portrait Marko Lukac" 
-                    class="lazy rounded-xl object-cover w-full">
+                    class="rounded-xl object-cover w-full"
+                >
             </div>
 
             <div class="grid grid-cols-3 gap-2 justify-items-center mt-2 xxs:flex xxs:flex-col xxs:justify-between xxs:mt-0 xxs:gap-0 xxs:grid-cols-1">

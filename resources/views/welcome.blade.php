@@ -13,7 +13,7 @@
 
         <div class="relative bg-black">
             <section class="z-10 relative w-full floating">
-                <img loading="lazy" class="lazy w-full max-w-lg mx-auto" src="{{ asset('media/macbook-2.jpg') }}" alt="MacBook">
+                <img loading="lazy" class="w-full max-w-lg mx-auto" src="{{ asset('media/macbook-2.jpg') }}" alt="MacBook">
                 <div class="w-full h-full bg-gradient-to-b from-black to-transparent top-full absolute left-0"></div>
             </section>
 
@@ -30,7 +30,7 @@
                 <div class="absolute left-0 bottom-0 w-full h-[50%] bg-gradient-to-t from-black z-20"></div>
                 <div class="absolute left-0 bottom-0 w-1/2 h-full bg-gradient-to-r from-black z-20"></div>
                 <div class="absolute right-0 bottom-0 w-1/2 h-full bg-gradient-to-l from-black z-20"></div>
-                <img loading="lazy" class="lazy parallax-3 sm:w-full md:mt-10" src="{{ asset('media/helloworld-lxfactory.jpg') }}" alt="Hello World - Lisboa - LX Factory">
+                <img loading="lazy" class="parallax-3 sm:w-full md:mt-10" src="{{ asset('media/helloworld-lxfactory.jpg') }}" alt="Hello World - Lisboa - LX Factory">
             </section>
 
             <x-footer />

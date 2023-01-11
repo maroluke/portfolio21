@@ -1,10 +1,9 @@
 import './bootstrap';
 import Alpine from 'alpinejs';
 import Plausible from 'plausible-tracker';
-import Swiper from 'swiper';
+import { Swiper, Lazy } from 'swiper';
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/bundle";
 
 import simpleParallax from 'simple-parallax-js';
 import Sparticles from "sparticles";
@@ -206,9 +205,9 @@ const { enableAutoPageviews } = Plausible({
    * Initialize Swiper JS
    * https://github.com/nolimits4web/swiper
    */
+    // configure Swiper to use modules
+    Swiper.use([Lazy]);
   
-    const w = window.innerWidth;
-    // if (w < 640) {
     const swiper1 = new Swiper('.swiper1', swiperOptions());
 
     const swiper2 = new Swiper('.swiper2', swiperOptions());
@@ -228,7 +227,11 @@ const { enableAutoPageviews } = Plausible({
             slidesPerView: "auto",
             spaceBetween: 10,
             centeredSlides: true,
-
+            preloadImages: false,
+            lazy: {
+                enabled: true,
+                loadPrevNext: true,
+            },
             on: {
                 slideChange: function () {
                     $('.animate-swipe-x').addClass('fade-out');
@@ -240,7 +243,6 @@ const { enableAutoPageviews } = Plausible({
             }
         }
     }
-    // }
 
 // AJAX CV Request submit
 $('form').on('submit', function (e) {

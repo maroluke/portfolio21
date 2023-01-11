@@ -522,3 +522,9 @@ html, body {
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@layer base {
+    html {
+        font-family: 'Min Sans', system-ui, sans-serif;
+    }
+}

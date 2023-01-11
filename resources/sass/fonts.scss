@@ -16,17 +16,38 @@
     font-weight: normal;
     font-style: normal;
 }
-*/
+
 @font-face {
-    font-family: 'MinSans-Medium';
-    src: url('../fonts/MinSans-Medium.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'Min Sans';
+    src: url('../fonts/MinSans-Medium.woff2') format('woff2'),
+        url('../fonts/MinSans-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
+}
+*/
+
+@font-face {
+    font-family: 'Min Sans';
+    src: url('../fonts/MinSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'MinSans-Black';
-    src: url('../fonts/MinSans-Black.woff2') format('woff2');
+    font-family: 'Min Sans';
+    src: url('../fonts/MinSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Min Sans';
+    src: url('../fonts/MinSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

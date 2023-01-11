@@ -27,22 +27,28 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-05.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/swisscom-05.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-01.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/swisscom-01.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-testing.jpg') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/mobile-testing.jpg') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-03.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/swisscom-03.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-04.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/swisscom-04.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/swisscom-02.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/swisscom-02.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                 </div>
             </div>
@@ -64,19 +70,23 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-screen-naanu-01.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/mobile-screen-naanu-01.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/desktop-screen-naanu-02.jpg') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/desktop-screen-naanu-02.jpg') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/restaurant.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/restaurant.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/naanu-testing.jpg') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/naanu-testing.jpg') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                 </div>
             </div>
@@ -92,19 +102,23 @@
                     </div>
                     
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-screen-generation-purpose-01.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/mobile-screen-generation-purpose-01.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/generation-purpose-meeting.jpg') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/generation-purpose-meeting.jpg') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/generation-purpose-meeting-02.jpg') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/generation-purpose-meeting-02.jpg') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/big-o.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/big-o.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                 </div>
             </div>
@@ -120,19 +134,23 @@
                     </div>
                     
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/desktop-screen-fundament-02.jpg') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/desktop-screen-fundament-02.jpg') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-screen-fundament-14.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/mobile-screen-fundament-14.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-screen-fundament-16.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/mobile-screen-fundament-16.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/fundament-logo.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/fundament-logo.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                 </div>
             </div>
@@ -148,23 +166,28 @@
                     </div>
                     
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-screen-coffaina-04.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/mobile-screen-coffaina-04.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/mobile-screen-coffaina-01.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/mobile-screen-coffaina-01.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/coffaina-bottle-02.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/coffaina-bottle-02.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/coffaina-01.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/coffaina-01.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <img class="rounded-3xl max-h-[400px]" loading="lazy" src="{{ asset('media/berlin.png') }}" alt="">
+                        <img class="swiper-lazy rounded-3xl max-h-[400px]" data-src="{{ asset('media/berlin.png') }}" alt="">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </div>
                 </div>
             </div>
